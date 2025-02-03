@@ -1,6 +1,6 @@
 # Roam N Route 
 
-##Overview
+## Overview
 The **Roam N Route** is an application will provide college students with a way to find places to study, do work, 
 or meet with friends around the city with a focus on places that do not require spending money. 
 Our program will include a main feed, a search feature, and the ability for users to add and review locations. 
