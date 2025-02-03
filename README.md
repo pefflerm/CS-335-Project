@@ -1,12 +1,47 @@
-# Roam N Route 
+# Roam N Route
 
 ## Overview
-The **Roam N Route** is an application will provide college students with a way to find places to study, do work, 
-or meet with friends around the city with a focus on places that do not require spending money. 
-Our program will include a main feed, a search feature, and the ability for users to add and review locations. 
-The main feed will show users pictures and information about locations that are similar to other locations the user has searched for or saved.
-This will be a way for users to find places that they otherwise might not have heard of. We were inspired by the functionality of Tinder, 
-where users will be shown a location and they can swipe left or right to show interest in going to this place, If user swipes right they will get the option to schedule an exact date and time where they want to go to the place, and they could be matched with someone going at the same exact time, helping college students make friends outside college atmosphere, and they could either deny or accept that match.. The search feature will allow users to look for 
-specific locations based on area, price, or keywords. The ability for users to add locations and reviews, notes, and pictures to existing 
-locations will mean the program is constantly growing and will have a “word of mouth” experience. 
----
+
+**Roam N Route** is a mobile application designed for college students, helping them discover free places to study, work, or meet up with friends around the city. The app focuses on locations that don’t require spending money, making it perfect for students on a budget.
+
+### Key Features
+
+- **Main Feed:**  
+  Users will see a feed of locations tailored to their preferences. This feed is dynamic, showing pictures and details about places similar to those they've searched for or saved. It’s designed to introduce students to new spots they might not have discovered otherwise.
+
+- **Swipe for Discovery:**  
+  Inspired by Tinder’s swipe functionality, users can swipe right to express interest in a location, or left to skip. If they swipe right, they’ll have the option to schedule a visit and even connect with other students going at the same time, helping them make new friends outside of the typical college environment.
+
+- **Search & Filters:**  
+  Users can search for specific locations based on area, price (free!), or keywords. This ensures students can easily find places that match their needs.
+
+- **Community-driven Content:**  
+  Users can add and review locations, share notes, upload photos, and leave feedback. This feature encourages a growing, community-driven experience where recommendations are continuously updated through user-generated content.
+
+- **Matchmaking for Socializing:**  
+  When a user schedules a visit to a location, they can be matched with others planning to be there at the same time. They can then decide whether to accept or decline the match, creating opportunities for social interaction outside of class.
+
+### How It Works
+
+1. **Browse Locations:**  
+   Explore the main feed to see different spots based on your preferences and interests.
+   
+2. **Swipe Right or Left:**  
+   Swipe right if you’re interested in a location. If you swipe left, it’s simply not for you.
+
+3. **Schedule Your Visit:**  
+   If you swipe right, you’ll get the option to pick a specific date and time for your visit.
+
+4. **Get Matched:**  
+   If someone else is going to the same place at the same time, you’ll be matched. You can then choose whether to meet up or go solo.
+
+5. **Contribute & Discover:**  
+   Add new spots, leave reviews, upload pictures, and help build the community of students supporting each other in finding the best free places around.
+
+### Why Roam N Route?
+
+- **Free:** Only free locations, perfect for college students.
+- **Social:** A way to meet new people outside the classroom.
+- **Ever-growing:** User-generated content means the app is always expanding with new places and insights.
+
+Join the Roam N Route community and never run out of places to study, work, or hang out—all for free!
