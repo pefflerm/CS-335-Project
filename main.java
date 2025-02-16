@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+
+class main {
+    public static void main(String [] args){
+        menu m =new menu();
+        String s = m.Menu();
+        System.out.println(s);
+        System.out.println("");
+
+        Placesfactory df = new Placesfactory("places/"+getCsvFile(s));
+        System.out.println(df.getHeaders());
+        String[] firstRow = df.getHeaders().split(",");
+        
+
+        System.out.println("");
+        ArrayList<String> Listofplaces  = new ArrayList<String>();
+
+        while (df.moreData()) {
+            ArrayList<String> placeDetails = df.getNextPlace(); // Read once and store
+        
+            for(int i=0;i<firstRow.length;i++) {  // Restaurants ,location,Notes,Reservation,Stars,Price Point,Has Kelsey been?,TikTok/ IG Reels,Links: ,,
+                System.out.println(firstRow[i].trim()+":"+ placeDetails.get(i));
+
+           
+            }
+            System.out.println("----------------------");
+        }
+       
+                   
+       }
+       private static String getCsvFile(String category) {
+        switch (category) {
+            case "Night Out": return "Copy of Boston Recommendations  - Going out Bars.csv";
+            case "Brunch": return "Boston Recommendations  - Brunch.csv";
+            case "Cafes/Bakeries": return "Copy of Boston Recommendations  - Coffee Shops _ Bakery.csv";
+            case "lunch/dinner": return "Copy of Boston Recommendations  - Restaurants.csv";
+
+            case "Shopping": return "Copy of Boston Recommendations  - Shopping.csv";
+            case "Fun Activities": return "Copy of Boston Recommendations  - Things To Do.csv";
+            case "Outdoors": return "Copy of Boston Recommendations  - Summer _ Outdoor.csv";
+
+            case "Spa": return "Copy of Boston Recommendations  - Spa_Beauty.csv";
+            case "Skincare/Haircare": return "Copy of Boston Recommendations  - Spa_Beauty.csv";
+
+            default: return "";
+        }
+    }
+}
