@@ -6,10 +6,13 @@ class main {
         String s = m.Menu();
         System.out.println(s);
         System.out.println("");
+        if(!s.isEmpty()){
 
         Placesfactory df = new Placesfactory("places/"+getCsvFile(s));
         System.out.println(df.getHeaders());
         String[] firstRow = df.getHeaders().split(",");
+        System.out.println(firstRow);
+
         
 
         System.out.println("");
@@ -18,14 +21,15 @@ class main {
         while (df.moreData()) {
             ArrayList<String> placeDetails = df.getNextPlace(); // Read once and store
         
-            for(int i=0;i<firstRow.length;i++) {  // Restaurants ,location,Notes,Reservation,Stars,Price Point,Has Kelsey been?,TikTok/ IG Reels,Links: ,,
-                System.out.println(firstRow[i].trim()+":"+ placeDetails.get(i));
+            for(int i=0;i<(firstRow.length);i++) {  // Restaurants ,location,Notes,Reservation,Stars,Price Point,Has Kelsey been?,TikTok/ IG Reels,Links: ,,
+                if((placeDetails.size())>i){
+                    System.out.println(firstRow[i].trim()+":"+ placeDetails.get(i));}
 
            
             }
             System.out.println("----------------------");
         }
-       
+    }
                    
        }
        private static String getCsvFile(String category) {
@@ -41,6 +45,7 @@ class main {
 
             case "Spa": return "Copy of Boston Recommendations  - Spa_Beauty.csv";
             case "Skincare/Haircare": return "Copy of Boston Recommendations  - Spa_Beauty.csv";
+            case "Massage": return "Copy of Boston Recommendations  - Spa_Beauty.csv";
 
             default: return "";
         }

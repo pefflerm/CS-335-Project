@@ -1,25 +1,28 @@
 import java.util.*;
 
 public class menu {
+
     public static String Menu() {
         Scanner scanner = new Scanner(System.in);
         int choice;
+        String subChoice;
+        do{
         
             System.out.println("\n===== MENU =====");
             System.out.println("1. Restaurants");
             System.out.println("2. Things to Do");
             System.out.println("3. Self-Care");
-            System.out.println("4. Shopping");
-            System.out.println("5. Exit");
+            System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
 
-            choice = getValidChoice(scanner, 5);
+            choice = getValidChoice(scanner, 4);
 
             switch (choice) {
                 case 1: {
                     String selectedRestaurant = restaurantMenu(scanner);
                     if (!selectedRestaurant.isEmpty()) {
                         System.out.println("You selected: " + selectedRestaurant);
+                        subChoice=selectedRestaurant;
                        return selectedRestaurant;
                     }
                     break;
@@ -28,6 +31,7 @@ public class menu {
                     String selectedActivity = activitiesMenu(scanner);
                     if (!selectedActivity.isEmpty()) {
                         System.out.println("You selected: " + selectedActivity);
+                        subChoice=selectedActivity;
                         return selectedActivity;
                     }
                     break;
@@ -36,21 +40,16 @@ public class menu {
                     String selectedSelfCare = selfCareMenu(scanner);
                     if (!selectedSelfCare.isEmpty()) {
                         System.out.println("You selected: " + selectedSelfCare);
+                        subChoice=selectedSelfCare;
                         return selectedSelfCare;
                     }
                     break;
                 }
-                case 4: {
-                    String selectedShopping = shoppingMenu(scanner);
-                    if (!selectedShopping.isEmpty()) {
-                        System.out.println("You selected: " + selectedShopping);
-                        return(selectedShopping);
-                    }
-                    break;
-                }
-                case 5:
+                
+                case 4:
                     System.out.println("Exiting... Goodbye!");
                     return "";
+                    
                    
             }
 
@@ -59,7 +58,7 @@ public class menu {
         scanner.close();
         return "";
         
-    }
+    }while (subChoice != "");}
 
     private static String restaurantMenu(Scanner scanner) {
         int subChoice;
@@ -111,39 +110,13 @@ public class menu {
             System.out.println("1. Spa");
             System.out.println("2. Massage");
             System.out.println("3. Skincare/Haircare");
-            System.out.println("4. Other (Enter your own)");
-            System.out.println("5. Go Back");
+            System.out.println("4. Go Back");
             System.out.print("Enter your choice: ");
 
             subChoice = getValidChoice(scanner, 5);
 
-            if (subChoice == 4) {
-                scanner.nextLine();
-                System.out.print("Enter what you'd like to do: ");
-                return scanner.nextLine();
-            } else if (subChoice != 5) {
+             if (subChoice != 4) {
                 return getSelfCareType(subChoice);
-            }
-
-        } while (subChoice != 5);
-
-        return "";
-    }
-
-    private static String shoppingMenu(Scanner scanner) {
-        int subChoice;
-        do {
-            System.out.println("\n===== Shopping Categories =====");
-            System.out.println("1. Clothing");
-            System.out.println("2. Electronics");
-            System.out.println("3. Home Goods");
-            System.out.println("4. Go Back");
-            System.out.print("Enter your choice: ");
-
-            subChoice = getValidChoice(scanner, 4);
-
-            if (subChoice != 4) {
-                return getShoppingType(subChoice);
             }
 
         } while (subChoice != 4);
@@ -151,6 +124,7 @@ public class menu {
         return "";
     }
 
+    
     private static int getValidChoice(Scanner scanner, int maxOption) {
         int choice;
         while (true) {
@@ -196,12 +170,5 @@ public class menu {
         }
     }
 
-    private static String getShoppingType(int choice) {
-        switch (choice) {
-            case 1: return "Clothing";
-            case 2: return "Electronics";
-            case 3: return "Home Goods";
-            default: return "";
-        }
-    }
+  
 }
