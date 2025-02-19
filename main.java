@@ -1,11 +1,19 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class main {
     public static void main(String [] args){
+        String t="yes";
+        while(t.equals("yes")){
         menu m =new menu();
         String s = m.Menu();
         System.out.println(s);
+        System.out.println(s);
         System.out.println("");
+        while(s.equals("Go Back")){
+            s=m.Menu();
+            
+        }
         if(!s.isEmpty()){
 
         Placesfactory df = new Placesfactory("places/"+getCsvFile(s));
@@ -28,7 +36,13 @@ class main {
            
             }
             System.out.println("----------------------");
+           
+
         }
+        Scanner sc=new Scanner(System.in);
+        System.out.println(" would you like to checkout other places and catergories? yes/no");
+        t=sc.nextLine();
+    }
     }
                    
        }

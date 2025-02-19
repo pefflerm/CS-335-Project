@@ -6,7 +6,7 @@ public class menu {
         Scanner scanner = new Scanner(System.in);
         int choice;
         String subChoice;
-        do{
+     
         
             System.out.println("\n===== MENU =====");
             System.out.println("1. Restaurants");
@@ -58,11 +58,11 @@ public class menu {
         scanner.close();
         return "";
         
-    }while (subChoice != "");}
+   }
 
     private static String restaurantMenu(Scanner scanner) {
         int subChoice;
-        do {
+        
             System.out.println("\n===== Restaurant Types =====");
             System.out.println("1. Night Out");
             System.out.println("2. Brunch");
@@ -71,20 +71,17 @@ public class menu {
             System.out.println("5. Go Back");
             System.out.print("Enter your choice: ");
 
-            subChoice = getValidChoice(scanner, 4);
+            subChoice = getValidChoice(scanner, 5);
 
-            if (subChoice != 5) {
-                return getRestaurantType(subChoice);
-            }
+            
+            return getRestaurantType(subChoice);
+            
 
-        } while (subChoice != 4);
-
-        return "";
     }
 
     private static String activitiesMenu(Scanner scanner) {
         int subChoice;
-        do {
+       
             System.out.println("\n===== Things to Do =====");
             System.out.println("1. Shopping");
             System.out.println("2. Fun Activities");
@@ -94,18 +91,18 @@ public class menu {
 
             subChoice = getValidChoice(scanner, 4);
 
-            if (subChoice != 4) {
+           
                 return getActivityType(subChoice);
-            }
+            
 
-        } while (subChoice != 4);
+        
 
-        return "";
+   
     }
 
     private static String selfCareMenu(Scanner scanner) {
         int subChoice;
-        do {
+     
             System.out.println("\n===== Self-Care Activities =====");
             System.out.println("1. Spa");
             System.out.println("2. Massage");
@@ -115,13 +112,8 @@ public class menu {
 
             subChoice = getValidChoice(scanner, 5);
 
-             if (subChoice != 4) {
-                return getSelfCareType(subChoice);
-            }
-
-        } while (subChoice != 4);
-
-        return "";
+            return getSelfCareType(subChoice);
+             
     }
 
     
@@ -146,9 +138,8 @@ public class menu {
             case 2: return "Brunch";
             case 3: return "Cafes/Bakeries";
             case 4: return "lunch/dinner";
-
-
-            default: return "";
+            case 5: return "Go Back";
+            default: return ""; 
         }
     }
 
@@ -157,7 +148,8 @@ public class menu {
             case 1: return "Shopping";
             case 2: return "Fun Activities";
             case 3: return "Outdoors";
-            default: return "";
+            case 4: return "Go Back";
+            default: return ""; 
         }
     }
 
@@ -166,7 +158,9 @@ public class menu {
             case 1: return "Spa";
             case 2: return "Massage";
             case 3: return "Skincare/Haircare";
-            default: return "";
+            
+            case 4: return "Go Back";
+            default: return ""; 
         }
     }
 
