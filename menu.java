@@ -6,17 +6,18 @@ public class menu {
     public static String Menu() {
         Scanner scanner = new Scanner(System.in);
         int choice;
-        String subChoice;
-     
+        String subChoice = null;
+    
         
             System.out.println("\n===== MENU =====");
             System.out.println("1. Restaurants");
             System.out.println("2. Things to Do");
             System.out.println("3. Self-Care");
-            System.out.println("4. Exit");
+            System.out.println("4. Add Location");
+            System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
 
-            choice = getValidChoice(scanner, 4);
+            choice = getValidChoice(scanner, 5);
 
             switch (choice) {
                 case 1: {
@@ -46,22 +47,17 @@ public class menu {
                     }
                     break;
                 }
-                
-                case 4:
-                    System.out.println("Exiting... Goodbye!");
-                    return "";
-                    
-                   
+                case 4: {
+                	LocationFactory locationFactory = new LocationFactory("newlocationpalce.csv");  // Pass the CSV file name
+                    locationFactory.addNewLocation();
+                    }
+                    break;
             }
+			return subChoice;}
+                
+ 
 
-        
-
-        scanner.close();
-        return "";
-        
-   }
-
-    private static String restaurantMenu(Scanner scanner) {
+	private static String restaurantMenu(Scanner scanner) {
         int subChoice;
         
             System.out.println("\n===== Restaurant Types =====");
