@@ -1,29 +1,24 @@
 package cs335_package;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PlacesFactory {
-	private Scanner sc;
+    private Scanner sc;
     private File placeFile;
     private String firstRow;
-   
-
    
     public PlacesFactory() {
         sc = new Scanner(System.in);
     }
-
 
     public PlacesFactory(String source) {
         try {
             placeFile = new File(source);
             sc = new Scanner(placeFile);
             if (sc.hasNextLine()) {
-               firstRow = sc.nextLine(); // Read the first row
+               firstRow = sc.nextLine(); // Read the first row (headers)
             }
-            
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred. Enter info from keyboard.");
             e.printStackTrace();
@@ -37,17 +32,71 @@ public class PlacesFactory {
 
     // Get the next place from the file
     public Location getNextPlace() {
-    	Location place;
-        if (sc.hasNextLine()) {
-            String data = sc.nextLine();
-            String[] arrOfStr = data.split(",", 10); 
-            place = new Location(arrOfStr[0], arrOfStr[1]);
-        }else {
-        	place = new Location("None","None");
+        if (!sc.hasNextLine()) {
+            return null;
         }
-		return place;
+        
+        String line = sc.nextLine();
+        String[] parts = line.split(",");
+        
+        if (parts.length < 2) {
+            System.out.println("Warning: Invalid line format in CSV: " + line);
+            return getNextPlace(); // Skip this line and try the next one
+        }
+        
+        String name = parts[0].trim();
+        String type = parts[1].trim();
+        
+        Location location = new Location(name, type);
+        
+        // Set other properties if they exist in the CSV
+        if (parts.length > 2 && !parts[2].isEmpty()) {
+            location.setLocation(parts[2].trim());
+        }
+        
+        if (parts.length > 3 && !parts[3].isEmpty()) {
+            location.setReservation(parts[3].trim());
+        }
+        
+        if (parts.length > 4 && !parts[4].isEmpty()) {
+            location.setCoatCheck(parts[4].trim());
+        }
+        
+        if (parts.length > 5 && !parts[5].isEmpty()) {
+            location.setCover(parts[5].trim());
+        }
+        
+        if (parts.length > 6 && !parts[6].isEmpty()) {
+            try {
+                double price = Double.parseDouble(parts[6].trim());
+                location.setPrice(price);
+            } catch (NumberFormatException e) {
+                // If price can't be parsed, set it to 0.0
+                location.setPrice(0.0);
+            }
+        }
+        
+        if (parts.length > 7 && !parts[7].isEmpty()) {
+            try {
+                double stars = Double.parseDouble(parts[7].trim());
+                location.setStars(stars);
+            } catch (NumberFormatException e) {
+                // If stars can't be parsed, set it to 0.0
+                location.setStars(0.0);
+            }
+        }
+        
+        if (parts.length > 8 && !parts[8].isEmpty()) {
+            location.setWeb(parts[8].trim());
+        }
+        
+        return location;
     }
-    public String getHeaders() {
-        return(firstRow);
+    
+    // Add a method to close the scanner when done
+    public void close() {
+        if (sc != null) {
+            sc.close();
+        }
     }
 }

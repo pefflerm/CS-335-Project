@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 
@@ -50,7 +52,17 @@ public class Location {
 		}
 		return scheduled;
 	}
-	
+    
+	public void setLocation(String location) { this.location = location; }
+    public void setReservation(String reserve) { this.reserve = reserve; }
+    public void setCoatCheck(String coat) { this.coat = coat; }
+    public void setCover(String cover) { this.cover = cover; }
+    public void setPrice(double price) { this.price = price; }
+    public void setStars(double stars) { this.stars = stars; }
+    public void setWeb(String web) { this.web = web; }
+
+    
+
 
    /* // Method to save the schedule to a file
     private void writeSchedule(File scheduleFile) throws IOException {
@@ -252,15 +264,58 @@ public void saveReviewToCSV(int rating, String reviewText) throws IOException {
 // Add these fields to the Location class
 private static Schedule globalSchedule = new Schedule();
 
-// Add these methods to the Location class
 public boolean scheduleVisit(Scanner scanner) {
     System.out.println("Schedule a visit to " + this.name);
     
-    System.out.println("Enter start date and time (yyyy-MM-dd HH:mm): ");
-    String startTime = scanner.nextLine().trim();
+    String startTime = "";
+    boolean validStartFormat = false;
     
-    System.out.println("Enter end date and time (yyyy-MM-dd HH:mm): ");
-    String endTime = scanner.nextLine().trim();
+    // Loop until valid start date/time format is entered
+    while (!validStartFormat) {
+        System.out.println("Enter start date and time (yyyy-MM-dd HH:mm): ");
+        startTime = scanner.nextLine().trim();
+        
+        if (startTime.isEmpty()) {
+            System.out.println("Start time cannot be empty. Please try again.");
+            continue;
+        }
+        
+        try {
+            // Validate the format
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+            dateFormat.setLenient(false);
+            dateFormat.parse(startTime);
+            validStartFormat = true; // Format is valid, exit the loop
+        } catch (ParseException e) {
+            System.out.println("Invalid date/time format. Please use the format yyyy-MM-dd HH:mm (e.g., 2023-05-20 14:30)");
+            // Loop will continue
+        }
+    }
+    
+    String endTime = "";
+    boolean validEndFormat = false;
+    
+    // Loop until valid end date/time format is entered
+    while (!validEndFormat) {
+        System.out.println("Enter end date and time (yyyy-MM-dd HH:mm): ");
+        endTime = scanner.nextLine().trim();
+        
+        if (endTime.isEmpty()) {
+            System.out.println("End time cannot be empty. Please try again.");
+            continue;
+        }
+        
+        try {
+            // Validate the format
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+            dateFormat.setLenient(false);
+            dateFormat.parse(endTime);
+            validEndFormat = true; // Format is valid, exit the loop
+        } catch (ParseException e) {
+            System.out.println("Invalid date/time format. Please use the format yyyy-MM-dd HH:mm (e.g., 2023-05-20 16:30)");
+            // Loop will continue
+        }
+    }
     
     boolean scheduled = globalSchedule.addEvent(this.name, startTime, endTime);
     if (scheduled) {
@@ -271,10 +326,32 @@ public boolean scheduleVisit(Scanner scanner) {
         } catch (IOException e) {
             System.out.println("Failed to add to wishlist: " + e.getMessage());
         }
+    } else {
+        System.out.println("Failed to schedule visit. The time slot may be already booked.");
+    }
+    
+    // Always ask if the user wants to continue or exit, regardless of scheduling success
+    boolean validChoice = false;
+    while (!validChoice) {
+        System.out.println("\nWould you like to see the NEXT location or STOP? (NEXT/STOP): ");
+        String choice = scanner.nextLine().trim().toUpperCase();
+        
+        if (choice.equals("NEXT")) {
+            validChoice = true;
+            return true; // Continue to next location
+        } else if (choice.equals("STOP")) {
+            validChoice = true;
+            System.out.println("Thank you for using the application. Goodbye!");
+            System.exit(0); // Exit the application
+            return false;
+        } else {
+            System.out.println("Invalid choice. Please enter NEXT or STOP.");
+        }
     }
     
     return scheduled;
 }
+
 
 public void add2Wishlist() throws IOException {
     String os = getOS();
