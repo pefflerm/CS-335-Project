@@ -66,16 +66,7 @@ public class Location {
     
 
 
-   /* // Method to save the schedule to a file
-    private void writeSchedule(File scheduleFile) throws IOException {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(scheduleFile))) {
-            for (String event : schedule) {
-                writer.write(event);  // Write each event to the file
-                writer.newLine();  // Write a new line after each event
-            }
-        }
-    } */
-    
+
     // Update toString method
 public String toString() {
     return("Name: " + this.name +
@@ -597,160 +588,9 @@ private static String[] parseCSVLine(String line) {
 
 
     
-
-	
-
-
-
-	
-	/*public void add2Wishlist() throws IOException {
-		
-		String os = getOS(); // Get OS this is early on knowing if we can support a systeom
-	    if (os == null) {
-	        System.out.println("Unable to determine operating system.");
-	        return; // Exit the method early if OS is null
-	    }
-	    
-	    String user = System.getProperty("user.name");  // This should correctly get the username
-		String basePath = "";
-		//String userHome = System.getProperty("user.home"); //lets try for home directory it was user.name
-		
-		
-		//if (os=="Windows") {
-	    if (os.equals("Windows")) {
-	        try {
-	            Path wishlistFolder = Paths.get("C:/Users/" + user + "/Desktop/routenroam/wishlistFolder");
-	            Files.createDirectories(wishlistFolder); // Create folder if it doesn't exist
-	        } catch (IOException ex) {
-	            System.out.println("Unable to create folder on Windows");
-	        }
-
-	        File f = new File("C:/Users/" + user + "/routenroam/wishlist/wishlist.FILE");
-	        Path path = Paths.get("C:/Users/" + user + "/routenroam/wishlist/wishlist.FILE");
-
-	        if (Files.exists(path)) {
-	            writeFile(f); // If file exists, write to it
-	        } else {
-	            f = createFile("wishlist", "C:/Users/" + user + "/routenroam/wishlistFolder/");
-	            writeFile(f); // Create and write to file if it doesn't exist
-	        }
-			
-		//linux uses a different path it will do /home/user instead of c:/users/	
-			
-		//}else if(os=="Linux") {
-		//} else if (os.equals("Linux")) {
-
-		//	try{
-		//		Path wishlistFolder = Paths.get("C:/Users/"+user+"/routenroam/wishlistFolder");
-		//		Files.createDirectories(wishlistFolder); // creates folder -- createDirectories should check if folder exists first
-		//	}catch(IOException ex){
-			//	System.out.println("Unable to create folder");
-		//	}
-		//	File f = new File("C:/Users/"+user+"/routenroam/wishlist/wishlist.FILE");
-		//	Path path = FileSystems.getDefault().getPath("C:\\Users\\"+user+"\\routenroam\\wishlist\\wishlist.FILE");
-		//	if (Files.exists(path)) { // checks if file exists
-			//	writeFile(f); // save location to file		
-		//	}else { // creates file
-		//		f = createFile("wishlist","C:/Users/"+user+"/routenroam/wishlistFolder/");
-			//	writeFile(f); // save location to file	
-		//	}
-			
-			
-	        
-	        
-	        
-		} else if (os.equals("Linux")) {
-	        try {
-	            Path wishlistFolder = Paths.get("/home/" + user + "/routenroam/wishlistFolder");
-	            Files.createDirectories(wishlistFolder); // Create folder if it doesn't exist
-	        } catch (IOException ex) {
-	            System.out.println("Unable to create folder on Linux");
-	        }
-	
-	        File f = new File("/home/" + user + "/routenroam/wishlist/wishlist.FILE");
-	        Path path = Paths.get("/home/" + user + "/routenroam/wishlist/wishlist.FILE");
-	
-	        if (Files.exists(path)) {
-	            writeFile(f); // If file exists, write to it
-	        } else {
-	            f = createFile("wishlist", "/home/" + user + "/routenroam/wishlistFolder/");
-	            writeFile(f); // Create and write to file if it doesn't exist
-	        }
-				
-	        
-	        
-	        
-	        
-				
-			//}else if(os=="MacOS") {
-		} else if (os.equals("MacOS")) {
-	        try {
-	            Path wishlistFolder = Paths.get("/Users/" + user + "/Desktop/routenroam/wishlistFolder");
-	            if (!Files.exists(wishlistFolder)) {
-	                Files.createDirectories(wishlistFolder); // Create folder if it doesn't exist
-	            }
-	        } catch (IOException ex) {
-	            System.out.println("Unable to create folder on MacOS");
-	            ex.printStackTrace(); // Log exception for debugging
-	        }
-	
-	        File f1 = new File("/Users/" + user + "/Desktop/routenroam/wishlistFolder/wishlist.FILE");
-	        Path path1 = Paths.get("/Users/" + user + "/Desktop/routenroam/wishlistFolder/wishlist.FILE");
-	
-	        if (Files.exists(path1)) {
-	            writeFile(f1); // If file exists, write to it
-	        } else {
-	            f1 = createFile("wishlist", "/Users/" + user + "/Desktop/routenroam/wishlistFolder/");
-	            writeFile(f1); // Create and write to file if it doesn't exist
-	        }
-	        
-	     
-			// Now save the schedule
-            File scheduleFile = new File(basePath + "/schedule.FILE");
-            Path schedulePath = Paths.get(basePath + "/schedule.FILE");
-
-            if (Files.exists(schedulePath)) {
-                writeSchedule(scheduleFile); // If schedule file exists, write to it
-            } else {
-                scheduleFile = createFile("schedule", basePath);
-                writeSchedule(scheduleFile); // Create and write to file if it doesn't exist
-            }
-            
-	
-	    } else {
-	        System.out.println("Unable to save. Incompatible operating system.");
-	    }
-	} // add2WishList method
-			
-*/
-    
 	
 	public void schedule() {}
 		// same issue as add2Wishlist
-	
-	
-	
-	
-	
-	
-	//public String getOS() { (this was rachels code) howveer this code was creating this to fail. So i took parts of it and did ifs and elses
-	//	String[] possibleSystems = {"Windows","Linux","MacOS"};
-	//	String system = null; // OS used by user's computer
-	//	boolean matchFound = false;
-	//	for (String i:possibleSystems) { // goes through each os and breaks if match is found
-	//		String os = System.getProperty("os.name"); // gets os on user's computer
-	//		Pattern pattern = Pattern.compile(i, Pattern.CASE_INSENSITIVE); // pattern to be found
-	//		Matcher match = pattern.matcher(os); // look for pattern in this string
-	//		matchFound = match.find();
-	//		if (matchFound) {
-	//			system = i;
-	//			break;
-	//		}
-		//}
-	
-	
-	
-	
 	
 	
 	
@@ -773,15 +613,6 @@ private static String[] parseCSVLine(String line) {
 	
 	
 	
-		//if (matchFound) {
-	//		return system; // returns system name
-	//	}else{
-	//		System.out.println("Compatible operating system not detected");
-	//		return null;
-	//	}
-//	} //getOS method
-	
-	
 	
 	
 	public File createFile(String fileName, String filePath) {
@@ -801,39 +632,14 @@ private static String[] parseCSVLine(String line) {
 	} // createFile method
 	
 	
-	/* public File createFile(String fileName,String filePath) {
-		File file1;
-		try {
-			file1 = new File(filePath+fileName);
-			file1.createNewFile();
-		}catch(IOException ex){
-			System.out.println("Failed to create file");
-			file1 = null;
-		}
-		return file1;
-	} // createFile method */
+	
 	
 	public void writeFile(File file1) {	
 		if (file1 == null) {
 	        System.out.println("File object is null. Unable to write to file.");
 	        return;
 		}
-		/* try{
-			String file = null; // making this a lowkey variable - nada
-			FileWriter Writer = new FileWriter(file, true);
-			Writer.write(this.name+","+
-						this.type+","+
-						this.location+","+
-						this.reserve+","+
-						this.coat+","+
-						this.cover+","+
-						this.price+","+
-						this.stars+","+
-						this.web);
-			Writer.close();
-			 System.out.println("Location added to wishlist.");
-		}catch(IOException ex) {
-			System.out.print("Failed to save"); */
+		
 	        
 	        try (FileWriter writer = new FileWriter(file1, true); 
 	                BufferedWriter bufferedWriter = new BufferedWriter(writer)) {

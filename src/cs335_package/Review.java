@@ -69,19 +69,7 @@ public class Review {
         
     }
         
-        
-   /* } // Save the review to the CSV file
-    public void saveReviewToCSV(String fileName) {
-        try {
-            FileWriter fw = new FileWriter(fileName, true); // Open the file in append mode
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.write(this.reviewer + "," + this.stars + "," + this.text);
-            bw.newLine();
-            bw.close();
-         //catch (IOException e) {
-            System.out.println("Error saving review to CSV: " + e.getMessage());
-        
-    } */
+    
         
     public void saveReviewToCSV(String fileName) throws IOException {
         try {
