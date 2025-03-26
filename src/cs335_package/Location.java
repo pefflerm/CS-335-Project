@@ -18,8 +18,8 @@ public class Location {
 	private String reserve; // can be empty
 	private String coat; // can be empty
 	private String cover; // can be empty
-	private double price;
-	private double stars;
+	private String price;  // Changed from double
+    private String stars;  // Changed from double
 	private String web; // can be empty
 	private ReviewList reviews; // can be empty
 	
@@ -28,8 +28,11 @@ public class Location {
 	private List<String> schedule; // To store schedule info
 
 	
-
+    public void setPrice(String price) { this.price = price; }
+    public void setStars(String stars) { this.stars = stars; }
 	
+
+
 	Location(String n, String t){
 		this.name = n;
 		this.type = t;
@@ -57,8 +60,7 @@ public class Location {
     public void setReservation(String reserve) { this.reserve = reserve; }
     public void setCoatCheck(String coat) { this.coat = coat; }
     public void setCover(String cover) { this.cover = cover; }
-    public void setPrice(double price) { this.price = price; }
-    public void setStars(double stars) { this.stars = stars; }
+  
     public void setWeb(String web) { this.web = web; }
 
     
@@ -74,24 +76,25 @@ public class Location {
         }
     } */
     
-    public String toString() {
-        return("Name: " + this.name +
-               "\nType: " + this.type +
-               "\nLocation: " + this.location +
-               "\nReservation: " + this.reserve +
-               "\nCoat Check: " + this.coat +
-               "\nCover: " + this.cover +
-               "\nPrice: " + Double.toString(this.price) +
-               "\nStars: " + Double.toString(this.stars) +
-               "\nWebsite: " + this.web
-        );
-    }
+    // Update toString method
+public String toString() {
+    return("Name: " + this.name +
+           "\nType: " + this.type +
+           "\nLocation: " + this.location +
+           "\nReservation: " + this.reserve +
+           "\nCoat Check: " + this.coat +
+           "\nCover: " + this.cover +
+           "\nPrice: " + this.price +  // No need for Double.toString()
+           "\nStars: " + this.stars +  // No need for Double.toString()
+           "\nWebsite: " + this.web
+    );
+}
 
-    public String[] toArray() {
-        String[] locArray = {this.name, this.type, this.location, this.reserve, this.coat, this.cover,
-                            Double.toString(this.price), Double.toString(this.stars), this.web};
-        return locArray;
-    }
+    public String[] toArray() {String[] locArray = {this.name, this.type, this.location, this.reserve, this.coat, this.cover,
+        this.price, this.stars, this.web};
+return locArray;
+}
+ 
 
     public String getName() {return this.name;}
     public String getType() {return this.type;}
@@ -100,8 +103,8 @@ public class Location {
     public String getCoatCheckStatus() {return this.coat;}
     public String getCoverStatus() {return this.cover;}
     public String getWeb() {return this.web;}
-    public double getPrice() {return this.price;}
-    public double getStars() {return this.stars;}
+    public String getPrice() { return this.price; }
+    public String getStars() { return this.stars; }
     public ReviewList getReviewList() {return this.reviews;}
 
     public void createReview(Scanner scan) { 
@@ -269,6 +272,9 @@ public boolean scheduleVisit(Scanner scanner) {
     
     String startTime = "";
     boolean validStartFormat = false;
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    dateFormat.setLenient(false);
+    Date startDate = null;
     
     // Loop until valid start date/time format is entered
     while (!validStartFormat) {
@@ -281,22 +287,35 @@ public boolean scheduleVisit(Scanner scanner) {
         }
         
         try {
-            // Validate the format
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-            dateFormat.setLenient(false);
-            dateFormat.parse(startTime);
+            // Validate the format - remove any closing parenthesis that might have been copied
+            startTime = startTime.replace(")", "");
+            
+            // Try to format the time properly if it has single-digit minutes
+            if (startTime.matches("\\d{4}-\\d{2}-\\d{2} \\d{1,2}:\\d{1}")) {
+                String[] parts = startTime.split(":");
+                String beforeColon = parts[0];
+                String afterColon = parts[1];
+                if (afterColon.length() == 1) {
+                    startTime = beforeColon + ":0" + afterColon;
+                }
+            }
+            
+            startDate = dateFormat.parse(startTime);
             validStartFormat = true; // Format is valid, exit the loop
         } catch (ParseException e) {
             System.out.println("Invalid date/time format. Please use the format yyyy-MM-dd HH:mm (e.g., 2023-05-20 14:30)");
+            System.out.println("Make sure to use two digits for hours and minutes (e.g., 09:05, not 9:5)");
             // Loop will continue
         }
     }
     
     String endTime = "";
     boolean validEndFormat = false;
+    boolean validEndTime = false;
+    Date endDate = null;
     
-    // Loop until valid end date/time format is entered
-    while (!validEndFormat) {
+    // Loop until valid end date/time format is entered AND end time is different from start time
+    while (!validEndFormat || !validEndTime) {
         System.out.println("Enter end date and time (yyyy-MM-dd HH:mm): ");
         endTime = scanner.nextLine().trim();
         
@@ -306,13 +325,40 @@ public boolean scheduleVisit(Scanner scanner) {
         }
         
         try {
-            // Validate the format
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-            dateFormat.setLenient(false);
-            dateFormat.parse(endTime);
-            validEndFormat = true; // Format is valid, exit the loop
+            // Validate the format - remove any closing parenthesis that might have been copied
+            endTime = endTime.replace(")", "");
+            
+            // Try to format the time properly if it has single-digit minutes
+            if (endTime.matches("\\d{4}-\\d{2}-\\d{2} \\d{1,2}:\\d{1}")) {
+                String[] parts = endTime.split(":");
+                String beforeColon = parts[0];
+                String afterColon = parts[1];
+                if (afterColon.length() == 1) {
+                    endTime = beforeColon + ":0" + afterColon;
+                }
+            }
+            
+            endDate = dateFormat.parse(endTime);
+            
+            validEndFormat = true; // Format is valid
+            
+            // Check if end time is different from start time
+            if (endTime.equals(startTime)) {
+                System.out.println("End time must be different from start time. Please enter a different time.");
+                validEndTime = false;
+            } 
+            // Check if end time is after start time
+            else if (endDate.before(startDate)) {
+                System.out.println("End time must be after start time. Please enter a valid end time.");
+                validEndTime = false;
+            }
+            else {
+                validEndTime = true; // End time is valid, exit the loop
+            }
         } catch (ParseException e) {
             System.out.println("Invalid date/time format. Please use the format yyyy-MM-dd HH:mm (e.g., 2023-05-20 16:30)");
+            System.out.println("Make sure to use two digits for hours and minutes (e.g., 09:05, not 9:5)");
+            validEndFormat = false;
             // Loop will continue
         }
     }
@@ -353,6 +399,7 @@ public boolean scheduleVisit(Scanner scanner) {
 }
 
 
+
 public void add2Wishlist() throws IOException {
     String os = getOS();
     if (os == null) {
@@ -386,25 +433,76 @@ public void add2Wishlist() throws IOException {
         throw ex;
     }
     
-    // Save the wishlist
-    File wishlistFile = new File(basePath + "/wishlist.FILE");
-    writeFile(wishlistFile);
+    // Save the wishlist to CSV
+    File wishlistFile = new File(basePath + "/wishlist.csv");
+    writeFileCSV(wishlistFile);
     
-    // Save the schedule
-    File scheduleFile = new File(basePath + "/schedule.FILE");
-    writeSchedule(scheduleFile);
+    // Save the schedule to CSV
+    File scheduleFile = new File(basePath + "/schedule.csv");
+    writeScheduleCSV(scheduleFile);
     
     System.out.println("Location added to wishlist successfully.");
 }
 
-
-// Add this method to write the schedule to a file
-private void writeSchedule(File scheduleFile) throws IOException {
-    try (FileWriter writer = new FileWriter(scheduleFile);
+// New method to write wishlist to CSV
+private void writeFileCSV(File file1) {
+    if (file1 == null) {
+        System.out.println("File object is null. Unable to write to file.");
+        return;
+    }
+    
+    try (FileWriter writer = new FileWriter(file1, true); 
          BufferedWriter bufferedWriter = new BufferedWriter(writer)) {
         
-        // Write the schedule data
-        bufferedWriter.write(globalSchedule.toCSVString());
+        // If the file is empty, write a header row
+        if (file1.length() == 0) {
+            bufferedWriter.write("Name,Type,Location,Reservation,CoatCheck,Cover,Price,Stars,Website");
+            bufferedWriter.newLine();
+        }
+        
+        // Write data to the file with proper CSV escaping
+        bufferedWriter.write(
+            escapeCSV(this.name) + "," + 
+            escapeCSV(this.type) + "," +
+            escapeCSV(this.location) + "," +
+            escapeCSV(this.reserve) + "," +
+            escapeCSV(this.coat) + "," +
+            escapeCSV(this.cover) + "," +
+            escapeCSV(this.price) + "," +
+            escapeCSV(this.stars) + "," +
+            escapeCSV(this.web)
+        );
+        bufferedWriter.newLine(); // Adds a newline after writing
+        System.out.println("Location added to wishlist CSV.");
+        
+    } catch (IOException ex) {
+        System.out.println("Failed to save to CSV file: " + ex.getMessage());
+    }
+}
+
+// New method to write schedule to CSV
+private void writeScheduleCSV(File scheduleFile) throws IOException {
+    try (FileWriter writer = new FileWriter(scheduleFile, true);
+         BufferedWriter bufferedWriter = new BufferedWriter(writer)) {
+        
+        // If the file is empty, write a header row
+        if (scheduleFile.length() == 0) {
+            bufferedWriter.write("Location,StartTime,EndTime");
+            bufferedWriter.newLine();
+        }
+        
+        // Get the schedule entries for this location
+        List<ScheduleEntry> entries = globalSchedule.getEntriesForLocation(this.name);
+        
+        // Write each schedule entry to the CSV
+        for (ScheduleEntry entry : entries) {
+            bufferedWriter.write(
+                escapeCSV(entry.getLocation()) + "," +
+                escapeCSV(entry.getStartTime()) + "," +
+                escapeCSV(entry.getEndTime())
+            );
+            bufferedWriter.newLine();
+        }
         
         System.out.println("Schedule saved successfully to: " + scheduleFile.getAbsolutePath());
     } catch (IOException e) {
@@ -413,23 +511,90 @@ private void writeSchedule(File scheduleFile) throws IOException {
     }
 }
 
-// Add this method to load the schedule from a file
-public static void loadSchedule(File scheduleFile) {
+// Helper method to properly escape CSV values
+private String escapeCSV(String value) {
+    if (value == null) {
+        return "";
+    }
+    
+    // If the value contains commas, quotes, or newlines, wrap it in quotes and escape any quotes
+    if (value.contains(",") || value.contains("\"") || value.contains("\n")) {
+        return "\"" + value.replace("\"", "\"\"") + "\"";
+    }
+    return value;
+}
+
+// Add this method to load the schedule from a CSV file
+public static void loadScheduleFromCSV(File scheduleFile) {
     if (!scheduleFile.exists()) {
-        System.out.println("Schedule file does not exist. Starting with empty schedule.");
+        System.out.println("Schedule CSV file does not exist. Starting with empty schedule.");
         return;
     }
     
     try {
-        String content = new String(Files.readAllBytes(scheduleFile.toPath()));
-        globalSchedule = Schedule.fromCSVString(content);
+        List<String> lines = Files.readAllLines(scheduleFile.toPath());
+        
+        // Skip the header row if it exists
+        boolean hasHeader = !lines.isEmpty() && lines.get(0).startsWith("Location,");
+        int startIndex = hasHeader ? 1 : 0;
+        
+        // Clear the existing schedule
+        globalSchedule = new Schedule();
+        
+        // Process each line
+        for (int i = startIndex; i < lines.size(); i++) {
+            String line = lines.get(i);
+            String[] parts = parseCSVLine(line);
+            
+            if (parts.length >= 3) {
+                String location = parts[0];
+                String startTime = parts[1];
+                String endTime = parts[2];
+                
+                globalSchedule.addEvent(location, startTime, endTime);
+            }
+        }
+        
         System.out.println("Schedule loaded successfully from: " + scheduleFile.getAbsolutePath());
     } catch (IOException e) {
-        System.out.println("Error loading schedule: " + e.getMessage());
+        System.out.println("Error loading schedule from CSV: " + e.getMessage());
     }
 }
 
- 
+// Helper method to parse CSV lines correctly (handling quoted values)
+private static String[] parseCSVLine(String line) {
+    List<String> result = new ArrayList<>();
+    StringBuilder currentValue = new StringBuilder();
+    boolean inQuotes = false;
+    
+    for (int i = 0; i < line.length(); i++) {
+        char c = line.charAt(i);
+        
+        if (c == '\"') {
+            // If we see a quote, toggle the inQuotes flag
+            if (inQuotes && i + 1 < line.length() && line.charAt(i + 1) == '\"') {
+                // This is an escaped quote (two quotes in a row)
+                currentValue.append('\"');
+                i++; // Skip the next quote
+            } else {
+                inQuotes = !inQuotes;
+            }
+        } else if (c == ',' && !inQuotes) {
+            // If we see a comma and we're not in quotes, end the current value
+            result.add(currentValue.toString());
+            currentValue = new StringBuilder();
+        } else {
+            // Otherwise, add the character to the current value
+            currentValue.append(c);
+        }
+    }
+    
+    // Add the last value
+    result.add(currentValue.toString());
+    
+    return result.toArray(new String[0]);
+}
+
 
     
 

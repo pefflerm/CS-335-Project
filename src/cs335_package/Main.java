@@ -434,7 +434,7 @@ public class Main {
                         System.out.println("----------------------");
                         System.out.println("----------------------");
     
-                        // Ask the user if they want to see the next place or stop
+                        // Ask the ur if they want to see the next place or stop
                         System.out.print("Type 'Next' to see the next place or 'Exit' to stop: ");
                         String input = sc.nextLine().trim().toLowerCase();  // Convert input to lowercase to avoid case issues
                         // Loop until user types "next" or "exit"

@@ -66,25 +66,15 @@ public class PlacesFactory {
             location.setCover(parts[5].trim());
         }
         
-        if (parts.length > 6 && !parts[6].isEmpty()) {
-            try {
-                double price = Double.parseDouble(parts[6].trim());
-                location.setPrice(price);
-            } catch (NumberFormatException e) {
-                // If price can't be parsed, set it to 0.0
-                location.setPrice(0.0);
-            }
-        }
-        
-        if (parts.length > 7 && !parts[7].isEmpty()) {
-            try {
-                double stars = Double.parseDouble(parts[7].trim());
-                location.setStars(stars);
-            } catch (NumberFormatException e) {
-                // If stars can't be parsed, set it to 0.0
-                location.setStars(0.0);
-            }
-        }
+        // Update the price handling
+if (parts.length > 6 && !parts[6].isEmpty()) {
+    location.setPrice(parts[6].trim());
+}
+
+// Update the stars handling
+if (parts.length > 7 && !parts[7].isEmpty()) {
+    location.setStars(parts[7].trim());
+}
         
         if (parts.length > 8 && !parts[8].isEmpty()) {
             location.setWeb(parts[8].trim());

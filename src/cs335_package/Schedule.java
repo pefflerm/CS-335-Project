@@ -5,8 +5,6 @@ import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 public class Schedule {
     private List<ScheduledEvent> events;
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
@@ -74,6 +72,24 @@ public class Schedule {
         }
     }
     
+    // Add this method to get entries for a specific location
+    public List<ScheduleEntry> getEntriesForLocation(String locationName) {
+        List<ScheduleEntry> entries = new ArrayList<>();
+        
+        for (ScheduledEvent event : events) {
+            if (event.getLocationName().equals(locationName)) {
+                // Convert ScheduledEvent to ScheduleEntry
+                entries.add(new ScheduleEntry(
+                    event.getLocationName(),
+                    event.getStartTime().format(formatter),
+                    event.getEndTime().format(formatter)
+                ));
+            }
+        }
+        
+        return entries;
+    }
+    
     public List<ScheduledEvent> getEvents() {
         return new ArrayList<>(events);
     }
@@ -112,5 +128,27 @@ public class Schedule {
     }
 }
 
-
- 
+// Define ScheduleEntry as a separate class outside of Schedule
+class ScheduleEntry {
+    private String location;
+    private String startTime;
+    private String endTime;
+    
+    public ScheduleEntry(String location, String startTime, String endTime) {
+        this.location = location;
+        this.startTime = startTime;
+        this.endTime = endTime;
+    }
+    
+    public String getLocation() {
+        return location;
+    }
+    
+    public String getStartTime() {
+        return startTime;
+    }
+    
+    public String getEndTime() {
+        return endTime;
+    }
+}
