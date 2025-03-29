@@ -1,3 +1,5 @@
+package cs335_package;
+
 import java.io.BufferedReader;
 
 import java.io.InputStreamReader;
@@ -47,7 +49,7 @@ public class SearchYelp {
         scanner.close();
     }
 
-    private static void fetchAndDisplayBusinesses(String term, double latitude, double longitude) throws Exception {
+    public static void fetchAndDisplayBusinesses(String term, double latitude, double longitude) throws Exception {
         String url = String.format("%s?term=%s&latitude=%f&longitude=%f", BASE_URL, term, latitude, longitude);
 
         try (CloseableHttpClient client = HttpClients.createDefault()) {
@@ -70,6 +72,9 @@ public class SearchYelp {
                 while ((line = reader.readLine()) != null) {
                     result.append(line);
                 }
+
+                // Debug print to see the raw response
+                System.out.println("Raw response from Yelp API: " + result.toString());
 
                 ObjectMapper objectMapper = new ObjectMapper();
                 JsonNode rootNode = objectMapper.readTree(result.toString());
@@ -101,6 +106,7 @@ public class SearchYelp {
             }
         }
     }
+
 
     public static void main(String[] args) {
         initiateSearch();
