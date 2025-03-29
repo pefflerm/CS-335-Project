@@ -2,7 +2,8 @@
     package cs335_package;
     import java.io.IOException;
     import java.util.*;
-    
+
+
     public class Main {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in); // Initialize Scanner here for Nada's code
@@ -93,12 +94,15 @@
                     System.out.println("");
                   
                     while(s.equals("Go Back")){
-                        s=m.Menu();           
+                        s=m.Menu();   
+                        
                     }
                     
                     if(!s.isEmpty()){
+                    	 SearchYelp.initiateSearch(s); 
                         System.out.println("");
                         // Renamed variable to avoid conflict with the removed Place object
+                        SearchYelp.initiateSearch(s);
                         Location currentPlace = null;
                         if (s.equals("Night Out")) {
                             currentPlace = nightOut.get(locIndex);

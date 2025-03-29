@@ -1,56 +1,41 @@
 package cs335_package;
 
 import java.io.BufferedReader;
-
 import java.io.InputStreamReader;
-import java.util.Scanner;
-
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Scanner;
 
-import org.apache.hc.client5.http.classic.methods.HttpGet;
-import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
-import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
-import org.apache.hc.client5.http.impl.classic.HttpClients;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 public class SearchYelp {
 
     private static final String API_KEY = "i9p0sLerDK1nOzWkMSEo9IwyZ3UoeU3jzKBVRna6sAJaJDB4FrKdwfLbLvzxGx7SsEaMAfHf2w4cjVtUADNhEHiw9k2vKyMDk5Jg7oTgQu_58ZOd-4Cj-vnBdZvlZ3Yx"; // Replace with your actual Yelp API key
     private static final String BASE_URL = "https://api.yelp.com/v3/businesses/search";
-
-    public static void initiateSearch() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter search term (e.g., 'restaurants'): ");
-        String term = scanner.nextLine();
-
-        System.out.print("Enter latitude: ");
-        double latitude = scanner.nextDouble();
-
-        System.out.print("Enter longitude: ");
-        double longitude = scanner.nextDouble();
+    public static void initiateSearch(String s) {  // Take term (s) as a parameter
+        // Hardcode Boston latitude and longitude
+        double latitude = 42.3601;
+        double longitude = -71.0589;
 
         try {
-            fetchAndDisplayBusinesses(term, latitude, longitude);
+            // Encode the term parameter (use 's' here)
+           
+            // Create the URL with the encoded term
+            String url = String.format("%s?term=%s&latitude=%f&longitude=%f", BASE_URL, s, latitude, longitude);
+           
+            System.out.println("Generated URL: " + url);
+
+            // Proceed with your HTTP request (this part should already be in your existing code)
+            fetchAndDisplayBusinesses(url);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        scanner.close();
     }
 
-    public static void fetchAndDisplayBusinesses(String term, double latitude, double longitude) throws Exception {
-        String url = String.format("%s?term=%s&latitude=%f&longitude=%f", BASE_URL, term, latitude, longitude);
+
+    public static void fetchAndDisplayBusinesses(String url) throws Exception {
+       
 
         try (CloseableHttpClient client = HttpClients.createDefault()) {
             HttpGet request = new HttpGet(url);
@@ -66,7 +51,6 @@ public class SearchYelp {
                 }
 
                 BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
-
                 StringBuilder result = new StringBuilder();
                 String line;
                 while ((line = reader.readLine()) != null) {
@@ -105,10 +89,4 @@ public class SearchYelp {
                 }
             }
         }
-    }
-
-
-    public static void main(String[] args) {
-        initiateSearch();
-    }
-}
+    }}
