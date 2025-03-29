@@ -21,10 +21,9 @@ public class Location {
 	private String price;  // Changed from double
     private String stars;  // Changed from double
 	private String web; // can be empty
-	private ReviewList reviews; // can be empty
-	
-	
-	private Review review;
+	private ReviewList reviews;
+	private String BusinessHours;// can be empty
+
 	private List<String> schedule; // To store schedule info
 
 	
@@ -57,6 +56,7 @@ public class Location {
 	}
     
 	public void setLocation(String location) { this.location = location; }
+	public void setType(String type) { this.type = type; }
     public void setReservation(String reserve) { this.reserve = reserve; }
     public void setCoatCheck(String coat) { this.coat = coat; }
     public void setCover(String cover) { this.cover = cover; }
@@ -70,18 +70,17 @@ public class Location {
     // Update toString method
 public String toString() {
     return("Name: " + this.name +
-           "\nType: " + this.type +
+      
            "\nLocation: " + this.location +
            "\nReservation: " + this.reserve +
-           "\nCoat Check: " + this.coat +
-           "\nCover: " + this.cover +
+           
            "\nPrice: " + this.price +  // No need for Double.toString()
            "\nStars: " + this.stars +  // No need for Double.toString()
            "\nWebsite: " + this.web
     );
 }
 
-    public String[] toArray() {String[] locArray = {this.name, this.type, this.location, this.reserve, this.coat, this.cover,
+    public String[] toArray() {String[] locArray = {this.name, this.location, this.reserve,
         this.price, this.stars, this.web};
 return locArray;
 }
@@ -646,11 +645,10 @@ private static String[] parseCSVLine(String line) {
 
 	               // Write data to the file
 	               bufferedWriter.write(this.name + "," + 
-	                                    this.type + "," +
+	                                   
 	                                    this.location + "," +
 	                                    this.reserve + "," +
-	                                    this.coat + "," +
-	                                    this.cover + "," +
+	                              
 	                                    this.price + "," +
 	                                    this.stars + "," +
 	                                    this.web);
