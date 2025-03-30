@@ -3,7 +3,7 @@
     import java.io.IOException;
     import java.util.*;
 
-
+    import cs335_package.SearchYelp; 
     public class Main {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in); // Initialize Scanner here for Nada's code
@@ -89,6 +89,8 @@
             int locIndex = 0; // keeps track of where in the locations arrayList the user is
             Menu m = new Menu();
             s = m.Menu();
+            if(!s.isEmpty()) {
+            SearchYelp.initiateSearch(s); }
             while(t.equals("yes") && s!=null){
                 if(s!=null){
                     System.out.println("");
@@ -99,10 +101,11 @@
                     }
                     
                     if(!s.isEmpty()){
-                    	 SearchYelp.initiateSearch(s); 
+                    	 
                         System.out.println("");
                         // Renamed variable to avoid conflict with the removed Place object
-                        SearchYelp.initiateSearch(s);
+                      
+                       
                         Location currentPlace = null;
                         if (s.equals("Night Out")) {
                             currentPlace = nightOut.get(locIndex);
@@ -204,7 +207,7 @@
             }
         }
     
-        private static String getCsvFile(String category) {
+        public static String getCsvFile(String category) {
             switch (category) {
                 case "Night Out": return "Copy of Boston Recommendations  - Going out Bars.csv";
                 case "Brunch": return "Boston Recommendations  - Brunch.csv";
@@ -219,7 +222,7 @@
                 case "Skincare/Haircare": return "Copy of Boston Recommendations  - Spa_Beauty.csv";
                 case "Massage": return "Copy of Boston Recommendations  - Spa_Beauty.csv";
     
-                default: return "";
+                default: return "GeneralRecommendations.csv"; // Fallback file
             }
         }
     }

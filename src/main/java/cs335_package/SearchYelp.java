@@ -1,5 +1,5 @@
 package cs335_package;
-
+import cs335_package.Main; 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URLEncoder;
@@ -14,6 +14,15 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class SearchYelp {
 
@@ -31,30 +40,69 @@ public class SearchYelp {
      DAY_MAPPING.put(5, "Friday");
      DAY_MAPPING.put(6, "Saturday");
  }
-    public static void initiateSearch(String s) {  // Take term (s) as a parameter
-        // Hardcode Boston latitude and longitude
-        double latitude = 42.3601;
-        double longitude = -71.0589;
-        
+ public static List<String> initiateSearch(String term) {  
+	    // Boston latitude and longitude
+	    double latitude = 42.3601;
+	    double longitude = -71.0589;
+	    
 
-        try {
-            // Encode the term parameter (use 's' here)
-        	 String encodedTerm = URLEncoder.encode(s, StandardCharsets.UTF_8.toString());
-           
-            // Create the URL with the encoded term
-            String url = String.format("%s?term=%s&latitude=%f&longitude=%f", BASE_URL, encodedTerm, latitude, longitude);
-           
-            System.out.println("Generated URL: " + url);
+	    try {
+	        // Encode the term parameter
+	        String encodedTerm = URLEncoder.encode(term, StandardCharsets.UTF_8.toString());
 
-            // Proceed with your HTTP request (this part should already be in your existing code)
-            fetchAndDisplayBusinesses(url);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+	        // Generate the URL with proper formatting
+	        String url = String.format("%s?term=%s&latitude=%.6f&longitude=%.6f", 
+	                                  BASE_URL, encodedTerm, latitude, longitude);
+
+	        System.out.println("Generated URL: " + url);
+
+	        // Perform the HTTP request
+	        
+	       List<String> ArrayReturned=fetchAndDisplayBusinesses(url);
+	       System.out.println("Called saveToCsv function: ");
+	       String path="";
+	       String cleanedTerm = term.trim(); 
+	       // Determine the path based on the cleanedTerm (formerly x)
+	       if (cleanedTerm.equals("Night Out") || cleanedTerm.equals("Brunch") || cleanedTerm.equals("Cafes/Bakeries") || cleanedTerm.equals("Lunch/Dinner")) {
+	           path = "places/restaurants/" + Main.getCsvFile(cleanedTerm);
+	       } else if (cleanedTerm.equals("Shopping") || cleanedTerm.equals("Fun Activities") || cleanedTerm.equals("Outdoors")) {
+	         path = "places/toDo/" + Main.getCsvFile(cleanedTerm);
+	       } else {
+	           path = "places/selfCare/" + Main.getCsvFile(cleanedTerm);
+	       }
+	   
+	       
+	       System.out.println(path);
+	       System.out.println(term);
+	        if (path == null || path.isEmpty()) {
+	            System.out.println("Error: CSV file name is null or empty.");
+	            return new ArrayList<>(); // Handle missing CSV file gracefully
+	        }
+
+	        System.out.println("CSV file to save to: " + path);
+	        saveToCsv(ArrayReturned, path);
+
+	       
+	        
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	        return new ArrayList<>();  // Return an empty array in case of an exception
+	    }
+		return null;
+	}
 
 
-    public static String[] fetchAndDisplayBusinesses(String url) throws Exception {
+
+
+
+	
+
+
+
+
+
+	public static List<String> fetchAndDisplayBusinesses(String url) throws Exception {
         final String[] DAY_NAMES = {
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
         };
@@ -71,7 +119,7 @@ public class SearchYelp {
 
                 if (statusCode != 200) {
                     System.out.println("Error: Failed to connect to Yelp API. Response code: " + statusCode);
-                    return new String[0];
+                    return new ArrayList<>();
                 }
 
                 BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
@@ -162,7 +210,37 @@ public class SearchYelp {
         }
 
         // Convert List to String array and return
-        return businessList.toArray(new String[0]);
+        
+        
+        return businessList;
+    }
+    public static void saveToCsv(List<String> businesses, String csvFile) throws IOException {
+        Path csvPath = Paths.get(csvFile);
+        System.out.println("Businesses to save: " + businesses.size());
+        if (businesses.isEmpty()) {
+            System.out.println("No businesses found to save.");
+        }
+        // Create the CSV with headers if it doesn't exist
+        if (!Files.exists(csvPath)) {
+            try (BufferedWriter writer = Files.newBufferedWriter(csvPath)) {
+                writer.write("Name,Type,Location,Reservation,Coat Check,Cover,Price,Stars,URL,Review,Business Hours");
+                writer.newLine();
+            }
+        }
+
+        // Load existing entries to avoid duplicates
+        Set<String> existingEntries = new HashSet<>(Files.readAllLines(csvPath));
+
+        try (BufferedWriter writer = Files.newBufferedWriter(csvPath, StandardOpenOption.APPEND)) {
+            for (String business : businesses) {
+                if (!existingEntries.contains(business)) {  // ✅ Avoid duplicates
+                    writer.write(business);
+                    writer.newLine();
+                }
+            }
+        }
+
+        System.out.println("\n✅ Yelp results saved to: " + csvFile);
     }
 
     /**
@@ -186,4 +264,5 @@ public class SearchYelp {
             return "N/A";
         }
     }
+   
 }

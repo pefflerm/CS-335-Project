@@ -76,7 +76,8 @@ public String toString() {
            
            "\nPrice: " + this.price +  // No need for Double.toString()
            "\nStars: " + this.stars +  // No need for Double.toString()
-           "\nWebsite: " + this.web
+           "\nWebsite: " + this.web+
+           "\nBusiness Hours: " + this.BusinessHours
     );
 }
 
