@@ -1,6 +1,9 @@
 
     package cs335_package;
     import java.io.IOException;
+    import java.io.FileWriter;
+
+    import java.util.Scanner;
     import java.util.*;
 
     import cs335_package.SearchYelp; 
@@ -22,7 +25,8 @@
             ArrayList<Location> shopping = new ArrayList<>(); // Fixed initialization
             ArrayList<Location> fun = new ArrayList<>(); // Fixed initialization
             ArrayList<Location> outdoors = new ArrayList<>(); // Fixed initialization
-            ArrayList<Location> selfCare = new ArrayList<>(); // Fixed initialization
+            ArrayList<Location> selfCare = new ArrayList<>();
+            ArrayList<Location> other = new ArrayList<>(); // Fixed initialization
             
             for (String x:category){
                 PlacesFactory df;
@@ -76,11 +80,20 @@
                             outdoors.add(df.getNextPlace());
                         }
                         break;
-                    default: 
+                    case "Spa":
+                    case "Massage":
+                    case "Skincare/Haircare":
                         selfCare = new ArrayList<Location>();
-                        df = new PlacesFactory("places/selfCare/"+getCsvFile(x));
-                        while (df.moreData()){
+                        df = new PlacesFactory("places/selfCare/" + getCsvFile(x));
+                        while (df.moreData()) {
                             selfCare.add(df.getNextPlace());
+                        }
+                        break;
+                    default: 
+                        other = new ArrayList<Location>();
+                        df = new PlacesFactory("places/"+getCsvFile(x));
+                        while (df.moreData()){
+                            other.add(df.getNextPlace());
                         }
                         break;
                 } 
@@ -90,7 +103,12 @@
             Menu m = new Menu();
             s = m.Menu();
             if(!s.isEmpty()) {
-            SearchYelp.initiateSearch(s); }
+            SearchYelp.initiateSearch(s); 
+           
+            PlacesFactory d = new PlacesFactory("places/" + getCsvFile(s)); // Use 's' instead of 'x'
+            while (d.moreData()) {
+                other.add(d.getNextPlace());
+            }}
             while(t.equals("yes") && s!=null){
                 if(s!=null){
                     System.out.println("");
@@ -121,9 +139,10 @@
                             currentPlace = fun.get(locIndex);
                         }else if(s.equals("Outdoors")) {
                             currentPlace = outdoors.get(locIndex);
-                        }else {
+                        }else if (s.equals("Spa") || s.equals("Massage") || s.equals("Skincare/Haircare")) { 
                             currentPlace = selfCare.get(locIndex);        
-                        }
+                        } else { currentPlace = other.get(locIndex);  }
+                        
                         locIndex += 1;
                         System.out.print(currentPlace);
     
@@ -225,5 +244,14 @@
                 default: return "GeneralRecommendations.csv"; // Fallback file
             }
         }
+        public static void createGeneralUserChoiceCSV(String userChoice) {
+            try (FileWriter writer = new FileWriter("places/usersChoice/GeneralUserChoice.csv")) {
+                // Write a header or any initial content to the CSV if needed
+                writer.write("User Choice\n"); // Example header
+                writer.write(userChoice); // Write the user's choice to the CSV
+                System.out.println("GeneralUserChoice.csv created/overwritten successfully.");
+            } catch (IOException e) {
+                System.out.println("Error creating/overwriting GeneralUserChoice.csv: " + e.getMessage());
+            }}
     }
     

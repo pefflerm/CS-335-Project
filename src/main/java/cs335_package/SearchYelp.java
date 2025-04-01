@@ -67,9 +67,11 @@ public class SearchYelp {
 	           path = "places/restaurants/" + Main.getCsvFile(cleanedTerm);
 	       } else if (cleanedTerm.equals("Shopping") || cleanedTerm.equals("Fun Activities") || cleanedTerm.equals("Outdoors")) {
 	         path = "places/toDo/" + Main.getCsvFile(cleanedTerm);
-	       } else {
+	       } else if (cleanedTerm.equals("Spa") || cleanedTerm.equals("Massage") || cleanedTerm.equals("Skincare/Haircare"))  {
 	           path = "places/selfCare/" + Main.getCsvFile(cleanedTerm);
-	       }
+	       } else  {
+	    	   Main.createGeneralUserChoiceCSV(cleanedTerm);
+	    	   path = "places/" + Main.getCsvFile(cleanedTerm);}
 	   
 	       
 	       System.out.println(path);
