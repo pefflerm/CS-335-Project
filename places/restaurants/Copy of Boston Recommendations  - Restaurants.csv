@@ -1,141 +1,243 @@
-Name,Type,Location,Reservation,Coat Check,Cover,Price,Stars,Link,Reviews
-Lolita,Mexican,Back Bay/Seaport,Yes,,,$$-$$$,,https://www.lolitamexican.com/,
-Contessa ,Italian,Back Bay,Yes,,,$$$$,,https://www.contessatrattoria.com/,
-Citrus and Salt,Mexican,Back Bay ,Yes,,,$$-$$$,,https://www.citrusandsaltboston.com/,
-Saltie Girl,Seafood,Back Bay,Yes,,,$$$,,https://www.saltiegirl.com/,
-Krasi,Greek,Back Bay,Yes,,,$$$,,https://krasiboston.com/,
-Zuma,Japanese,Back Bay Four Seasons,Yes,,,$$$$,,https://zumarestaurant.com/,
-Grill 23 & Bar ,Steakhouse,Back Bay,Yes,,,$$$$,,https://grill23.com/,
-Buttermilk & Bourbon,American Southern,Back Bay,,,,$$-$$$,,https://www.buttermilkbourbon.com/,
-Ramsay's Kitchen by Gordon Ramsay,British American,Back Bay,,,,$$$,,https://www.gordonramsayrestaurants.com/en/us/ramsays-kitchen,
-La Padrona,Italian,Back Bay Raffles Boston,,,,,,https://www.raffles.com/boston/dining/la-padrona/,
-Shore Leave,Tiki Asian Fusion,Back Bay,Yes,,,$$-$$$,,https://www.shoreleaveboston.com,
-Cafe Sauvage,French,Back Bay,,,,$$-$$$,,https://www.cafesauvage.com/,
-Douzo,Japanese,Back Bay,,,,$$-$$$,,https://douzosushi.com/,
-Deuxave,French,Back Bay,,,,$$$$,,https://www.deuxave.com/,
-Salty Pig ,Italian Pizza,Back Bay,,,,$$-$$$,,https://www.thesaltypig.com/,
-Select Oyster Bar,Seafood,Back Bay,,,,$$$,,http://www.selectboston.com/,
-NEW: D16,Cocktail bar,Back Bay,,,,,,https://www.d16boston.com/,
-Sorellina,Italian,Back Bay,,,,,,https://sorellinaboston.com/ ,
-Abe & Louie's,Steakhouse,Back Bay,,,,,,https://abeandlouies.com/,
-The Street Bar,American,Newbury,,,,,,https://www.thenewburyboston.com/dine/street-bar,
-Crazy Good Kitchen,American,Newbury,No,,,$$$,,https://www.crazygoodkitchen.com/,
-Eva,Mediterranean,Newbury,,,,$$-$$$,,https://www.evaboston.com,
-Faccia a Faccia,Italian,Newbury,Yes,,,$$$,,https://facciaafacciaboston.com,
-Puro ceviche,Peruvian Seafood,Newbury,,,,$$-$$$,,https://www.purocevichebar.com/,
-Thai Basil,Thai,Newbury,,,,,,https://www.thaibasilma.com/,
-Earls,American ,Multiple locations,,,,$$-$$$,,https://earls.ca/locations/prudential/,
-Terra ,Italian,Prudential Eataly,Yes,,,$$-$$$,,https://www.eataly.com/us_en/stores/boston/terra/,
-Yvonne ,"American, Fusion",Downtown,Yes,,,$$$$,,https://www.yvonnesboston.com/,
-Mariel,Cuban,Downtown,Yes,,,$$$,,https://www.marielofficial.com/,
-Blu,American,Downtown,Yes,,,$$$,,http://www.blurestaurant.com/,
-Ruka Restrobar,Japanese Peruvian,Downtown,,,,$$$,,https://www.rukarestobar.com/,
-Bogies Place,American,Downtown,No,,,$$,,http://bogiesplace.com/bogiesplace/,
-Wig Shop,American,Downtown,No,,,$$,,https://www.wigshopboston.com,
-French Quarter,American Southern,Downtown,,,,$$-$$$,,https://frenchquarterboston.com/,
-Sushi @ Temple Records,Sushi,Downtown,,,,,,https://www.sushiattemplerecords.com/ ,
-Somaek Korean,Korean,Downtown,,,,,,https://www.somaek.com/,
-o ya,Japanese,Downtown,,,,,,https://www.o-ya.restaurant/location/o-ya-boston/,
-Hei La Moon,Dim Sum,Chinatown,No,,,$$,,https://www.heilamoonrestaurant.com/,
-Dumpling Cafe,Chinese,Chinatown,No,,,$$,,https://www.dumplingcafeboston.com/,
-Mija Cantina,Mexican,Faneuil hall ,,,,$$,,https://www.mijaboston.com/,
-Roxanne,Cocktail bar,Beacon Hill,Yes,,,$$$,,https://www.roxannesboston.com/,
-Figs ,Pizza Italian,Beacon Hill,,,,$$-$$$,,https://www.opentable.com/r/figs-by-todd-english-beacon-hill-boston,
-Florina,Pizza,Beacon Hill,,,,$$-$$$,,https://www.florinapizza.com/,
-Scampo at the Liberty Hotel,Italian Seafood,West End Liberty Hotel,Yes,,,$$$$,,https://www.scampoboston.com/,
-Clink,American,West End Liberty Hotel,Yes,,,$$$,,http://www.clinkboston.com/menu,
-Banners,Sports bar,West End,,,,$$,,https://www.patinagroup.com/banners,
-1928 Beacon Hill,American,Beacon Hill,Yes,,,$$$,,https://www.1928beaconhill.com,
-Toscano,Italian,Multiple locations,,,,,,https://www.toscanoboston.com/,
-Mooo…,Steakhouse,Beacon Hill Seaport,Yes,,,$$$$,,https://www.mooorestaurant.com/,
-Pink Taco,Mexican,Seaport,,,,$$,,https://pinktaco.com/,
-Coquette,French,Seaport,Yes,,,$$$,,https://www.frenchcoquette.com/,
-Barking Crab,Seafood,Seaport,,,,$$,,http://barkingcrab.com/,
-Bar Taco,Mexican,Seaport,No,,,$$,,https://bartaco.com/,
-Lola 42,Japanese Sushi,Seaport,Yes,,,$$$$,,https://www.lola42.com/,
-Row 34,Seafood,Seaport,Yes,,,$$$,,https://www.row34.com/,
-Empire,Asian Fusion,Seaport,Yes,,,$$$,,https://www.empireboston.com/,
-NEW: Marcelino’s Seaport,Cocktail bar,Seaport,,,,,,https://www.marcelinosboutiquebar.com/ ,
-SAVR,American,Seaport,,,,,,https://savrtm.com/,
-75 on Liberty ,American,Seaport,,,,,,https://www.75onlibertywharf.com/ ,
-Mr. H,Chinese,Seaport,,,,,,https://www.mrhchinese.com/,
-Nautilus Pier 4,Asian fusion,Seaport,,,,,,https://www.thenautilus.com/boston/ ,
-Carmelina's ,Italian,North end,Yes,,,$$-$$$,,https://carmelinasboston.com/,
-Bricco,Italian,North end,,,,$$$,,https://bricco.com/,
-Florentine,Italian,North end,,,,$$-$$$,,https://www.florentinecafeboston.com/,
-Strega,Italian Steakhouse,North end,Yes,,,$$$$,,https://stregabynickvarano.com/,
-Ward 8,American,North end,,,,$$$,,http://www.ward8.com/,
-Forcellas,Italian,North end,,,,$$-$$$,,https://www.forcellaboston.com/,
-Ciao Roma,Italian,North end,,,,$$-$$$,,https://www.ciaoromanorthend.com/,
-Wiked Craft Co,American,North end,,,,$$,,https://www.wickedcraftco.com/,
-Trattoria il Panino,Italian,North end,,,,$$-$$$,,https://trattoriailpanino.com/,
-Neptune oyster,Seafood,North end,,,,$$$,,https://www.neptuneoyster.com/,
-Chart House,Seafood,North end,,,,$$,,https://www.chart-house.com/location/chart-house-boston-ma/,
-Monicas,Italian,North end,,,,$$-$$$,,https://monicastrattoriaboston.com/ ,
-The Red Fox,"Italian
-Speakeasy",North end,,,,,,https://www.redfoxnorthend.com/,
-Vinoteca di Monica,Italian,North end,,,,$$-$$$,,https://www.monicasboston.com/ ,
-Mare Oyster Bar,Seafood,North end,,,,$$-$$$,,https://mareoysterbar.com/,
-Boston Sail Loft,Seafood,North end,,,,,,https://www.thebostonsailloft.com/,
-Time Out Market ,Various,Fenway,No,,,$$,,https://www.timeoutmarket.com/boston/,
-Uni,Japanese Sushi,Fenway,,,,$$$$,,https://uni-boston.com/,
-Blue Ribbon Sushi,Sushi,Fenway,,,,,,https://www.blueribbonsushikenmore.com/,
-Toro,Spanish Tapas,South end,,,,$$$,,https://www.toro-restaurant.com/,
-Barcelona Wine Bar,Spanish Tapas,South end Brookline,Yes,,,$$-$$$,,https://barcelonawinebar.com/,
-Frenchie Wine,French,South end,Yes,,,$$$,,https://www.frenchieboston.com/,
-Burro Bar,Mexican,South end Brookline,,,,$$,,https://www.burrobarboston.com/,
-Yellow Door Taqueria,Mexican,South end,,,,$$,,https://www.yellowdoortaqueria.com/,
-ilona,Mediterranean ,South end,,,,$$$,,https://ilonasouthend.com/  ,
-Oishii Bostom,Japanese,South end,,,,$$$$,,https://www.oishiiboston.com,
-Mida,Italian,South end,,,,$$$,,https://midarestaurant.com/,
-SRV,Italian,South end,,,,$$$,,http://www.srvboston.com/,
-Coppa,Italian,South end,,,,$$$,,https://www.coppaboston.com/?utm_source=google&utm_medium=profile&utm_campaign=local-coppa&utm_content=website,
-Myers & Chang,Chinese,South end,,,,$$$,,https://www.myersandchang.com/,
-Doña Habana,Cuban,South end,,,,$$,,http://donahabanarestaurant.com,
-Black Lamb,American,South end,,,,$$,,https://www.blacklambsouthend.com,
-Casa Giacomos,Italian,South end,,,,$$-$$$,,https://www.casagiacomos.com,
-Banyan,Asian Fusion,South end,,,,$$$,,https://www.banyanboston.com,
-El Centro,Mexican,South end,,,,$$,,https://www.elcentroinboston.com,
-Petit Robert Bistro,French,South end,,,,,,https://www.petitrobertbistro.com/,
-Gigi,Italian,South end,,,,,,https://www.instagram.com/gigisouthend/?hl=en,
-KAVA Neo-Taverna,Greek,South end,,,,$$$,,https://kavaneotaverna.com,
-Mistral,French,South end,,,,,,https://mistralbistro.com/,
-Desnuda cocina & bar,Latin Asian,South end,,,,,,https://desnudacocina.com/ ,
- Kaia,Greek,South end,,,,,,https://www.kaiasouthend.com/ ,
-Desnuda cocina & bar,Asian Speakeasy,South end,,,,,,https://desnudacocina.com/ ,
-Petula's,American,South end,,,,$$,,https://www.petulasboston.com/,
-Reunion BBQ,Barbecue,South end,,,,,,https://www.reunionbbqboston.com/,
-Yunnan Kitchen,Chinese,South end,,,,,,https://www.yunnankitchensouthend.com/,
-Capo,Italian,Southie,Yes,,,$$-$$$,,https://www.caposouthboston.com/,
-Lincoln,American,Southie,Yes,,,$$-$$$,,https://www.lincolnsouthboston.com/,
-Publico,Latin ,Southie,,,,$$-$$$,,https://www.publicoboston.com/,
-Fat Baby,Asian Fusion,Southie,,,,$$,,https://fatbabysouthboston.com/,
-Loco,Mexican,Southie,Yes,,,$$,,https://locosouthboston.com/,
-Hunters,American,Southie,,,,$$-$$$,,https://www.hunterssouthboston.com,
-Gray's Hall,Wine Bar,Southie,,,,,,https://www.grayshall.com/,
-Mystique,Asian Fusion,Encore,,,,$$$$,,https://www.encorebostonharbor.com/dining-and-nightlife/dining/mystique,
-Oleana ,Mediterranean ,Cambridge,,,,$$$$,,https://www.oleanarestaurant.com/,
-Harvest,American,Cambridge,,,,$$$,,https://www.harvestcambridge.com/,
-Arden & Harlow,American,Cambridge,,,,$$$,,https://www.aldenharlow.com/,
-Gustazo,Cuban,Cambridge,,,,$$,,https://www.gustazo-cubancafe.com/cambridge/,
-Waypoint,Seafood,Cambridge,,,,$$$,,https://www.waypointharvard.com/,
-Margeaux Supper Parlor,American,Cambridge,,,,,,https://www.margeauxsupperparlor.com/ ,
-Sarma,Mediterranean ,Somerville ,,,,$$,,https://www.sarmarestaurant.com/,
-Field & Vine,American ,Somerville ,,,,$$,,https://www.fieldandvinesomerville.com/,
-Sarma ,Mediterranean ,Somerville ,,,,,,https://www.sarmarestaurant.com/,
-Salt + Stone,Seafood,Assembly Row,,,,$$,,https://saltandstoneboston.com,
-Casa Verde,Mexican,Jamaica Plain,,,,$$,,http://www.casaverdejp.com,
-Tres Gatos,Spanish Tapas,Jamaica Plain,,,,$$,,http://www.tresgatosjp.com ,
-Tonino,Italian,Jamaica Plain,,,,,,https://www.toninojp.com/,
-Rinos Place,Italian,East Boston,,,,$$,,http://rinosplace.com/,
-Pazza on the Porter,Italian,East Boston,,,,$$,,https://www.pazzaonporter.com/,
-Taquería Jalisco,Mexican,East Boston,No,,,$$,,https://instagram.com/taqueriajaliscoeb?igshid=MWI4MTIyMDE=,
-Lucy's American Tavern,American,Dorchester,No,,,$$,,https://www.lucysamericantavern.com/ ,
-Mochinut,Dessert Korean,Multiple locations,No,,,$$,,https://www.mochinut.com/,
-Rubato,Asian ,Quincy,,,,$,,https://www.rubato-food.com/,
-Chili Square,Chinese,Quincy,,,,$,,,
-Cucina Mia Cafe & Deli,Deli,Quincy,No,,,,,https://www.cucinamiacafe.com/ ,
-Wei Shu Wu Hot Pot,Chinese,Quincy,,,,,,,
-Cloud Asian Fusion & Bar,Asian ,Quincy,,,,$$,,https://www.cloudfusionbar.com/,
-H Mart Food Court,Asian ,Quincy,,,,,,https://www.hmart.com/store/quincy-ma-02169/f7c42f63-9d8a-442a-a782-b5c159795217,
-Prima,Italian,Charlestown,Yes,,,,,https://www.primaboston.com/,
+Name,Type,Location,Reservation,Coat Check,Cover,Price,Stars,Link,Reviews,Business Hours,Number of Reviews
+Lolita,Mexican,Back Bay/Seaport,Yes,,,$$-$$$,5,https://www.lolitamexican.com/,,,0
+Contessa ,Italian,Back Bay,Yes,,,$$$$,,https://www.contessatrattoria.com/,,,0
+Citrus and Salt,Mexican,Back Bay ,Yes,,,$$-$$$,,https://www.citrusandsaltboston.com/,,,0
+Saltie Girl,Seafood,Back Bay,Yes,,,$$$,,https://www.saltiegirl.com/,,,0
+Krasi,Greek,Back Bay,Yes,,,$$$,,https://krasiboston.com/,,,0
+Zuma,Japanese,Back Bay Four Seasons,Yes,,,$$$$,,https://zumarestaurant.com/,,,0
+Grill 23 & Bar ,Steakhouse,Back Bay,Yes,,,$$$$,,https://grill23.com/,,,0
+Buttermilk & Bourbon,American Southern,Back Bay,,,,$$-$$$,,https://www.buttermilkbourbon.com/,,,0
+Ramsay's Kitchen by Gordon Ramsay,British American,Back Bay,,,,$$$,,https://www.gordonramsayrestaurants.com/en/us/ramsays-kitchen,,,0
+La Padrona,Italian,Back Bay Raffles Boston,,,,,,https://www.raffles.com/boston/dining/la-padrona/,,,0
+Shore Leave,Tiki Asian Fusion,Back Bay,Yes,,,$$-$$$,,https://www.shoreleaveboston.com,,,0
+Cafe Sauvage,French,Back Bay,,,,$$-$$$,,https://www.cafesauvage.com/,,,0
+Douzo,Japanese,Back Bay,,,,$$-$$$,,https://douzosushi.com/,,,0
+Deuxave,French,Back Bay,,,,$$$$,,https://www.deuxave.com/,,,0
+Salty Pig ,Italian Pizza,Back Bay,,,,$$-$$$,,https://www.thesaltypig.com/,,,0
+Select Oyster Bar,Seafood,Back Bay,,,,$$$,,http://www.selectboston.com/,,,0
+NEW: D16,Cocktail bar,Back Bay,,,,,,https://www.d16boston.com/,,,0
+Sorellina,Italian,Back Bay,,,,,,https://sorellinaboston.com/ ,,,0
+Abe & Louie's,Steakhouse,Back Bay,,,,,,https://abeandlouies.com/,,,0
+The Street Bar,American,Newbury,,,,,,https://www.thenewburyboston.com/dine/street-bar,,,0
+Crazy Good Kitchen,American,Newbury,No,,,$$$,,https://www.crazygoodkitchen.com/,,,0
+Eva,Mediterranean,Newbury,,,,$$-$$$,,https://www.evaboston.com,,,0
+Faccia a Faccia,Italian,Newbury,Yes,,,$$$,,https://facciaafacciaboston.com,,,0
+Puro ceviche,Peruvian Seafood,Newbury,,,,$$-$$$,,https://www.purocevichebar.com/,,,0
+Thai Basil,Thai,Newbury,,,,,,https://www.thaibasilma.com/,,,0
+Earls,American ,Multiple locations,,,,$$-$$$,,https://earls.ca/locations/prudential/,,,0
+Terra ,Italian,Prudential Eataly,Yes,,,$$-$$$,,https://www.eataly.com/us_en/stores/boston/terra/,,,0
+Yvonne ,American Fusion,Downtown,Yes,,,$$$$,,https://www.yvonnesboston.com/,,,0
+Mariel,Cuban,Downtown,Yes,,,$$$,,https://www.marielofficial.com/,,,0
+Blu,American,Downtown,Yes,,,$$$,,http://www.blurestaurant.com/,,,0
+Ruka Restrobar,Japanese Peruvian,Downtown,,,,$$$,,https://www.rukarestobar.com/,,,0
+Bogies Place,American,Downtown,No,,,$$,,http://bogiesplace.com/bogiesplace/,,,0
+Wig Shop,American,Downtown,No,,,$$,,https://www.wigshopboston.com,,,0
+French Quarter,American Southern,Downtown,,,,$$-$$$,,https://frenchquarterboston.com/,,,0
+Sushi @ Temple Records,Sushi,Downtown,,,,,,https://www.sushiattemplerecords.com/ ,,,0
+Somaek Korean,Korean,Downtown,,,,,,https://www.somaek.com/,,,0
+o ya,Japanese,Downtown,,,,,,https://www.o-ya.restaurant/location/o-ya-boston/,,,0
+Hei La Moon,Dim Sum,Chinatown,No,,,$$,,https://www.heilamoonrestaurant.com/,,,0
+Dumpling Cafe,Chinese,Chinatown,No,,,$$,,https://www.dumplingcafeboston.com/,,,0
+Mija Cantina,Mexican,Faneuil hall ,,,,$$,,https://www.mijaboston.com/,,,0
+Roxanne,Cocktail bar,Beacon Hill,Yes,,,$$$,,https://www.roxannesboston.com/,,,0
+Figs ,Pizza Italian,Beacon Hill,,,,$$-$$$,,https://www.opentable.com/r/figs-by-todd-english-beacon-hill-boston,,,0
+Florina,Pizza,Beacon Hill,,,,$$-$$$,,https://www.florinapizza.com/,,,0
+Scampo at the Liberty Hotel,Italian Seafood,West End Liberty Hotel,Yes,,,$$$$,,https://www.scampoboston.com/,,,0
+Clink,American,West End Liberty Hotel,Yes,,,$$$,,http://www.clinkboston.com/menu,,,0
+Banners,Sports bar,West End,,,,$$,,https://www.patinagroup.com/banners,,,0
+1928 Beacon Hill,American,Beacon Hill,Yes,,,$$$,,https://www.1928beaconhill.com,,,0
+Toscano,Italian,Multiple locations,,,,,,https://www.toscanoboston.com/,,,0
+Mooo…,Steakhouse,Beacon Hill Seaport,Yes,,,$$$$,,https://www.mooorestaurant.com/,,,0
+Pink Taco,Mexican,Seaport,,,,$$,,https://pinktaco.com/,,,0
+Coquette,French,Seaport,Yes,,,$$$,,https://www.frenchcoquette.com/,,,0
+Barking Crab,Seafood,Seaport,,,,$$,,http://barkingcrab.com/,,,0
+Bar Taco,Mexican,Seaport,No,,,$$,,https://bartaco.com/,,,0
+Lola 42,Japanese Sushi,Seaport,Yes,,,$$$$,,https://www.lola42.com/,,,0
+Row 34,Seafood,Seaport,Yes,,,$$$,,https://www.row34.com/,,,0
+Empire,Asian Fusion,Seaport,Yes,,,$$$,,https://www.empireboston.com/,,,0
+NEW: Marcelino’s Seaport,Cocktail bar,Seaport,,,,,,https://www.marcelinosboutiquebar.com/ ,,,0
+SAVR,American,Seaport,,,,,,https://savrtm.com/,,,0
+75 on Liberty ,American,Seaport,,,,,,https://www.75onlibertywharf.com/ ,,,0
+Mr. H,Chinese,Seaport,,,,,,https://www.mrhchinese.com/,,,0
+Nautilus Pier 4,Asian fusion,Seaport,,,,,,https://www.thenautilus.com/boston/ ,,,0
+Carmelina's ,Italian,North end,Yes,,,$$-$$$,,https://carmelinasboston.com/,,,0
+Bricco,Italian,North end,,,,$$$,,https://bricco.com/,,,0
+Florentine,Italian,North end,,,,$$-$$$,,https://www.florentinecafeboston.com/,,,0
+Strega,Italian Steakhouse,North end,Yes,,,$$$$,,https://stregabynickvarano.com/,,,0
+Ward 8,American,North end,,,,$$$,,http://www.ward8.com/,,,0
+Forcellas,Italian,North end,,,,$$-$$$,,https://www.forcellaboston.com/,,,0
+Ciao Roma,Italian,North end,,,,$$-$$$,,https://www.ciaoromanorthend.com/,,,0
+Wiked Craft Co,American,North end,,,,$$,,https://www.wickedcraftco.com/,,,0
+Trattoria il Panino,Italian,North end,,,,$$-$$$,,https://trattoriailpanino.com/,,,0
+Neptune oyster,Seafood,North end,,,,$$$,,https://www.neptuneoyster.com/,,,0
+Chart House,Seafood,North end,,,,$$,,https://www.chart-house.com/location/chart-house-boston-ma/,,,0
+Monicas,Italian,North end,,,,$$-$$$,,https://monicastrattoriaboston.com/ ,,,0
+Vinoteca di Monica,Italian,North end,,,,$$-$$$,,https://www.monicasboston.com/ ,,,0
+Mare Oyster Bar,Seafood,North end,,,,$$-$$$,,https://mareoysterbar.com/,,,0
+Boston Sail Loft,Seafood,North end,,,,,,https://www.thebostonsailloft.com/,,,0
+Time Out Market ,Various,Fenway,No,,,$$,,https://www.timeoutmarket.com/boston/,,,0
+Uni,Japanese Sushi,Fenway,,,,$$$$,,https://uni-boston.com/,,,0
+Blue Ribbon Sushi,Sushi,Fenway,,,,,,https://www.blueribbonsushikenmore.com/,,,0
+Toro,Spanish Tapas,South end,,,,$$$,,https://www.toro-restaurant.com/,,,0
+Barcelona Wine Bar,Spanish Tapas,South end Brookline,Yes,,,$$-$$$,,https://barcelonawinebar.com/,,,0
+Frenchie Wine,French,South end,Yes,,,$$$,,https://www.frenchieboston.com/,,,0
+Burro Bar,Mexican,South end Brookline,,,,$$,,https://www.burrobarboston.com/,,,0
+Yellow Door Taqueria,Mexican,South end,,,,$$,,https://www.yellowdoortaqueria.com/,,,0
+ilona,Mediterranean ,South end,,,,$$$,,https://ilonasouthend.com/  ,,,0
+Oishii Bostom,Japanese,South end,,,,$$$$,,https://www.oishiiboston.com,,,0
+Mida,Italian,South end,,,,$$$,,https://midarestaurant.com/,,,0
+SRV,Italian,South end,,,,$$$,,http://www.srvboston.com/,,,0
+Coppa,Italian,South end,,,,$$$,,https://www.coppaboston.com/?utm_source=google&utm_medium=profile&utm_campaign=local-coppa&utm_content=website,,,0
+Myers & Chang,Chinese,South end,,,,$$$,,https://www.myersandchang.com/,,,0
+Doña Habana,Cuban,South end,,,,$$,,http://donahabanarestaurant.com,,,0
+Black Lamb,American,South end,,,,$$,,https://www.blacklambsouthend.com,,,0
+Casa Giacomos,Italian,South end,,,,$$-$$$,,https://www.casagiacomos.com,,,0
+Banyan,Asian Fusion,South end,,,,$$$,,https://www.banyanboston.com,,,0
+El Centro,Mexican,South end,,,,$$,,https://www.elcentroinboston.com,,,0
+Petit Robert Bistro,French,South end,,,,,,https://www.petitrobertbistro.com/,,,0
+Gigi,Italian,South end,,,,,,https://www.instagram.com/gigisouthend/?hl=en,,,0
+KAVA Neo-Taverna,Greek,South end,,,,$$$,,https://kavaneotaverna.com,,,0
+Mistral,French,South end,,,,,,https://mistralbistro.com/,,,0
+Desnuda cocina & bar,Latin Asian,South end,,,,,,https://desnudacocina.com/ ,,,0
+ Kaia,Greek,South end,,,,,,https://www.kaiasouthend.com/ ,,,0
+Desnuda cocina & bar,Asian Speakeasy,South end,,,,,,https://desnudacocina.com/ ,,,0
+Petula's,American,South end,,,,$$,,https://www.petulasboston.com/,,,0
+Reunion BBQ,Barbecue,South end,,,,,,https://www.reunionbbqboston.com/,,,0
+Yunnan Kitchen,Chinese,South end,,,,,,https://www.yunnankitchensouthend.com/,,,0
+Capo,Italian,Southie,Yes,,,$$-$$$,,https://www.caposouthboston.com/,,,0
+Lincoln,American,Southie,Yes,,,$$-$$$,,https://www.lincolnsouthboston.com/,,,0
+Publico,Latin ,Southie,,,,$$-$$$,,https://www.publicoboston.com/,,,0
+Fat Baby,Asian Fusion,Southie,,,,$$,,https://fatbabysouthboston.com/,,,0
+Loco,Mexican,Southie,Yes,,,$$,,https://locosouthboston.com/,,,0
+Hunters,American,Southie,,,,$$-$$$,,https://www.hunterssouthboston.com,,,0
+Gray's Hall,Wine Bar,Southie,,,,,,https://www.grayshall.com/,,,0
+Mystique,Asian Fusion,Encore,,,,$$$$,,https://www.encorebostonharbor.com/dining-and-nightlife/dining/mystique,,,0
+Oleana ,Mediterranean ,Cambridge,,,,$$$$,,https://www.oleanarestaurant.com/,,,0
+Harvest,American,Cambridge,,,,$$$,,https://www.harvestcambridge.com/,,,0
+Arden & Harlow,American,Cambridge,,,,$$$,,https://www.aldenharlow.com/,,,0
+Gustazo,Cuban,Cambridge,,,,$$,,https://www.gustazo-cubancafe.com/cambridge/,,,0
+Waypoint,Seafood,Cambridge,,,,$$$,,https://www.waypointharvard.com/,,,0
+Margeaux Supper Parlor,American,Cambridge,,,,,,https://www.margeauxsupperparlor.com/ ,,,0
+Sarma,Mediterranean ,Somerville ,,,,$$,,https://www.sarmarestaurant.com/,,,0
+Field & Vine,American ,Somerville ,,,,$$,,https://www.fieldandvinesomerville.com/,,,0
+Sarma ,Mediterranean ,Somerville ,,,,,,https://www.sarmarestaurant.com/,,,0
+Salt + Stone,Seafood,Assembly Row,,,,$$,,https://saltandstoneboston.com,,,0
+Casa Verde,Mexican,Jamaica Plain,,,,$$,,http://www.casaverdejp.com,,,0
+Tres Gatos,Spanish Tapas,Jamaica Plain,,,,$$,,http://www.tresgatosjp.com ,,,0
+Tonino,Italian,Jamaica Plain,,,,,,https://www.toninojp.com/,,,0
+Rinos Place,Italian,East Boston,,,,$$,,http://rinosplace.com/,,,0
+Pazza on the Porter,Italian,East Boston,,,,$$,,https://www.pazzaonporter.com/,,,0
+Taquería Jalisco,Mexican,East Boston,No,,,$$,,https://instagram.com/taqueriajaliscoeb?igshid=MWI4MTIyMDE=,,,0
+Lucy's American Tavern,American,Dorchester,No,,,$$,,https://www.lucysamericantavern.com/ ,,,0
+Mochinut,Dessert Korean,Multiple locations,No,,,$$,,https://www.mochinut.com/,,,0
+Rubato,Asian ,Quincy,,,,$,,https://www.rubato-food.com/,,,0
+Chili Square,Chinese,Quincy,,,,$,,,,,0
+Cucina Mia Cafe & Deli,Deli,Quincy,No,,,,,https://www.cucinamiacafe.com/ ,,,0
+Wei Shu Wu Hot Pot,Chinese,Quincy,,,,,,,,,0
+Cloud Asian Fusion & Bar,Asian ,Quincy,,,,$$,,https://www.cloudfusionbar.com/,,,0
+H Mart Food Court,Asian ,Quincy,,,,,,https://www.hmart.com/store/quincy-ma-02169/f7c42f63-9d8a-442a-a782-b5c159795217,,,0
+Prima,Italian,Charlestown,Yes,,,,,https://www.primaboston.com/,,,0
+Boston Sail Loft,,80 Atlantic Ave,,,,$$,4.3,https://www.yelp.com/biz/boston-sail-loft-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 02:00 AM; Tuesday: 11:30 AM - 02:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 11:30 AM - 02:00 AM; Sunday: 11:30 AM - 02:00 AM,0
+SAVR,,150 Seaport Blvd,,,,$$$,4.2,https://www.yelp.com/biz/savr-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 11:00 PM; Wednesday: 11:00 AM - 11:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 11:00 PM,0
+Bostonia Public House,,131 State St,,,,$$$,4.2,https://www.yelp.com/biz/bostonia-public-house-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 12:00 AM; Tuesday: 11:30 AM - 12:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 09:00 AM - 02:00 AM; Sunday: 09:00 AM - 12:00 AM,0
+State Street Provisions,,255 State St,,,,$$,3.9,https://www.yelp.com/biz/state-street-provisions-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 12:00 AM; Wednesday: 11:00 AM - 12:00 AM; Thursday: 11:00 AM - 12:00 AM; Friday: 11:00 AM - 01:00 AM; Saturday: 10:00 AM - 01:00 AM; Sunday: 09:00 AM - 11:00 PM,0
+Carmelina's,,307 Hanover St,,,,$$$,4.5,https://www.yelp.com/biz/carmelinas-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:00 PM; Saturday: 11:30 AM - 10:00 PM; Sunday: 11:30 AM - 10:00 PM,0
+Isabella Ristorante,,2 Prince St,,,,$$,4.5,https://www.yelp.com/biz/isabella-ristorante-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 10:00 PM; Friday: 11:00 AM - 10:00 PM; Saturday: 11:00 AM - 10:00 PM; Sunday: 11:00 AM - 10:00 PM,0
+Comfort Kitchen,,611 Columbia Rd,,,,,4.5,https://www.yelp.com/biz/comfort-kitchen-dorchester?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Tuesday: 04:30 PM - 10:00 PM; Wednesday: 04:30 PM - 10:00 PM; Thursday: 04:30 PM - 10:00 PM; Friday: 04:30 PM - 10:00 PM; Saturday: 10:00 AM - 01:30 PM; Saturday: 04:30 PM - 10:00 PM; Sunday: 10:00 AM - 01:30 PM,0
+Saltie Girl,,279 Dartmouth St,,,,$$$,4.2,https://www.yelp.com/biz/saltie-girl-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 09:00 PM,0
+Happy Lamb Hot Pot,,693 Washington St,,,,$$$,4.1,https://www.yelp.com/biz/happy-lamb-hot-pot-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 12:00 PM - 10:00 PM; Tuesday: 12:00 PM - 10:00 PM; Wednesday: 12:00 PM - 10:00 PM; Thursday: 12:00 PM - 10:00 PM; Friday: 12:00 PM - 10:00 PM; Saturday: 12:00 PM - 10:00 PM; Sunday: 12:00 PM - 10:00 PM,0
+Mo'Rockin Fusion,,100 Hanover St,,,,$,4.8,https://www.yelp.com/biz/morockin-fusion-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 05:30 PM; Tuesday: 11:00 AM - 05:30 PM; Wednesday: 11:00 AM - 07:30 PM; Thursday: 11:00 AM - 07:30 PM; Friday: 11:00 AM - 07:30 PM; Saturday: 11:00 AM - 07:30 PM; Sunday: 11:00 AM - 05:30 PM,0
+Earls Kitchen + Bar,,800 Boylston Ave,,,,$$,3.9,https://www.yelp.com/biz/earls-kitchen-bar-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 11:00 PM; Tuesday: 11:30 AM - 11:00 PM; Wednesday: 11:30 AM - 12:00 AM; Thursday: 11:30 AM - 12:00 AM; Friday: 11:30 AM - 12:00 AM; Saturday: 12:00 AM - 01:00 AM; Saturday: 10:00 AM - 12:00 AM; Sunday: 12:00 AM - 01:00 AM; Sunday: 10:00 AM - 11:00 PM,0
+Neptune Oyster,,63 Salem St,,,,$$$,4.3,https://www.yelp.com/biz/neptune-oyster-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 09:30 PM; Tuesday: 11:00 AM - 09:30 PM; Wednesday: 11:00 AM - 09:30 PM; Thursday: 11:00 AM - 09:30 PM; Friday: 11:00 AM - 10:30 PM; Saturday: 11:00 AM - 10:30 PM; Sunday: 11:00 AM - 09:30 PM,0
+Moonshine 152,,152 Dorchester Ave,,,,$$,4.4,https://www.yelp.com/biz/moonshine-152-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Tuesday: 05:00 PM - 10:00 PM; Wednesday: 05:00 PM - 10:00 PM; Thursday: 05:00 PM - 10:00 PM; Friday: 05:00 PM - 11:00 PM; Saturday: 11:30 AM - 11:00 PM; Sunday: 11:30 AM - 10:00 PM,0
+French Quarter,,545 Washington St,,,,$$,4.1,https://www.yelp.com/biz/french-quarter-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 05:00 PM - 09:00 PM; Tuesday: 05:00 PM - 09:00 PM; Wednesday: 05:00 PM - 09:00 PM; Thursday: 05:00 PM - 10:00 PM; Friday: 11:30 AM - 11:00 PM; Saturday: 11:30 AM - 11:00 PM; Sunday: 11:30 AM - 08:00 PM,0
+The Salty Pig,,130 Dartmouth St,,,,$$,4.2,https://www.yelp.com/biz/the-salty-pig-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:30 PM; Saturday: 11:30 AM - 10:30 PM; Sunday: 11:30 AM - 10:00 PM,0
+Trattoria Il Panino,,11 Parmenter St,,,,$$,3.9,https://www.yelp.com/biz/trattoria-il-panino-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 11:00 PM; Wednesday: 11:00 AM - 11:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 02:00 AM; Saturday: 11:00 AM - 02:00 AM; Sunday: 11:00 AM - 11:00 PM,0
+Flour Bakery + Café,,12 Farnsworth St,,,,$$,4.3,https://www.yelp.com/biz/flour-bakery-caf%C3%A9-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 07:00 PM; Tuesday: 07:00 AM - 07:00 PM; Wednesday: 07:00 AM - 07:00 PM; Thursday: 07:00 AM - 07:00 PM; Friday: 07:00 AM - 07:00 PM; Saturday: 08:00 AM - 06:00 PM; Sunday: 08:00 AM - 06:00 PM,0
+Mamma Maria,,3 North Sq,,,,$$$,4.3,https://www.yelp.com/biz/mamma-maria-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 05:00 PM - 09:15 PM; Tuesday: 05:00 PM - 09:15 PM; Wednesday: 05:00 PM - 09:15 PM; Thursday: 05:00 PM - 09:15 PM; Friday: 04:30 PM - 09:30 PM; Saturday: 04:30 PM - 09:30 PM; Sunday: 04:30 PM - 09:30 PM,0
+Ma Maison,,272 Cambridge St,,,,$$,4.5,https://www.yelp.com/biz/ma-maison-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 10:00 PM; Friday: 11:00 AM - 10:00 PM; Saturday: 11:00 AM - 10:00 PM; Sunday: 11:00 AM - 10:00 PM,0
+Dig,,277 Washington St,,,,$$,4.1,https://www.yelp.com/biz/dig-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 09:00 PM; Tuesday: 11:00 AM - 09:00 PM; Wednesday: 11:00 AM - 09:00 PM; Thursday: 11:00 AM - 09:00 PM; Friday: 11:00 AM - 09:00 PM; Saturday: 11:00 AM - 09:00 PM; Sunday: 11:00 AM - 09:00 PM,0
+Al's State Street Cafe,,114 State St,,,,$,4.3,https://www.yelp.com/biz/als-state-street-cafe-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 10:30 AM - 03:00 PM; Tuesday: 10:30 AM - 03:00 PM; Wednesday: 10:30 AM - 03:00 PM; Thursday: 10:30 AM - 03:00 PM; Friday: 10:30 AM - 03:00 PM; Saturday: 10:30 AM - 04:00 PM,0
+Sam LaGrassa's,,44 Province St,,,,$$,4.4,https://www.yelp.com/biz/sam-lagrassas-boston-3?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 02:00 PM; Tuesday: 11:00 AM - 02:00 PM; Wednesday: 11:00 AM - 02:00 PM; Thursday: 11:00 AM - 02:00 PM; Friday: 11:00 AM - 02:00 PM,0
+Theo's Cozy Corner,,162 Salem St,,,,$$,4.5,https://www.yelp.com/biz/theos-cozy-corner-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 06:00 AM - 03:00 PM; Tuesday: 06:00 AM - 03:00 PM; Wednesday: 06:00 AM - 03:00 PM; Thursday: 06:00 AM - 03:00 PM; Friday: 06:00 AM - 03:00 PM; Saturday: 06:00 AM - 03:00 PM; Sunday: 06:00 AM - 03:00 PM,0
+Lily's Bar Pizza Patio,,33 Batterymarch St,,,,,4.5,https://www.yelp.com/biz/lilys-bar-pizza-patio-boston-3?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 11:00 PM; Friday: 11:30 AM - 11:30 PM; Saturday: 05:00 PM - 11:30 PM,0
+SAVR,,150 Seaport Blvd,,,,$$$,4.2,https://www.yelp.com/biz/savr-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 11:00 PM; Wednesday: 11:00 AM - 11:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 11:00 PM,0
+Boston Sail Loft,,80 Atlantic Ave,,,,$$,4.3,https://www.yelp.com/biz/boston-sail-loft-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 02:00 AM; Tuesday: 11:30 AM - 02:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 11:30 AM - 02:00 AM; Sunday: 11:30 AM - 02:00 AM,0
+Comfort Kitchen,,611 Columbia Rd,,,,,4.5,https://www.yelp.com/biz/comfort-kitchen-dorchester?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Tuesday: 04:30 PM - 10:00 PM; Wednesday: 04:30 PM - 10:00 PM; Thursday: 04:30 PM - 10:00 PM; Friday: 04:30 PM - 10:00 PM; Saturday: 10:00 AM - 01:30 PM; Saturday: 04:30 PM - 10:00 PM; Sunday: 10:00 AM - 01:30 PM,0
+State Street Provisions,,255 State St,,,,$$,3.9,https://www.yelp.com/biz/state-street-provisions-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 12:00 AM; Wednesday: 11:00 AM - 12:00 AM; Thursday: 11:00 AM - 12:00 AM; Friday: 11:00 AM - 01:00 AM; Saturday: 10:00 AM - 01:00 AM; Sunday: 09:00 AM - 11:00 PM,0
+Isabella Ristorante,,2 Prince St,,,,$$,4.5,https://www.yelp.com/biz/isabella-ristorante-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 10:00 PM; Friday: 11:00 AM - 10:00 PM; Saturday: 11:00 AM - 10:00 PM; Sunday: 11:00 AM - 10:00 PM,0
+Carmelina's,,307 Hanover St,,,,$$$,4.5,https://www.yelp.com/biz/carmelinas-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:00 PM; Saturday: 11:30 AM - 10:00 PM; Sunday: 11:30 AM - 10:00 PM,0
+Saltie Girl,,279 Dartmouth St,,,,$$$,4.2,https://www.yelp.com/biz/saltie-girl-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 09:00 PM,0
+Bostonia Public House,,131 State St,,,,$$$,4.2,https://www.yelp.com/biz/bostonia-public-house-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 12:00 AM; Tuesday: 11:30 AM - 12:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 09:00 AM - 02:00 AM; Sunday: 09:00 AM - 12:00 AM,0
+Al's State Street Cafe,,114 State St,,,,$,4.3,https://www.yelp.com/biz/als-state-street-cafe-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 10:30 AM - 03:00 PM; Tuesday: 10:30 AM - 03:00 PM; Wednesday: 10:30 AM - 03:00 PM; Thursday: 10:30 AM - 03:00 PM; Friday: 10:30 AM - 03:00 PM; Saturday: 10:30 AM - 04:00 PM,0
+Earls Kitchen + Bar,,800 Boylston Ave,,,,$$,3.9,https://www.yelp.com/biz/earls-kitchen-bar-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 11:00 PM; Tuesday: 11:30 AM - 11:00 PM; Wednesday: 11:30 AM - 12:00 AM; Thursday: 11:30 AM - 12:00 AM; Friday: 11:30 AM - 12:00 AM; Saturday: 12:00 AM - 01:00 AM; Saturday: 10:00 AM - 12:00 AM; Sunday: 12:00 AM - 01:00 AM; Sunday: 10:00 AM - 11:00 PM,0
+Happy Lamb Hot Pot,,693 Washington St,,,,$$$,4.1,https://www.yelp.com/biz/happy-lamb-hot-pot-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 12:00 PM - 10:00 PM; Tuesday: 12:00 PM - 10:00 PM; Wednesday: 12:00 PM - 10:00 PM; Thursday: 12:00 PM - 10:00 PM; Friday: 12:00 PM - 10:00 PM; Saturday: 12:00 PM - 10:00 PM; Sunday: 12:00 PM - 10:00 PM,0
+Sam LaGrassa's,,44 Province St,,,,$$,4.5,https://www.yelp.com/biz/sam-lagrassas-boston-3?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 02:00 PM; Tuesday: 11:00 AM - 02:00 PM; Wednesday: 11:00 AM - 02:00 PM; Thursday: 11:00 AM - 02:00 PM; Friday: 11:00 AM - 02:00 PM,0
+The Salty Pig,,130 Dartmouth St,,,,$$,4.2,https://www.yelp.com/biz/the-salty-pig-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:30 PM; Saturday: 11:30 AM - 10:30 PM; Sunday: 11:30 AM - 10:00 PM,0
+Lucky's Lounge,,355 Congress St,,,,$$,3.7,https://www.yelp.com/biz/luckys-lounge-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 04:00 PM - 02:00 AM; Tuesday: 04:00 PM - 02:00 AM; Wednesday: 04:00 PM - 02:00 AM; Thursday: 04:00 PM - 02:00 AM; Friday: 04:00 PM - 02:00 AM; Saturday: 04:00 PM - 02:00 AM,0
+French Quarter,,545 Washington St,,,,$$,4.1,https://www.yelp.com/biz/french-quarter-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 05:00 PM - 09:00 PM; Tuesday: 05:00 PM - 09:00 PM; Wednesday: 05:00 PM - 09:00 PM; Thursday: 05:00 PM - 10:00 PM; Friday: 11:30 AM - 11:00 PM; Saturday: 11:30 AM - 11:00 PM; Sunday: 11:30 AM - 08:00 PM,0
+Milkweed,,1508 Tremont St,,,,$$,4.2,https://www.yelp.com/biz/milkweed-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 09:00 PM; Tuesday: 07:00 AM - 09:00 PM; Wednesday: 07:00 AM - 09:00 PM; Thursday: 07:00 AM - 09:00 PM; Friday: 07:00 AM - 09:00 PM; Saturday: 08:00 AM - 09:00 PM; Sunday: 08:00 AM - 09:00 PM,0
+Row 34,,383 Congress St,,,,$$$,4.2,https://www.yelp.com/biz/row-34-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 11:00 PM; Tuesday: 11:30 AM - 11:00 PM; Wednesday: 11:30 AM - 11:00 PM; Thursday: 11:30 AM - 11:00 PM; Friday: 11:30 AM - 11:00 PM; Saturday: 11:30 AM - 11:00 PM; Sunday: 11:30 AM - 10:00 PM,0
+Mamma Maria,,3 North Sq,,,,$$$,4.3,https://www.yelp.com/biz/mamma-maria-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 05:00 PM - 09:15 PM; Tuesday: 05:00 PM - 09:15 PM; Wednesday: 05:00 PM - 09:15 PM; Thursday: 05:00 PM - 09:15 PM; Friday: 04:30 PM - 09:30 PM; Saturday: 04:30 PM - 09:30 PM; Sunday: 04:30 PM - 09:30 PM,0
+The Friendly Toast - Boston,,35 Stanhope St,,,,$$,4.3,https://www.yelp.com/biz/the-friendly-toast-boston-back-bay?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:30 AM - 02:30 PM; Tuesday: 07:30 AM - 02:30 PM; Wednesday: 07:30 AM - 02:30 PM; Thursday: 07:30 AM - 02:30 PM; Friday: 07:30 AM - 02:30 PM; Saturday: 07:30 AM - 05:00 PM; Sunday: 07:30 AM - 05:00 PM,0
+Bon Me - Fort Point,,313 Congress St,,,,$,3.6,https://www.yelp.com/biz/bon-me-fort-point-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 10:30 AM - 08:00 PM; Tuesday: 10:30 AM - 08:00 PM; Wednesday: 10:30 AM - 08:00 PM; Thursday: 10:30 AM - 08:00 PM; Friday: 10:30 AM - 08:00 PM; Saturday: 10:30 AM - 08:00 PM; Sunday: 10:30 AM - 08:00 PM,0
+SAVR,,150 Seaport Blvd,,,,$$$,4.2,https://www.yelp.com/biz/savr-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 11:00 PM; Wednesday: 11:00 AM - 11:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 11:00 PM,0
+Boston Sail Loft,,80 Atlantic Ave,,,,$$,4.3,https://www.yelp.com/biz/boston-sail-loft-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 02:00 AM; Tuesday: 11:30 AM - 02:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 11:30 AM - 02:00 AM; Sunday: 11:30 AM - 02:00 AM,0
+Comfort Kitchen,,611 Columbia Rd,,,,,4.5,https://www.yelp.com/biz/comfort-kitchen-dorchester?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Tuesday: 04:30 PM - 10:00 PM; Wednesday: 04:30 PM - 10:00 PM; Thursday: 04:30 PM - 10:00 PM; Friday: 04:30 PM - 10:00 PM; Saturday: 10:00 AM - 01:30 PM; Saturday: 04:30 PM - 10:00 PM; Sunday: 10:00 AM - 01:30 PM,0
+State Street Provisions,,255 State St,,,,$$,3.9,https://www.yelp.com/biz/state-street-provisions-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 12:00 AM; Wednesday: 11:00 AM - 12:00 AM; Thursday: 11:00 AM - 12:00 AM; Friday: 11:00 AM - 01:00 AM; Saturday: 10:00 AM - 01:00 AM; Sunday: 09:00 AM - 11:00 PM,0
+Isabella Ristorante,,2 Prince St,,,,$$,4.5,https://www.yelp.com/biz/isabella-ristorante-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 10:00 PM; Friday: 11:00 AM - 10:00 PM; Saturday: 11:00 AM - 10:00 PM; Sunday: 11:00 AM - 10:00 PM,0
+Carmelina's,,307 Hanover St,,,,$$$,4.5,https://www.yelp.com/biz/carmelinas-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:00 PM; Saturday: 11:30 AM - 10:00 PM; Sunday: 11:30 AM - 10:00 PM,0
+Saltie Girl,,279 Dartmouth St,,,,$$$,4.2,https://www.yelp.com/biz/saltie-girl-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 09:00 PM,0
+Bostonia Public House,,131 State St,,,,$$$,4.2,https://www.yelp.com/biz/bostonia-public-house-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 12:00 AM; Tuesday: 11:30 AM - 12:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 09:00 AM - 02:00 AM; Sunday: 09:00 AM - 12:00 AM,0
+Al's State Street Cafe,,114 State St,,,,$,4.3,https://www.yelp.com/biz/als-state-street-cafe-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 10:30 AM - 03:00 PM; Tuesday: 10:30 AM - 03:00 PM; Wednesday: 10:30 AM - 03:00 PM; Thursday: 10:30 AM - 03:00 PM; Friday: 10:30 AM - 03:00 PM; Saturday: 10:30 AM - 04:00 PM,0
+Sam LaGrassa's,,44 Province St,,,,$$,4.5,https://www.yelp.com/biz/sam-lagrassas-boston-3?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 02:00 PM; Tuesday: 11:00 AM - 02:00 PM; Wednesday: 11:00 AM - 02:00 PM; Thursday: 11:00 AM - 02:00 PM; Friday: 11:00 AM - 02:00 PM,0
+Earls Kitchen + Bar,,800 Boylston Ave,,,,$$,3.9,https://www.yelp.com/biz/earls-kitchen-bar-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 11:00 PM; Tuesday: 11:30 AM - 11:00 PM; Wednesday: 11:30 AM - 12:00 AM; Thursday: 11:30 AM - 12:00 AM; Friday: 11:30 AM - 12:00 AM; Saturday: 12:00 AM - 01:00 AM; Saturday: 10:00 AM - 12:00 AM; Sunday: 12:00 AM - 01:00 AM; Sunday: 10:00 AM - 11:00 PM,0
+Happy Lamb Hot Pot,,693 Washington St,,,,$$$,4.1,https://www.yelp.com/biz/happy-lamb-hot-pot-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 12:00 PM - 10:00 PM; Tuesday: 12:00 PM - 10:00 PM; Wednesday: 12:00 PM - 10:00 PM; Thursday: 12:00 PM - 10:00 PM; Friday: 12:00 PM - 10:00 PM; Saturday: 12:00 PM - 10:00 PM; Sunday: 12:00 PM - 10:00 PM,0
+The Salty Pig,,130 Dartmouth St,,,,$$,4.2,https://www.yelp.com/biz/the-salty-pig-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:30 PM; Saturday: 11:30 AM - 10:30 PM; Sunday: 11:30 AM - 10:00 PM,0
+Lucky's Lounge,,355 Congress St,,,,$$,3.7,https://www.yelp.com/biz/luckys-lounge-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 04:00 PM - 02:00 AM; Tuesday: 04:00 PM - 02:00 AM; Wednesday: 04:00 PM - 02:00 AM; Thursday: 04:00 PM - 02:00 AM; Friday: 04:00 PM - 02:00 AM; Saturday: 04:00 PM - 02:00 AM,0
+French Quarter,,545 Washington St,,,,$$,4.1,https://www.yelp.com/biz/french-quarter-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 05:00 PM - 09:00 PM; Tuesday: 05:00 PM - 09:00 PM; Wednesday: 05:00 PM - 09:00 PM; Thursday: 05:00 PM - 10:00 PM; Friday: 11:30 AM - 11:00 PM; Saturday: 11:30 AM - 11:00 PM; Sunday: 11:30 AM - 08:00 PM,0
+The Friendly Toast - Boston,,35 Stanhope St,,,,$$,4.3,https://www.yelp.com/biz/the-friendly-toast-boston-back-bay?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:30 AM - 02:30 PM; Tuesday: 07:30 AM - 02:30 PM; Wednesday: 07:30 AM - 02:30 PM; Thursday: 07:30 AM - 02:30 PM; Friday: 07:30 AM - 02:30 PM; Saturday: 07:30 AM - 05:00 PM; Sunday: 07:30 AM - 05:00 PM,0
+Milkweed,,1508 Tremont St,,,,$$,4.2,https://www.yelp.com/biz/milkweed-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 09:00 PM; Tuesday: 07:00 AM - 09:00 PM; Wednesday: 07:00 AM - 09:00 PM; Thursday: 07:00 AM - 09:00 PM; Friday: 07:00 AM - 09:00 PM; Saturday: 08:00 AM - 09:00 PM; Sunday: 08:00 AM - 09:00 PM,0
+Row 34,,383 Congress St,,,,$$$,4.2,https://www.yelp.com/biz/row-34-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 11:00 PM; Tuesday: 11:30 AM - 11:00 PM; Wednesday: 11:30 AM - 11:00 PM; Thursday: 11:30 AM - 11:00 PM; Friday: 11:30 AM - 11:00 PM; Saturday: 11:30 AM - 11:00 PM; Sunday: 11:30 AM - 10:00 PM,0
+Mamma Maria,,3 North Sq,,,,$$$,4.3,https://www.yelp.com/biz/mamma-maria-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 05:00 PM - 09:15 PM; Tuesday: 05:00 PM - 09:15 PM; Wednesday: 05:00 PM - 09:15 PM; Thursday: 05:00 PM - 09:15 PM; Friday: 04:30 PM - 09:30 PM; Saturday: 04:30 PM - 09:30 PM; Sunday: 04:30 PM - 09:30 PM,0
+Bon Me - Fort Point,,313 Congress St,,,,$,3.6,https://www.yelp.com/biz/bon-me-fort-point-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 10:30 AM - 08:00 PM; Tuesday: 10:30 AM - 08:00 PM; Wednesday: 10:30 AM - 08:00 PM; Thursday: 10:30 AM - 08:00 PM; Friday: 10:30 AM - 08:00 PM; Saturday: 10:30 AM - 08:00 PM; Sunday: 10:30 AM - 08:00 PM,0
+Boston Sail Loft,,80 Atlantic Ave,,,,$$,4.3,https://www.yelp.com/biz/boston-sail-loft-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 02:00 AM; Tuesday: 11:30 AM - 02:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 11:30 AM - 02:00 AM; Sunday: 11:30 AM - 02:00 AM,0
+Comfort Kitchen,,611 Columbia Rd,,,,,4.5,https://www.yelp.com/biz/comfort-kitchen-dorchester?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Tuesday: 04:30 PM - 10:00 PM; Wednesday: 04:30 PM - 10:00 PM; Thursday: 04:30 PM - 10:00 PM; Friday: 04:30 PM - 10:00 PM; Saturday: 10:00 AM - 01:30 PM; Saturday: 04:30 PM - 10:00 PM; Sunday: 10:00 AM - 01:30 PM,0
+SAVR,,150 Seaport Blvd,,,,$$$,4.2,https://www.yelp.com/biz/savr-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 11:00 PM; Wednesday: 11:00 AM - 11:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 11:00 PM,0
+Bostonia Public House,,131 State St,,,,$$$,4.2,https://www.yelp.com/biz/bostonia-public-house-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 12:00 AM; Tuesday: 11:30 AM - 12:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 09:00 AM - 02:00 AM; Sunday: 09:00 AM - 12:00 AM,0
+State Street Provisions,,255 State St,,,,$$,3.9,https://www.yelp.com/biz/state-street-provisions-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 12:00 AM; Wednesday: 11:00 AM - 12:00 AM; Thursday: 11:00 AM - 12:00 AM; Friday: 11:00 AM - 01:00 AM; Saturday: 10:00 AM - 01:00 AM; Sunday: 09:00 AM - 11:00 PM,0
+Carmelina's,,307 Hanover St,,,,$$$,4.5,https://www.yelp.com/biz/carmelinas-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:00 PM; Saturday: 11:30 AM - 10:00 PM; Sunday: 11:30 AM - 10:00 PM,0
+Isabella Ristorante,,2 Prince St,,,,$$,4.5,https://www.yelp.com/biz/isabella-ristorante-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 10:00 PM; Friday: 11:00 AM - 10:00 PM; Saturday: 11:00 AM - 10:00 PM; Sunday: 11:00 AM - 10:00 PM,0
+Saltie Girl,,279 Dartmouth St,,,,$$$,4.2,https://www.yelp.com/biz/saltie-girl-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 09:00 PM,0
+Happy Lamb Hot Pot,,693 Washington St,,,,$$$,4.1,https://www.yelp.com/biz/happy-lamb-hot-pot-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 12:00 PM - 10:00 PM; Tuesday: 12:00 PM - 10:00 PM; Wednesday: 12:00 PM - 10:00 PM; Thursday: 12:00 PM - 10:00 PM; Friday: 12:00 PM - 10:00 PM; Saturday: 12:00 PM - 10:00 PM; Sunday: 12:00 PM - 10:00 PM,0
+Earls Kitchen + Bar,,800 Boylston Ave,,,,$$,3.9,https://www.yelp.com/biz/earls-kitchen-bar-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 11:00 PM; Tuesday: 11:30 AM - 11:00 PM; Wednesday: 11:30 AM - 12:00 AM; Thursday: 11:30 AM - 12:00 AM; Friday: 11:30 AM - 12:00 AM; Saturday: 12:00 AM - 01:00 AM; Saturday: 10:00 AM - 12:00 AM; Sunday: 12:00 AM - 01:00 AM; Sunday: 10:00 AM - 11:00 PM,0
+Neptune Oyster,,63 Salem St,,,,$$$,4.3,https://www.yelp.com/biz/neptune-oyster-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 09:30 PM; Tuesday: 11:00 AM - 09:30 PM; Wednesday: 11:00 AM - 09:30 PM; Thursday: 11:00 AM - 09:30 PM; Friday: 11:00 AM - 10:30 PM; Saturday: 11:00 AM - 10:30 PM; Sunday: 11:00 AM - 09:30 PM,0
+The Salty Pig,,130 Dartmouth St,,,,$$,4.2,https://www.yelp.com/biz/the-salty-pig-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:30 PM; Saturday: 11:30 AM - 10:30 PM; Sunday: 11:30 AM - 10:00 PM,0
+Trattoria Il Panino,,11 Parmenter St,,,,$$,3.9,https://www.yelp.com/biz/trattoria-il-panino-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 11:00 PM; Wednesday: 11:00 AM - 11:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 02:00 AM; Saturday: 11:00 AM - 02:00 AM; Sunday: 11:00 AM - 11:00 PM,0
+Mamma Maria,,3 North Sq,,,,$$$,4.3,https://www.yelp.com/biz/mamma-maria-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 05:00 PM - 09:15 PM; Tuesday: 05:00 PM - 09:15 PM; Wednesday: 05:00 PM - 09:15 PM; Thursday: 05:00 PM - 09:15 PM; Friday: 04:30 PM - 09:30 PM; Saturday: 04:30 PM - 09:30 PM; Sunday: 04:30 PM - 09:30 PM,0
+Hobgoblin Bar,,48 Temple Pl,,,,,3.8,https://www.yelp.com/biz/hobgoblin-bar-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 03:00 PM - 12:00 AM; Tuesday: 03:00 PM - 12:00 AM; Wednesday: 03:00 PM - 12:00 AM; Thursday: 03:00 PM - 01:00 AM; Friday: 03:00 PM - 02:00 AM; Saturday: 03:00 PM - 02:00 AM; Sunday: 03:00 PM - 12:00 AM,0
+Moonshine 152,,152 Dorchester Ave,,,,$$,4.4,https://www.yelp.com/biz/moonshine-152-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Tuesday: 05:00 PM - 10:00 PM; Wednesday: 05:00 PM - 10:00 PM; Thursday: 05:00 PM - 10:00 PM; Friday: 05:00 PM - 11:00 PM; Saturday: 11:30 AM - 11:00 PM; Sunday: 11:30 AM - 10:00 PM,0
+Flour Bakery + Café,,12 Farnsworth St,,,,$$,4.3,https://www.yelp.com/biz/flour-bakery-caf%C3%A9-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 07:00 PM; Tuesday: 07:00 AM - 07:00 PM; Wednesday: 07:00 AM - 07:00 PM; Thursday: 07:00 AM - 07:00 PM; Friday: 07:00 AM - 07:00 PM; Saturday: 08:00 AM - 06:00 PM; Sunday: 08:00 AM - 06:00 PM,0
+French Quarter,,545 Washington St,,,,$$,4.1,https://www.yelp.com/biz/french-quarter-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 05:00 PM - 09:00 PM; Tuesday: 05:00 PM - 09:00 PM; Wednesday: 05:00 PM - 09:00 PM; Thursday: 05:00 PM - 10:00 PM; Friday: 11:30 AM - 11:00 PM; Saturday: 11:30 AM - 11:00 PM; Sunday: 11:30 AM - 08:00 PM,0
+Ma Maison,,272 Cambridge St,,,,$$,4.4,https://www.yelp.com/biz/ma-maison-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 10:00 PM; Friday: 11:00 AM - 10:00 PM; Saturday: 11:00 AM - 10:00 PM; Sunday: 11:00 AM - 10:00 PM,0
+Lucky's Lounge,,355 Congress St,,,,$$,3.7,https://www.yelp.com/biz/luckys-lounge-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 04:00 PM - 02:00 AM; Tuesday: 04:00 PM - 02:00 AM; Wednesday: 04:00 PM - 02:00 AM; Thursday: 04:00 PM - 02:00 AM; Friday: 04:00 PM - 02:00 AM; Saturday: 04:00 PM - 02:00 AM,0
+Boston Sail Loft,,80 Atlantic Ave,,,,$$,4.3,https://www.yelp.com/biz/boston-sail-loft-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 02:00 AM; Tuesday: 11:30 AM - 02:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 11:30 AM - 02:00 AM; Sunday: 11:30 AM - 02:00 AM,0
+Comfort Kitchen,,611 Columbia Rd,,,,,4.5,https://www.yelp.com/biz/comfort-kitchen-dorchester?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Tuesday: 04:30 PM - 10:00 PM; Wednesday: 04:30 PM - 10:00 PM; Thursday: 04:30 PM - 10:00 PM; Friday: 04:30 PM - 10:00 PM; Saturday: 10:00 AM - 01:30 PM; Saturday: 04:30 PM - 10:00 PM; Sunday: 10:00 AM - 01:30 PM,0
+SAVR,,150 Seaport Blvd,,,,$$$,4.2,https://www.yelp.com/biz/savr-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 11:00 PM; Wednesday: 11:00 AM - 11:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 11:00 PM,0
+Bostonia Public House,,131 State St,,,,$$$,4.2,https://www.yelp.com/biz/bostonia-public-house-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 12:00 AM; Tuesday: 11:30 AM - 12:00 AM; Wednesday: 11:30 AM - 02:00 AM; Thursday: 11:30 AM - 02:00 AM; Friday: 11:30 AM - 02:00 AM; Saturday: 09:00 AM - 02:00 AM; Sunday: 09:00 AM - 12:00 AM,0
+State Street Provisions,,255 State St,,,,$$,3.9,https://www.yelp.com/biz/state-street-provisions-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 12:00 AM; Wednesday: 11:00 AM - 12:00 AM; Thursday: 11:00 AM - 12:00 AM; Friday: 11:00 AM - 01:00 AM; Saturday: 10:00 AM - 01:00 AM; Sunday: 09:00 AM - 11:00 PM,0
+Carmelina's,,307 Hanover St,,,,$$$,4.5,https://www.yelp.com/biz/carmelinas-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:00 PM; Saturday: 11:30 AM - 10:00 PM; Sunday: 11:30 AM - 10:00 PM,0
+Isabella Ristorante,,2 Prince St,,,,$$,4.5,https://www.yelp.com/biz/isabella-ristorante-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 10:00 PM; Friday: 11:00 AM - 10:00 PM; Saturday: 11:00 AM - 10:00 PM; Sunday: 11:00 AM - 10:00 PM,0
+Al's State Street Cafe,,114 State St,,,,$,4.3,https://www.yelp.com/biz/als-state-street-cafe-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 10:30 AM - 03:00 PM; Tuesday: 10:30 AM - 03:00 PM; Wednesday: 10:30 AM - 03:00 PM; Thursday: 10:30 AM - 03:00 PM; Friday: 10:30 AM - 03:00 PM; Saturday: 10:30 AM - 04:00 PM,0
+Saltie Girl,,279 Dartmouth St,,,,$$$,4.2,https://www.yelp.com/biz/saltie-girl-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 11:00 PM; Saturday: 11:00 AM - 11:00 PM; Sunday: 11:00 AM - 09:00 PM,0
+Happy Lamb Hot Pot,,693 Washington St,,,,$$$,4.1,https://www.yelp.com/biz/happy-lamb-hot-pot-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 12:00 PM - 10:00 PM; Tuesday: 12:00 PM - 10:00 PM; Wednesday: 12:00 PM - 10:00 PM; Thursday: 12:00 PM - 10:00 PM; Friday: 12:00 PM - 10:00 PM; Saturday: 12:00 PM - 10:00 PM; Sunday: 12:00 PM - 10:00 PM,0
+Mo'Rockin Fusion,,100 Hanover St,,,,$,4.8,https://www.yelp.com/biz/morockin-fusion-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 05:30 PM; Tuesday: 11:00 AM - 05:30 PM; Wednesday: 11:00 AM - 07:30 PM; Thursday: 11:00 AM - 07:30 PM; Friday: 11:00 AM - 07:30 PM; Saturday: 11:00 AM - 07:30 PM; Sunday: 11:00 AM - 05:30 PM,0
+Neptune Oyster,,63 Salem St,,,,$$$,4.3,https://www.yelp.com/biz/neptune-oyster-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 09:30 PM; Tuesday: 11:00 AM - 09:30 PM; Wednesday: 11:00 AM - 09:30 PM; Thursday: 11:00 AM - 09:30 PM; Friday: 11:00 AM - 10:30 PM; Saturday: 11:00 AM - 10:30 PM; Sunday: 11:00 AM - 09:30 PM,0
+Earls Kitchen + Bar,,800 Boylston Ave,,,,$$,3.9,https://www.yelp.com/biz/earls-kitchen-bar-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 11:00 PM; Tuesday: 11:30 AM - 11:00 PM; Wednesday: 11:30 AM - 12:00 AM; Thursday: 11:30 AM - 12:00 AM; Friday: 11:30 AM - 12:00 AM; Saturday: 12:00 AM - 01:00 AM; Saturday: 10:00 AM - 12:00 AM; Sunday: 12:00 AM - 01:00 AM; Sunday: 10:00 AM - 11:00 PM,0
+The Salty Pig,,130 Dartmouth St,,,,$$,4.2,https://www.yelp.com/biz/the-salty-pig-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 10:00 PM; Friday: 11:30 AM - 10:30 PM; Saturday: 11:30 AM - 10:30 PM; Sunday: 11:30 AM - 10:00 PM,0
+Trattoria Il Panino,,11 Parmenter St,,,,$$,3.9,https://www.yelp.com/biz/trattoria-il-panino-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 11:00 PM; Tuesday: 11:00 AM - 11:00 PM; Wednesday: 11:00 AM - 11:00 PM; Thursday: 11:00 AM - 11:00 PM; Friday: 11:00 AM - 02:00 AM; Saturday: 11:00 AM - 02:00 AM; Sunday: 11:00 AM - 11:00 PM,0
+Flour Bakery + Café,,12 Farnsworth St,,,,$$,4.3,https://www.yelp.com/biz/flour-bakery-caf%C3%A9-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 07:00 PM; Tuesday: 07:00 AM - 07:00 PM; Wednesday: 07:00 AM - 07:00 PM; Thursday: 07:00 AM - 07:00 PM; Friday: 07:00 AM - 07:00 PM; Saturday: 08:00 AM - 06:00 PM; Sunday: 08:00 AM - 06:00 PM,0
+Ma Maison,,272 Cambridge St,,,,$$,4.4,https://www.yelp.com/biz/ma-maison-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:00 AM - 10:00 PM; Tuesday: 11:00 AM - 10:00 PM; Wednesday: 11:00 AM - 10:00 PM; Thursday: 11:00 AM - 10:00 PM; Friday: 11:00 AM - 10:00 PM; Saturday: 11:00 AM - 10:00 PM; Sunday: 11:00 AM - 10:00 PM,0
+Hobgoblin Bar,,48 Temple Pl,,,,,3.8,https://www.yelp.com/biz/hobgoblin-bar-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 03:00 PM - 12:00 AM; Tuesday: 03:00 PM - 12:00 AM; Wednesday: 03:00 PM - 12:00 AM; Thursday: 03:00 PM - 01:00 AM; Friday: 03:00 PM - 02:00 AM; Saturday: 03:00 PM - 02:00 AM; Sunday: 03:00 PM - 12:00 AM,0
+Lily's Bar Pizza Patio,,33 Batterymarch St,,,,,4.5,https://www.yelp.com/biz/lilys-bar-pizza-patio-boston-3?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 11:30 AM - 10:00 PM; Tuesday: 11:30 AM - 10:00 PM; Wednesday: 11:30 AM - 10:00 PM; Thursday: 11:30 AM - 11:00 PM; Friday: 11:30 AM - 11:30 PM; Saturday: 05:00 PM - 11:30 PM,0
+Pauli's,,65 Salem St,,,,$$,4.3,https://www.yelp.com/biz/paulis-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 08:00 AM - 09:00 PM; Tuesday: 08:00 AM - 09:00 PM; Wednesday: 08:00 AM - 09:00 PM; Thursday: 08:00 AM - 09:00 PM; Friday: 08:00 AM - 09:00 PM; Saturday: 08:00 AM - 09:00 PM; Sunday: 09:00 AM - 05:00 PM,0

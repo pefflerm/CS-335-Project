@@ -1,47 +1,72 @@
-Name,Type,Location,Reservation,Coat Check,Cover,Price,Stars,Link,Reviews
-Tatte Bakery,Coffee shop,Multiple locations,,,,,,https://tattebakery.com/,
-Pavement Coffee,Coffee shop,Multiple locations,,,,,,https://pavementcoffeehouse.com,
-La Colombe Cafe,Coffee shop,Multiple locations,,,,,,https://www.lacolombe.com,
-Life Alive Organic Cafe ,Coffee shop,Multiple locations,,,,,,https://www.lifealive.com/,
-Flour Bakery,Coffee shop,Multiple locations,,,,,,https://www.flourbakery.com/,
-Thinking Cup,Coffee shop,Multiple Locations,,,,,,http://thinkingcup.com/,
-Revival Cafe+Kitchen,Coffee shop,Multiple Locations,,,,,,https://www.revivalcafeandkitchen.com/,
-Blue Bottle Coffee,Coffee shop,Multiple locations,,,,,,https://bluebottlecoffee.com/,
-Beacon Hill Books & Cafe,High Tea,Beacon Hill,,,,,,https://www.bhbooks.com,
-Blank Street,Coffee shop,Beacon Hill,,,,,,https://www.blankstreet.com/,
-Caffe Vittoria,Coffee shop,North end,,,,,,https://www.caffevittoria.com/,
-Bova's Bakery,Bakery,North end,,,,,,http://bovabakeryboston.net/,
-Pink Carrot,Juice Cafe,North end,,,,,,https://linktr.ee/PinkCarrot,
-Jonquils Cafe & Bakery,Coffee and Bakery,Newbury,,,,,,https://jonquilscafe.com,
-BitterSweet Shoppe,Coffee shop,Newbury,,,,,,https://www.bittersweetnewbury.com/ ,
-Tradesmen,Coffee shop,Downtown ,,,,,,https://www.tradesmanboston.com/,
-George Howell,Coffee shop,Downtown ,,,,,,https://georgehowellcoffee.com,
-Gracenote Coffee,Coffee shop,Downtown ,,,,,,https://www.gracenotecoffee.com,
-Phin Coffee House ,Coffee shop,Downtown ,,,,,,https://www.phincoffeehouse.com/,
-Ogawa,Coffee shop,Downtown ,,,,,,https://www.ogawacoffeeusa.com/,
-Kane Donuts,Donut shop,Financial District,,,,,,https://www.kanesdonuts.com/,
-Cafe Susu,Coffee shop,Back Bay ,,,,,,https://cafesusu.square.site/,
-Jaho,Coffee shop,Back Bay ,,,,,,https://www.jaho.com/,
-Farmer Horse Coffee,Coffee shop,Back Bay ,,,,,,https://instagram.com/farmershorse?igshid=MWI4MTIyMDE=,
-Greystone,Coffee shop,South end,,,,,,https://www.greystonecafe.com/,
-South End Buttery ,Coffee shop,South end,,,,,,https://www.southendbuttery.com/,
-Mike & Patty's,Bakery,South end,,,,,,https://www.mikeandpattys.com,
-Brick Street Bagel,Bakery,South end,,,,,,https://www.instagram.com/brick.street.bagels/?hl=en  ,
-Phinista Cafe,Coffee shop,Fenway,,,,,,https://www.phinista.com,
-Vester Cafe ,Coffee shop,Cambridge,,,,,,https://www.vestercafe.com/,
-Curio Coffee,Coffee shop,Cambridge,,,,,,https://instagram.com/curiocoffee?igshid=MWI4MTIyMDE=,
-Bagelsaurus,Bakery,Cambridge,,,,,,https://www.bagelsaurus.com/,
-Black Sheep Bagel Cafe,Bakery,Cambridge,,,,,,https://www.blacksheepbagelcafe.com/ ,
-Lakon Paris Patisserie Seaport,Coffee shop,Southie,,,,,,https://lakonparis.com/,
-Cannonball Cafe,Coffee shop,Southie,,,,,,https://www.cannonballcafe.com/,
-Olga's Kafe,Coffee shop,Southie,,,,,,https://olgaskafe.com/ ,
-Better bagels,Bakery,Seaport,,,,,,https://www.betterbagelsboston.com/,
-Gunther Tooties,Bakery,Quincy,,,,,,https://www.gunthertooties.com/ ,
-Niveaux Pâtisserie,Bakery,Quincy,,,,,,https://www.instagram.com/niveaux.patisserie/?hl=en ,
-Kupel's Bakery,Bakery,Brookline,,,,,,https://www.kupelsbakery.com/ ,
-The Bagel Table,Bakery,Chestnut Hill,,,,,,https://mybageltable.com/ ,
-Mochinut,Bakery,Allston,,,,,,https://www.mochinut.com/,
-Mother Juice ,Juice Bar,Multiple Locations,,,,,,https://www.motherjuice.com/,
-American Provisions,Sandwiches ,Multiple Locations,,,,,,https://www.instagram.com/americanprovisions/?hl=en,
-The VU,Coffee shop,Jamaica Plain,,,,,,https://thevuinjp.com/,
-Colette Bakery,Coffee shop,Medford,,,,,,https://www.colettebakery.com/ ,
+Name,Type,Location,Reservation,Coat Check,Cover,Price,Stars,Link,Reviews,Business Hours,Number of Reviews
+Tatte Bakery,Coffee shop,Multiple locations,,,,,,https://tattebakery.com/,,,0
+Pavement Coffee,Coffee shop,Multiple locations,,,,,,https://pavementcoffeehouse.com,,,0
+La Colombe Cafe,Coffee shop,Multiple locations,,,,,,https://www.lacolombe.com,,,0
+Life Alive Organic Cafe ,Coffee shop,Multiple locations,,,,,,https://www.lifealive.com/,,,0
+Flour Bakery,Coffee shop,Multiple locations,,,,,,https://www.flourbakery.com/,,,0
+Thinking Cup,Coffee shop,Multiple Locations,,,,,,http://thinkingcup.com/,,,0
+Revival Cafe+Kitchen,Coffee shop,Multiple Locations,,,,,,https://www.revivalcafeandkitchen.com/,,,0
+Blue Bottle Coffee,Coffee shop,Multiple locations,,,,,,https://bluebottlecoffee.com/,,,0
+Beacon Hill Books & Cafe,High Tea,Beacon Hill,,,,,,https://www.bhbooks.com,,,0
+Blank Street,Coffee shop,Beacon Hill,,,,,,https://www.blankstreet.com/,,,0
+Caffe Vittoria,Coffee shop,North end,,,,,,https://www.caffevittoria.com/,,,0
+Bova's Bakery,Bakery,North end,,,,,,http://bovabakeryboston.net/,,,0
+Pink Carrot,Juice Cafe,North end,,,,,,https://linktr.ee/PinkCarrot,,,0
+Jonquils Cafe & Bakery,Coffee and Bakery,Newbury,,,,,,https://jonquilscafe.com,,,0
+BitterSweet Shoppe,Coffee shop,Newbury,,,,,,https://www.bittersweetnewbury.com/ ,,,0
+Tradesmen,Coffee shop,Downtown ,,,,,,https://www.tradesmanboston.com/,,,0
+George Howell,Coffee shop,Downtown ,,,,,,https://georgehowellcoffee.com,,,0
+Gracenote Coffee,Coffee shop,Downtown ,,,,,,https://www.gracenotecoffee.com,,,0
+Phin Coffee House ,Coffee shop,Downtown ,,,,,,https://www.phincoffeehouse.com/,,,0
+Ogawa,Coffee shop,Downtown ,,,,,,https://www.ogawacoffeeusa.com/,,,0
+Kane Donuts,Donut shop,Financial District,,,,,,https://www.kanesdonuts.com/,,,0
+Cafe Susu,Coffee shop,Back Bay ,,,,,,https://cafesusu.square.site/,,,0
+Jaho,Coffee shop,Back Bay ,,,,,,https://www.jaho.com/,,,0
+Farmer Horse Coffee,Coffee shop,Back Bay ,,,,,,https://instagram.com/farmershorse?igshid=MWI4MTIyMDE=,,,0
+Greystone,Coffee shop,South end,,,,,,https://www.greystonecafe.com/,,,0
+South End Buttery ,Coffee shop,South end,,,,,,https://www.southendbuttery.com/,,,0
+Mike & Patty's,Bakery,South end,,,,,,https://www.mikeandpattys.com,,,0
+Brick Street Bagel,Bakery,South end,,,,,,https://www.instagram.com/brick.street.bagels/?hl=en  ,,,0
+Phinista Cafe,Coffee shop,Fenway,,,,,,https://www.phinista.com,,,0
+Vester Cafe ,Coffee shop,Cambridge,,,,,,https://www.vestercafe.com/,,,0
+Curio Coffee,Coffee shop,Cambridge,,,,,,https://instagram.com/curiocoffee?igshid=MWI4MTIyMDE=,,,0
+Bagelsaurus,Bakery,Cambridge,,,,,,https://www.bagelsaurus.com/,,,0
+Black Sheep Bagel Cafe,Bakery,Cambridge,,,,,,https://www.blacksheepbagelcafe.com/ ,,,0
+Lakon Paris Patisserie Seaport,Coffee shop,Southie,,,,,,https://lakonparis.com/,,,0
+Cannonball Cafe,Coffee shop,Southie,,,,,,https://www.cannonballcafe.com/,,,0
+Olga's Kafe,Coffee shop,Southie,,,,,,https://olgaskafe.com/ ,,,0
+Better bagels,Bakery,Seaport,,,,,,https://www.betterbagelsboston.com/,,,0
+Gunther Tooties,Bakery,Quincy,,,,,,https://www.gunthertooties.com/ ,,,0
+Niveaux Pâtisserie,Bakery,Quincy,,,,,,https://www.instagram.com/niveaux.patisserie/?hl=en ,,,0
+Kupel's Bakery,Bakery,Brookline,,,,,,https://www.kupelsbakery.com/ ,,,0
+The Bagel Table,Bakery,Chestnut Hill,,,,,,https://mybageltable.com/ ,,,0
+Mochinut,Bakery,Allston,,,,,,https://www.mochinut.com/,,,0
+Mother Juice ,Juice Bar,Multiple Locations,,,,,,https://www.motherjuice.com/,,,0
+American Provisions,Sandwiches ,Multiple Locations,,,,,,https://www.instagram.com/americanprovisions/?hl=en,,,0
+The VU,Coffee shop,Jamaica Plain,,,,,,https://thevuinjp.com/,,,0
+Colette Bakery,Coffee shop,Medford,,,,,,https://www.colettebakery.com/ ,,,0
+Jonquils Cafe & Bakery,,125 Newbury St,,,,$$,4.3,https://www.yelp.com/biz/jonquils-cafe-and-bakery-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 09:00 AM - 06:00 PM; Tuesday: 09:00 AM - 06:00 PM; Wednesday: 09:00 AM - 06:00 PM; Thursday: 09:00 AM - 06:00 PM; Friday: 09:00 AM - 06:00 PM; Saturday: 09:00 AM - 06:00 PM; Sunday: 09:00 AM - 06:00 PM,0
+Flour Bakery + Café,,12 Farnsworth St,,,,$$,4.3,https://www.yelp.com/biz/flour-bakery-caf%C3%A9-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 07:00 PM; Tuesday: 07:00 AM - 07:00 PM; Wednesday: 07:00 AM - 07:00 PM; Thursday: 07:00 AM - 07:00 PM; Friday: 07:00 AM - 07:00 PM; Saturday: 08:00 AM - 06:00 PM; Sunday: 08:00 AM - 06:00 PM,0
+Flour Bakery + Café,,131 Clarendon St,,,,$$,4.2,https://www.yelp.com/biz/flour-bakery-caf%C3%A9-boston-5?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 07:00 PM; Tuesday: 07:00 AM - 07:00 PM; Wednesday: 07:00 AM - 07:00 PM; Thursday: 07:00 AM - 07:00 PM; Friday: 07:00 AM - 07:00 PM; Saturday: 08:00 AM - 06:00 PM; Sunday: 08:00 AM - 06:00 PM,0
+Caffé Vittoria,,296 Hanover St,,,,$,3.9,https://www.yelp.com/biz/caff%C3%A9-vittoria-boston-3?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 08:00 AM - 12:00 AM; Tuesday: 08:00 AM - 12:00 AM; Wednesday: 08:00 AM - 12:00 AM; Thursday: 08:00 AM - 12:00 AM; Friday: 08:00 AM - 12:00 AM; Saturday: 08:00 AM - 12:00 AM; Sunday: 08:00 AM - 12:00 AM,0
+Thinking Cup,,165 Tremont St,,,,$$,4.2,https://www.yelp.com/biz/thinking-cup-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 07:00 PM; Tuesday: 07:00 AM - 07:00 PM; Wednesday: 07:00 AM - 07:00 PM; Thursday: 07:00 AM - 07:00 PM; Friday: 07:00 AM - 07:00 PM; Saturday: 07:00 AM - 07:00 PM; Sunday: 07:00 AM - 07:00 PM,0
+Thinking Cup,,236 Hanover St,,,,$,4.1,https://www.yelp.com/biz/thinking-cup-boston-3?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 07:00 PM; Tuesday: 07:00 AM - 07:00 PM; Wednesday: 07:00 AM - 07:00 PM; Thursday: 07:00 AM - 07:00 PM; Friday: 07:00 AM - 07:00 PM; Saturday: 07:00 AM - 07:00 PM; Sunday: 07:00 AM - 07:00 PM,0
+Tradesman Coffee Shop & Lounge,,58 Batterymarch St,,,,$$,4.4,https://www.yelp.com/biz/tradesman-coffee-shop-and-lounge-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 06:00 PM; Tuesday: 07:00 AM - 06:00 PM; Wednesday: 07:00 AM - 06:00 PM; Thursday: 07:00 AM - 06:00 PM; Friday: 07:00 AM - 06:00 PM; Saturday: 07:00 AM - 06:00 PM; Sunday: 07:00 AM - 05:00 PM,0
+Caffè Nero,,560 Washington St,,,,$,3.8,https://www.yelp.com/biz/caff%C3%A8-nero-boston-8?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 06:30 AM - 09:00 PM; Tuesday: 06:30 AM - 09:00 PM; Wednesday: 06:30 AM - 09:00 PM; Thursday: 06:30 AM - 09:00 PM; Friday: 06:30 AM - 09:00 PM; Saturday: 07:00 AM - 09:00 PM; Sunday: 07:00 AM - 08:00 PM,0
+George Howell Coffee,,505 Washington St,,,,$$,4.1,https://www.yelp.com/biz/george-howell-coffee-boston-4?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 06:30 PM; Tuesday: 07:00 AM - 06:30 PM; Wednesday: 07:00 AM - 06:30 PM; Thursday: 07:00 AM - 06:30 PM; Friday: 07:00 AM - 06:30 PM; Saturday: 07:00 AM - 06:30 PM; Sunday: 07:00 AM - 06:30 PM,0
+Vester,,73 Ames St,,,,$,4,https://www.yelp.com/biz/vester-cambridge-3?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 06:00 PM; Tuesday: 07:00 AM - 06:00 PM; Wednesday: 07:00 AM - 06:00 PM; Thursday: 07:00 AM - 06:00 PM; Friday: 07:00 AM - 06:00 PM; Saturday: 09:00 AM - 03:00 PM,0
+Tatte Bakery & Cafe,,70 Charles St,,,,$$,4,https://www.yelp.com/biz/tatte-bakery-and-cafe-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 08:00 PM; Tuesday: 07:00 AM - 08:00 PM; Wednesday: 07:00 AM - 08:00 PM; Thursday: 07:00 AM - 08:00 PM; Friday: 07:00 AM - 08:00 PM; Saturday: 07:00 AM - 08:00 PM; Sunday: 08:00 AM - 07:00 PM,0
+Ogawa Coffee,,10 Milk St,,,,$,4.3,https://www.yelp.com/biz/ogawa-coffee-boston-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 08:00 AM - 04:00 PM; Tuesday: 08:00 AM - 04:00 PM; Wednesday: 08:00 AM - 04:00 PM; Thursday: 08:00 AM - 04:00 PM; Friday: 08:00 AM - 04:00 PM; Saturday: 09:00 AM - 04:30 PM; Sunday: 09:00 AM - 04:30 PM,0
+Tatte Bakery and Cafe,,399 Boylston St,,,,$$,4.2,https://www.yelp.com/biz/tatte-bakery-and-cafe-boston-6?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 08:00 PM; Tuesday: 07:00 AM - 08:00 PM; Wednesday: 07:00 AM - 08:00 PM; Thursday: 07:00 AM - 08:00 PM; Friday: 07:00 AM - 08:00 PM; Saturday: 07:00 AM - 08:00 PM; Sunday: 08:00 AM - 07:00 PM,0
+Bakey,,370 Harvard St,,,,,4.6,https://www.yelp.com/biz/bakey-brookline?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 06:00 PM; Tuesday: 07:00 AM - 06:00 PM; Wednesday: 07:00 AM - 06:00 PM; Thursday: 07:00 AM - 06:00 PM; Friday: 07:00 AM - 07:00 PM; Saturday: 07:00 AM - 07:00 PM; Sunday: 07:00 AM - 07:00 PM,0
+Tatte Bakery,,201 Washington St,,,,$$,4.4,https://www.yelp.com/biz/tatte-bakery-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 06:00 PM; Tuesday: 07:00 AM - 06:00 PM; Wednesday: 07:00 AM - 06:00 PM; Thursday: 07:00 AM - 06:00 PM; Friday: 07:00 AM - 06:00 PM; Saturday: 07:00 AM - 04:00 PM; Sunday: 08:00 AM - 04:00 PM,0
+Cafe Bonjour,,55 Temple Pl,,,,$$,4.7,https://www.yelp.com/biz/cafe-bonjour-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 03:00 PM; Tuesday: 07:00 AM - 03:00 PM; Wednesday: 07:00 AM - 03:00 PM; Thursday: 07:00 AM - 03:00 PM; Friday: 07:00 AM - 03:00 PM; Saturday: 07:00 AM - 03:00 PM; Sunday: 07:00 AM - 03:00 PM,0
+Lakon Paris Patisserie,,113 Autumn Ln,,,,,4.4,https://www.yelp.com/biz/lakon-paris-patisserie-boston-6?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 08:00 PM; Tuesday: 07:00 AM - 08:00 PM; Wednesday: 07:00 AM - 08:00 PM; Thursday: 07:00 AM - 08:00 PM; Friday: 07:00 AM - 08:00 PM; Saturday: 08:00 AM - 08:00 PM; Sunday: 08:00 AM - 06:00 PM,0
+Cafe Beatrice,,100 N First St,,,,,4.4,https://www.yelp.com/biz/cafe-beatrice-cambridge-2?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 05:00 PM; Tuesday: 07:00 AM - 09:00 PM; Wednesday: 07:00 AM - 09:00 PM; Thursday: 07:00 AM - 09:00 PM; Friday: 07:00 AM - 09:00 PM; Saturday: 08:00 AM - 09:00 PM; Sunday: 08:00 AM - 05:00 PM,0
+L.A. Burdick Handmade Chocolates,,220 Clarendon St,,,,$$,4.2,https://www.yelp.com/biz/l-a-burdick-handmade-chocolates-boston-3?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 08:00 AM - 09:00 PM; Tuesday: 08:00 AM - 09:00 PM; Wednesday: 08:00 AM - 09:00 PM; Thursday: 08:00 AM - 09:00 PM; Friday: 08:00 AM - 09:00 PM; Saturday: 08:00 AM - 09:00 PM; Sunday: 08:00 AM - 09:00 PM,0
+Jaho Coffee Roaster & Wine Bar,,665 Washington St,,,,$$,3.7,https://www.yelp.com/biz/jaho-coffee-roaster-and-wine-bar-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 06:30 AM - 11:00 PM; Tuesday: 06:30 AM - 11:00 PM; Wednesday: 06:30 AM - 11:00 PM; Thursday: 06:30 AM - 11:00 PM; Friday: 06:30 AM - 11:00 PM; Saturday: 07:00 AM - 11:00 PM; Sunday: 07:00 AM - 11:00 PM,0
+The Well Coffee House,,1-1A State St,,,,$$,4.7,https://www.yelp.com/biz/the-well-coffee-house-boston-7?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 06:00 PM; Tuesday: 07:00 AM - 06:00 PM; Wednesday: 07:00 AM - 06:00 PM; Thursday: 07:00 AM - 06:00 PM; Friday: 07:00 AM - 06:00 PM; Saturday: 08:00 AM - 06:00 PM,0
+Seaport Bakery,,1 Seaport Ln,,,,,4.3,https://www.yelp.com/biz/seaport-bakery-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 06:00 AM - 02:00 PM; Tuesday: 06:00 AM - 02:00 PM; Wednesday: 06:00 AM - 02:00 PM; Thursday: 06:00 AM - 02:00 PM; Friday: 06:00 AM - 02:00 PM; Saturday: 06:30 AM - 01:00 PM; Sunday: 06:30 AM - 01:00 PM,0
+Sip Cafe,,0 Post Office Sq,,,,$$,4,https://www.yelp.com/biz/sip-cafe-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:30 AM - 08:00 PM; Tuesday: 07:30 AM - 08:30 PM; Wednesday: 07:30 AM - 08:30 PM; Thursday: 07:30 AM - 08:30 PM; Friday: 07:30 AM - 08:00 PM,0
+Emmi Bakery & Cafe,,100 City Sq,,,,,5,https://www.yelp.com/biz/emmi-bakery-and-cafe-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,,0
+Phin Coffee House,,10 High St,,,,$,4.6,https://www.yelp.com/biz/phin-coffee-house-boston?adjust_creative=MJG9nGcXziyd-cakMaW14A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=MJG9nGcXziyd-cakMaW14A,,Monday: 07:00 AM - 06:00 PM; Tuesday: 07:00 AM - 06:00 PM; Wednesday: 07:00 AM - 06:00 PM; Thursday: 07:00 AM - 06:00 PM; Friday: 07:00 AM - 06:00 PM; Saturday: 09:00 AM - 05:00 PM,0

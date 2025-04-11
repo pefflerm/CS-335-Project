@@ -12,7 +12,7 @@ public class ReviewList {
 	// Prints all reviews in a readable format
 	public void printReviewList() {
 		for (Review i : allReviews) {
-			System.out.printf("   %2d  %s\n", i.getStars(), i.getText());
+			System.out.printf("   %2d  %s\n", i.getStarsStr(), i.getText());
 		}
 	}
 	// Add this method to ReviewList class
@@ -27,7 +27,7 @@ public class ReviewList {
 	public String getReviews() {
 		StringBuilder sb = new StringBuilder();
 		for (Review i : allReviews) {
-			sb.append(String.format("   %2d  %s\n", i.getStars(), i.getText()));
+			sb.append(String.format("   %2d  %s\n", i.getStarsStr(), i.getText()));
 		}
 		return sb.toString();
 	}

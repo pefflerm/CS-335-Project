@@ -23,5 +23,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="src/main/java/cs335_package/opencsv-5.10.jar"/>
+	<classpathentry kind="lib" path="src/main/java/cs335_package/commons-lang3-3.17.0/commons-lang3-3.17.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
