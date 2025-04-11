@@ -55,7 +55,8 @@ public class Menu {
                 
             }
             case 5: {
-                addLocation(scanner);
+            	String fileName = "places/general.csv";
+            	new LocationFactory(fileName);
             }
             break;
 

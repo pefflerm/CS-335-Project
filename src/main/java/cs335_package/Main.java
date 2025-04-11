@@ -28,6 +28,13 @@
             ArrayList<Location> selfCare = new ArrayList<>();
             ArrayList<Location> other = new ArrayList<>(); // Fixed initialization
             
+           
+            int locIndex = 0; // keeps track of where in the locations arrayList the user is
+            Menu m = new Menu();
+            s = m.Menu();
+            if(!s.matches("")) {
+            SearchYelp.initiateSearch(s); 
+           
             for (String x:category){
                 PlacesFactory df;
                 switch (x) {
@@ -98,17 +105,7 @@
                         break;
                 } 
             }
-            
-            int locIndex = 0; // keeps track of where in the locations arrayList the user is
-            Menu m = new Menu();
-            s = m.Menu();
-            if(!s.isEmpty()) {
-            SearchYelp.initiateSearch(s); 
-           
-            PlacesFactory d = new PlacesFactory("places/" + getCsvFile(s)); // Use 's' instead of 'x'
-            while (d.moreData()) {
-                other.add(d.getNextPlace());
-            }}
+            }
             while(t.equals("yes") && s!=null){
                 if(s!=null){
                     System.out.println("");
