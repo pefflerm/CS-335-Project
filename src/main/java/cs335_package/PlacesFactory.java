@@ -1,9 +1,5 @@
 package cs335_package;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import java.util.Scanner;
 
@@ -45,8 +41,6 @@ public class PlacesFactory {
         }
         String line = sc.nextLine();
         String[] parts = line.split(",");
-        //System.out.println(rowIndex);
-        //System.out.println(path);
         if (parts.length < 2) {
             System.out.println("Warning: Invalid line format in CSV: " + line);
             return getNextPlace(rowIndex+1,path); // Skip this line and try the next one
@@ -90,20 +84,28 @@ public class PlacesFactory {
 	    if (parts.length > 8 && !parts[8].isEmpty()) {
 	        location.setWeb(parts[8].trim());
 	    }
-	    
-	    /*
-	    if (parts.length > 3 && !parts[11].isEmpty()) {
-	    	location.setNumOfReviews(parts[1].trim());
-	    }
-	    */
+
 	    location.setID(rowIndex);
         location.setFilePath(path);
-        if (parts.length>11 && !parts[11].isEmpty()) {
-        	location.setNumOfReviews(parts[11]);
-        }else {
-        	location.setNumOfReviews("0"); // temp fix
-        }
         
+        String reviewPath = "reviews/" + location.getName().replaceAll("[^a-zA-Z0-9]", "_") + "_reviews.csv";
+        File reviewCsv = new File(reviewPath);
+        if (reviewCsv.exists()) { // if review file exists, number of reviews = number of rows in csv - 1
+        	int num = 0;
+        	try {
+        		BufferedReader reader = new BufferedReader(new FileReader(reviewCsv));       	
+	        	while (!reader.readLine().isEmpty()) {
+	        		System.out.println(reader.readLine());
+	        		num += 1;
+	        	}
+	        	location.setNumOfReviews(num-1);
+	        	reader.close();
+        	} catch(IOException e){
+        		e.printStackTrace();
+        	}
+        }else { // if review file doesn't exist then there's 0 reviews
+        	location.setNumOfReviews(0);
+        }
         
         return location;
     }

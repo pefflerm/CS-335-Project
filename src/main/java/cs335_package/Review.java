@@ -35,17 +35,6 @@ public class Review {
         
         // Get star rating from user
         this.addStars(scan);
-        
-        /* get this information in the addStars method
-        System.out.print("Enter your rating (1-5): ");
-        while (!scan.hasNextInt()) {  // Ensure valid integer input
-            System.out.println("Invalid input. Please enter a number between 1 and 5.");
-            scan.next(); // Consume invalid input
-        }
-        int stars = scan.nextInt();
-        scan.nextLine(); // Consume the leftover newline
-        r.setStars(stars); // Set stars in the Review object
-		*/
 
         // Ask user if they want to add text to the review
         boolean cont = true;
@@ -54,11 +43,6 @@ public class Review {
             String wantText = scan.nextLine().trim().toLowerCase();
             if (wantText.equals("yes")) {
             	this.addText(scan);
-            	/* get this information in the addText method
-                System.out.println("Enter your review text: ");
-                String reviewText = scan.nextLine();
-                r.setText(reviewText);
-                */
                 cont = false; // Exit loop after getting review text
             } else if (wantText.equals("no")) {
                 this.setText(""); // No text review provided
@@ -132,7 +116,7 @@ public class Review {
 		if (stars >= 1 && stars <= 5) {
 			this.stars = stars;
 		} else { 
-			System.out.println("Invalid star raiting. Must be between 1 and 5.");
+			System.out.println("Invalid star rating. Must be between 1 and 5.");
 		}		
 	}
 	*/         

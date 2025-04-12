@@ -26,7 +26,7 @@ public class Location {
 	private List<String> schedule; // To store schedule info
 	private int id; // row of the csv
 	private String filePath;
-	private String numOfReviews;
+	private int numOfReviews;
 
 	// setters
     public void setPrice(String price) { this.price = price; }
@@ -40,7 +40,7 @@ public class Location {
     public void setWeb(String web) { this.web = web; }
     public void setID(int id) {this.id = id;}
     public void setFilePath(String path) {this.filePath = path;}
-    public void setNumOfReviews(String num) {this.numOfReviews = num;}
+    public void setNumOfReviews(int num) {this.numOfReviews = num;}
     
     // getters
     public String getName() {return this.name;}
@@ -55,7 +55,7 @@ public class Location {
     public String getStarsStr() {return this.starsStr;}
     public int getID() {return this.id;}
     public String getFilePath() {return this.filePath;}
-    public String getNumOfReviews() {return this.numOfReviews;}
+    public int getNumOfReviews() {return this.numOfReviews;}
     
     // constructor
 	Location(String n, String t){
@@ -99,87 +99,12 @@ public class Location {
 	return locArray;
 	}
 
-
-    /* Moved to Review class
-    public void createReview(Scanner scan) { 
-        Review r = new Review(); // Initialize a new Review object
-        
-        // Get star rating from user
-        r.addStars(scan);
-        this information is gotten in the addStars method
-        System.out.print("Enter your rating (1-5): ");
-        while (!scan.hasNextInt()) {  // Ensure valid integer input
-            System.out.println("Invalid input. Please enter a number between 1 and 5.");
-            scan.next(); // Consume invalid input
-        }
-        int stars = scan.nextInt();
-        scan.nextLine(); // Consume the leftover newline
-        r.setStars(stars); // Set stars in the Review object
-
-        // Ask user if they want to add text to the review
-        boolean cont = true;
-        while (cont) {
-            System.out.println("Do you want to add text to your review (yes/no)? ");
-            String addText = scan.nextLine().trim().toLowerCase();
-
-            if (addText.equals("yes")) {
-                System.out.println("Enter your review text: ");
-                String reviewText = scan.nextLine();
-                r.setText(reviewText);
-                cont = false; // Exit loop after getting review text
-            } else if (addText.equals("no")) {
-                r.setText(""); // No text review provided
-                cont = false; // Exit loop
-            } else {
-                System.out.println("Please enter 'yes' or 'no'.");
-            }
-        }
-
-        // Print review details
-        System.out.println("Thank you for your review!");
-        System.out.println("Your review: " + r.getStars() + " stars");
-        System.out.println("Review: " + (r.getText().isEmpty() ? "No text review provided." : r.getText()));
-
-        // Add review to the list
-        if (reviews == null) {
-            reviews = new ReviewList(); // Initialize ReviewList if it's null
-        }
-        reviews.addReview(r); // Add the review to the list
-    }
-	*/
-
-    
-	// Add this method to the Location class
-    // Make it public so it can be called from Main
-    /* this method exists in the Review class
-    public int getRating(Scanner scan) {
-	    int rating = 0;
-	    boolean validInput = false;
-	    
-	    while (!validInput) {
-	        System.out.print("Enter your rating (1-5 stars): ");
-	        try {
-	            rating = Integer.parseInt(scan.nextLine().trim());
-	            if (rating >= 1 && rating <= 5) {
-	                validInput = true;
-	            } else {
-	                System.out.println("Please enter a number between 1 and 5.");
-	            }
-	        } catch (NumberFormatException e) {
-	            System.out.println("Please enter a valid number.");
-	        }
-	    }
-	    return rating;	    
-	}
-	*/
-
     public void updateStars(Review r) {
     	// CSV file path is now stored as an attribute
 	    String csvFilePath = this.getFilePath();
 	    
 	    // Calculate new average
-	    int numReviews = Integer.valueOf(this.numOfReviews);
-	    this.starsDouble = ((this.starsDouble*numReviews) + r.getStarsDouble())/(numReviews+1);
+	    this.starsDouble = ((this.starsDouble*this.getNumOfReviews()) + r.getStarsDouble())/(this.getNumOfReviews()+1);
 	    this.starsStr = Double.toString(this.starsDouble);
 	    this.numOfReviews += 1;
 	    
@@ -217,14 +142,7 @@ public class Location {
     	}
     }
 
-	public void saveReviewToCSV(Review r) throws IOException {
-	    // Create a review object and add it to the review list
-	    /* review is created in Main class using Review class methods
-	    Review review = new Review();
-	    review.setStars(rating);
-	    review.setText(reviewText);
-	    */
-	    
+	public void saveReviewToCSV(Review r) throws IOException {	    
 	    // Add the review to the location's review list
 	    if (this.reviews == null) {
 	        this.reviews = new ReviewList();
