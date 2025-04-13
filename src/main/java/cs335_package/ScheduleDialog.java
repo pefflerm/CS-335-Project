@@ -142,6 +142,14 @@ public class ScheduleDialog extends JDialog {
         endCal.set(Calendar.MILLISECOND, 0);
         selectedEndDate = endCal.getTime();
 
+        // --- Add this check ---
+        Date now = new Date(); // Get the current date and time
+        if (selectedStartDate.before(now)) {
+            JOptionPane.showMessageDialog(this, "Start date/time cannot be in the past.", "Input Error", JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+        // --- End of added check ---
+
         if (!selectedEndDate.after(selectedStartDate)) {
             JOptionPane.showMessageDialog(this, "End date/time must be after start date/time.", "Input Error", JOptionPane.ERROR_MESSAGE);
             return false;
@@ -149,6 +157,7 @@ public class ScheduleDialog extends JDialog {
 
         return true;
     }
+
 
     // Public methods to get the results
     public boolean isConfirmed() {

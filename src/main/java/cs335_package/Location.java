@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -59,6 +58,8 @@ public class Location {
 		}
 		return scheduled;
 	}
+    private static Schedule globalSchedule = new Schedule();
+
     
 	public void setLocation(String location) { this.location = location; }
 	public void setType(String type) { this.type = type; }
