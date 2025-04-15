@@ -86,26 +86,27 @@ public class PlacesFactory {
 	    }
 
 	    location.setID(rowIndex);
-        location.setFilePath(path);
+        location.setFilePath(path);     
         
         String reviewPath = "reviews/" + location.getName().replaceAll("[^a-zA-Z0-9]", "_") + "_reviews.csv";
         File reviewCsv = new File(reviewPath);
         if (reviewCsv.exists()) { // if review file exists, number of reviews = number of rows in csv - 1
         	int num = 0;
         	try {
-        		BufferedReader reader = new BufferedReader(new FileReader(reviewCsv));       	
-	        	while (!reader.readLine().isEmpty()) {
-	        		System.out.println(reader.readLine());
-	        		num += 1;
+        		CSVReader reader = new CSVReader(new FileReader(reviewCsv));
+        		while (reader.readNext() != null) {
+        			num += 1;
 	        	}
+        		System.out.println(location.getName()+" "+Integer.toString(num));
 	        	location.setNumOfReviews(num-1);
 	        	reader.close();
-        	} catch(IOException e){
+        	} catch(IOException|CsvException e){
         		e.printStackTrace();
         	}
         }else { // if review file doesn't exist then there's 0 reviews
         	location.setNumOfReviews(0);
         }
+        
         
         return location;
     }
@@ -116,4 +117,6 @@ public class PlacesFactory {
             sc.close();
         }
     }
+    
+
 }
