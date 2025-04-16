@@ -3,8 +3,8 @@
     import java.io.FileWriter;
     import java.io.IOException;
     import java.util.ArrayList;
-    import java.util.Scanner; 
     import java.util.Date;
+    import java.util.Scanner;
 
     import javax.swing.JOptionPane; 
     public class Main {
@@ -150,38 +150,64 @@
                         System.out.println("----------------------");
                         System.out.println("----------------------");
                         System.out.println("----------------------");
-                        // Ask if the user wants to leave a review
-                        System.out.print("Would you like to leave a review for this place? (yes/no): ");
-                        String leaveReview = sc.nextLine().trim().toLowerCase();
-                        // If yes, ask for rating and a text review
-                        if (leaveReview.equals("yes")) {
-                            int rating = currentPlace.getRating(sc);
-                            System.out.print("Enter your review: ");
-                            String reviewText = sc.nextLine().trim();
-                            System.out.println("Thank you for your review!");
-                            
-                            // Store the review and save it to CSV - with IOException handling
-                            try {
-                                currentPlace.saveReviewToCSV(rating, reviewText);
-                                System.out.println("Your review has been saved!");
-                            } catch (IOException e) {
-                                System.out.println("Error saving review to CSV: " + e.getMessage());
-                            }
-                            
-                            // Display the review
-                            System.out.println("Your review: " + rating + " stars");
-                            System.out.println("Review: " + reviewText);
-                        }
-    
-                        System.out.println("----------------------");
-                        System.out.println("----------------------");
-                        System.out.println("----------------------");
+                                                // Ask if the user wants to leave a review
+                                               // System.out.println("DEBUG: About to ask for review..."); // <-- DEBUG LINE
+                                                System.out.print("Would you like to leave a review for this place? (yes/no): ");
+                                                String leaveReview = sc.nextLine().trim().toLowerCase();
+                                               // System.out.println("DEBUG: User entered: '" + leaveReview + "'"); // <-- DEBUG LINE
+                        
+                                                // If yes, show the review dialog
+                                                if (leaveReview.equals("yes")) {
+                                               //     System.out.println("DEBUG: User entered 'yes'. Creating ReviewDialog..."); // <-- DEBUG LINE
+                                                    // --- Use the GUI Dialog for Review ---
+                                                    // Pass null as the owner frame if you don't have a main JFrame
+                                                    ReviewDialog reviewDialog = new ReviewDialog(null, currentPlace.getName());
+                                                   // System.out.println("DEBUG: ReviewDialog created. Calling setVisible(true)..."); // <-- DEBUG LINE
+                                                    reviewDialog.setVisible(true); // Show the dialog and wait
+                                                   // System.out.println("DEBUG: ReviewDialog closed."); // <-- DEBUG LINE
+                        
+                                                    // Check if the user submitted the review
+                                                    if (reviewDialog.isSubmitted()) {
+                                                        //System.out.println("DEBUG: Review was submitted."); // <-- DEBUG LINE
+                                                        int rating = reviewDialog.getRating();
+                                                        String reviewText = reviewDialog.getReviewText();
+                        
+                                                        System.out.println("Thank you for your review!");
+                        
+                                                        // Store the review and save it to CSV - with IOException handling
+                                                        try {
+                                                            // Assuming saveReviewToCSV doesn't need Scanner anymore
+                                                            // Make sure your Location class's saveReviewToCSV method
+                                                            // now only takes (int rating, String reviewText)
+                                                            currentPlace.saveReviewToCSV(rating, reviewText);
+                                                            System.out.println("Your review has been saved!");
+                                                        } catch (IOException e) {
+                                                            System.out.println("Error saving review to CSV: " + e.getMessage());
+                                                        }
+                        
+                                                        // Display the review (optional, could be removed)
+                                                        System.out.println("Your review: " + rating + " stars");
+                                                        System.out.println("Review: " + reviewText);
+                        
+                                                    } else {
+                                                       // System.out.println("DEBUG: Review was cancelled."); // <-- DEBUG LINE
+                                                       // System.out.println("Review cancelled by user.");
+                                                    }
+                                                } else {
+                                                     System.out.println("DEBUG: User did not enter 'yes'. Skipping review dialog."); // <-- DEBUG LINE
+                                                } // End if leaveReview.equals("yes")
+                        
+                                                System.out.println("----------------------"); // <<< This separator should remain
+                                                System.out.println("----------------------"); // <<< This separator should remain
+                                                System.out.println("----------------------"); // <<< This separator should remain
                         
                                                 // Add these imports at the top of your Main.java file if they aren't already there:
-                        // import java.util.Date;
-                        // import javax.swing.JFrame; // Needed if you pass 'null' to ScheduleDialog
-
-                        System.out.println("Do you want to save this location to your wishlist (yes/no)? ");
+                                                // import java.util.Date;
+                                                // import javax.swing.JFrame; // Needed if you pass 'null' to ScheduleDialog
+                        
+                                                System.out.println("Do you want to save this location to your wishlist (yes/no)? "); // <<< Wishlist part starts here
+                                                // ... rest of the wishlist logic ...
+                        
                         String wish = sc.nextLine().trim().toLowerCase();
                         while (!wish.equals("yes") && !wish.equals("no")){
                             System.out.println("Please enter yes or no: ");

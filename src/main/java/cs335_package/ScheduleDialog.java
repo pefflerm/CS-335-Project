@@ -1,3 +1,8 @@
+//source: https://github.com/empeeoh/JCalendar/blob/master/src/com/toedter/calendar/JDateChooser.java
+//source: https://stackoverflow.com/questions/24323126/traverse-jdatechooser-with-enter-key
+//helped me figure out what to do!!! good read to figure out what the program does. basically helped me realize what do put and what not to do!. 
+//it did make this simple to use for our code!
+
 package cs335_package;
 
 import com.toedter.calendar.JDateChooser;
