@@ -1,14 +1,17 @@
 package cs335_package;
+
 import java.time.LocalDateTime;
+import java.time.ZoneId; // <-- Add this import
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
+import java.util.Date; // <-- Add this import
 import java.util.List;
 
 public class Schedule {
     private List<ScheduledEvent> events;
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-    
+
     public Schedule() {
         this.events = new ArrayList<>();
     }
@@ -43,33 +46,63 @@ public class Schedule {
     }
     
     public boolean addEvent(String locationName, String startTimeStr, String endTimeStr) {
+        // ... (
         try {
             LocalDateTime startTime = LocalDateTime.parse(startTimeStr, formatter);
             LocalDateTime endTime = LocalDateTime.parse(endTimeStr, formatter);
-            
+
             // Check if the end time is after the start time
             if (endTime.isBefore(startTime) || endTime.isEqual(startTime)) {
                 System.out.println("End time must be after start time.");
                 return false;
             }
-            
-            // Check for conflicts with existing events
-            for (ScheduledEvent event : events) {
-                if ((startTime.isBefore(event.endTime) && endTime.isAfter(event.startTime))) {
-                    System.out.println("Time conflict with existing event: " + event);
-                    return false;
-                }
+
+            // Check for conflicts with existing events using LocalDateTime
+            if (hasConflict(startTime, endTime)) { // Use the new helper method
+                 System.out.println("Time conflict detected during addEvent."); // More specific message
+                 return false;
             }
-            
+
             // No conflicts, add the event
             events.add(new ScheduledEvent(locationName, startTime, endTime));
-            System.out.println("Event scheduled successfully: " + locationName + " from " + 
+            System.out.println("Event scheduled successfully: " + locationName + " from " +
                               startTime.format(formatter) + " to " + endTime.format(formatter));
             return true;
         } catch (DateTimeParseException e) {
             System.out.println("Invalid date/time format. Please use yyyy-MM-dd HH:mm format.");
             return false;
         }
+    }
+
+    // Helper method for conflict check using LocalDateTime (used by addEvent)
+    private boolean hasConflict(LocalDateTime newStartTime, LocalDateTime newEndTime) {
+         for (ScheduledEvent event : events) {
+            // Check for overlap: (StartA < EndB) and (StartB < EndA)
+            if (newStartTime.isBefore(event.endTime) && event.startTime.isBefore(newEndTime)) {
+                 System.out.println("Time conflict with existing event: " + event); // Keep this log
+                 return true; // Conflict found
+            }
+        }
+        return false; // No conflict
+    }
+
+
+    // New method to check conflicts using java.util.Date (for ScheduleDialog)
+    public boolean hasConflict(Date startDate, Date endDate) {
+        if (startDate == null || endDate == null) {
+            return false; // Cannot check conflict with null dates
+        }
+
+        // Convert java.util.Date to java.time.LocalDateTime
+        LocalDateTime newStartTime = startDate.toInstant()
+                                              .atZone(ZoneId.systemDefault())
+                                              .toLocalDateTime();
+        LocalDateTime newEndTime = endDate.toInstant()
+                                            .atZone(ZoneId.systemDefault())
+                                            .toLocalDateTime();
+
+        // Reuse the LocalDateTime conflict check logic
+        return hasConflict(newStartTime, newEndTime);
     }
     
     // Add this method to get entries for a specific location

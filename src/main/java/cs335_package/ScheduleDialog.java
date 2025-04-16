@@ -147,21 +147,42 @@ public class ScheduleDialog extends JDialog {
         endCal.set(Calendar.MILLISECOND, 0);
         selectedEndDate = endCal.getTime();
 
-        // --- Add this check ---
+        // --- Basic Validation ---
         Date now = new Date(); // Get the current date and time
         if (selectedStartDate.before(now)) {
             JOptionPane.showMessageDialog(this, "Start date/time cannot be in the past.", "Input Error", JOptionPane.ERROR_MESSAGE);
             return false;
         }
-        // --- End of added check ---
 
         if (!selectedEndDate.after(selectedStartDate)) {
             JOptionPane.showMessageDialog(this, "End date/time must be after start date/time.", "Input Error", JOptionPane.ERROR_MESSAGE);
             return false;
         }
 
-        return true;
+        // --- Check for Schedule Conflicts ---
+      
+        try {
+         
+
+            Schedule schedule = Location.getGlobalSchedule(); // Assumes static getter exists in Location
+            if (schedule != null && schedule.hasConflict(selectedStartDate, selectedEndDate)) {
+                 JOptionPane.showMessageDialog(this,
+                    "This time slot conflicts with an existing scheduled event.",
+                    "Scheduling Conflict",
+                    JOptionPane.WARNING_MESSAGE);
+                return false; // Conflict found
+            }
+        } catch (Exception e) {
+            // Handle potential errors if getGlobalSchedule or hasConflict fails
+             System.err.println("Error checking schedule conflicts: " + e.getMessage());
+             // E);
+        }
+
+
+
+        return true; // All checks passed
     }
+
 
 
     // Public methods to get the results

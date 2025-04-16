@@ -69,6 +69,10 @@ public class Location {
   
     public void setWeb(String web) { this.web = web; }
 
+     
+    public static Schedule getGlobalSchedule() {
+            return globalSchedule;
+    }
     
 
 

@@ -176,9 +176,7 @@
                         
                                                         // Store the review and save it to CSV - with IOException handling
                                                         try {
-                                                            // Assuming saveReviewToCSV doesn't need Scanner anymore
-                                                            // Make sure your Location class's saveReviewToCSV method
-                                                            // now only takes (int rating, String reviewText)
+                                                           
                                                             currentPlace.saveReviewToCSV(rating, reviewText);
                                                             System.out.println("Your review has been saved!");
                                                         } catch (IOException e) {
@@ -206,7 +204,7 @@
                                                 // import javax.swing.JFrame; // Needed if you pass 'null' to ScheduleDialog
                         
                                                 System.out.println("Do you want to save this location to your wishlist (yes/no)? "); // <<< Wishlist part starts here
-                                                // ... rest of the wishlist logic ...
+                                         
                         
                         String wish = sc.nextLine().trim().toLowerCase();
                         while (!wish.equals("yes") && !wish.equals("no")){
