@@ -53,9 +53,8 @@ public class Menu {
             	
                 case 5:{
                     System.out.println("Exiting... Goodbye!");
-                    return "";
-                
-                   
+                    subChoice = "";
+                    break;                  
             }}
 			return subChoice;
         

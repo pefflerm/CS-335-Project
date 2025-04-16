@@ -128,17 +128,14 @@ public class Main {
         Menu m = new Menu();
         s = m.Menu();
         if(!s.isEmpty()) {
-            SearchYelp.initiateSearch(s); 
-            
-            
+            SearchYelp.initiateSearch(s);                       
             /*
             PlacesFactory d = new PlacesFactory("places/" + getCsvFile(s)); // Use 's' instead of 'x'
             while (d.moreData()) {
                 other.add(d.getNextPlace());
             }}
-            */
-            
-            while(t.equals("yes") && s!=null){
+            */           
+            while(t.equals("yes") && !s.isEmpty()){
                 if(s!=null){
                     System.out.println("");
                   
@@ -230,76 +227,8 @@ public class Main {
                             }
                         } // while loop
                         if (choice==6) {
-                        	System.out.print("GOODBYE");
-                            break;
+                        	s = "Go Back";
                         }
-
-                        
-                        /* OLD CODE
-                        // Ask if the user wants to leave a review
-                        System.out.print("Would you like to leave a review for this place? (yes/no): ");
-                        String leaveReview = sc.nextLine().trim().toLowerCase();
-                        // If yes, ask for rating and a text review
-                        if (leaveReview.equals("yes")) {
-                        	Review r = new Review();
-                            r.createReview(sc);                            
-                            // Store the review and save it to CSV - with IOException handling
-                            try {
-                                currentPlace.saveReviewToCSV(r);
-                                currentPlace.updateStars(r);
-                                System.out.println("Your review has been saved!");
-                            } catch (IOException e) {
-                                System.out.println("Error saving review to CSV: " + e.getMessage());
-                            }                            
-                            // method to update stars
-                            currentPlace.updateStars(r);
-                        }
-                        System.out.println("----------------------");
-                        System.out.println("----------------------");
-                        System.out.println("----------------------");
-                                               
-                        System.out.println("Do you want to save this location to your wishlist (yes/no)? ");
-                        String wish = sc.nextLine().trim().toLowerCase();
-                        while (!wish.equals("yes") && !wish.equals("no")){
-                            System.out.println("Please enter yes or no: ");
-                            wish = sc.nextLine().trim().toLowerCase();
-                        }
-                        if (wish.equals("yes")) {
-                            // Ask about scheduling first, before adding to wishlist
-                            System.out.println("Would you like to schedule a time to visit " + currentPlace.getName() + "? (yes/no)");
-                            String scheduleChoice = sc.nextLine().trim().toLowerCase();
-                            
-                            if (scheduleChoice.equals("yes")) {
-                                // Using the scheduleVisit method which will handle both scheduling and adding to wishlist
-                                // Removed try-catch since scheduleVisit doesn't throw IOException
-                                currentPlace.scheduleVisit(sc);
-                            } else {
-                                // Add to wish list without scheduling
-                                try {
-                                    currentPlace.add2Wishlist();
-                                    System.out.println("Location added to wishlist without scheduling.");
-                                } catch (IOException e) {
-                                    System.out.println("Error adding to wishlist: " + e.getMessage());
-                                }
-                            }
-                        }                       
-                        System.out.println("----------------------");
-                        System.out.println("----------------------");
-                        System.out.println("----------------------");
-						
-                        // Ask the user if they want to see the next place or stop
-                        System.out.print("Type 'Next' to see the next place or 'Exit' to stop: ");
-                        String input = sc.nextLine().trim().toLowerCase();  // Convert input to lowercase to avoid case issues
-                        // Loop until user types "next" or "exit"
-                        while (!input.equals("next") && !input.equals("exit")) {
-                            // Just keep asking the user without showing the "Invalid input" message
-                            input = sc.nextLine().trim().toLowerCase();  // Keep reading until "Next" or "Exit" is typed
-                        }
-                        if (input.equals("exit")) {
-                            System.out.print("GOODBYE");
-                            break; 
-                        }
-                        */
                     }
                 }
             } // while loop
@@ -336,16 +265,11 @@ public class Main {
         }
     } // createGeneralUserChoiceCSV function
     
-    // this function sets the column 'Number of Reviews' in all of the rows that are added from Yelp API to zero
-    // short term fix to avoid fatal errors
-    public void fixYelpNumReviews() {
-    	
-    }
-    
     public static void printLns() {
     	System.out.println("\n----------------------");
         System.out.println("----------------------");
         System.out.println("----------------------");
-    }
+    } // printLns function
+    
 } // Main class
     
