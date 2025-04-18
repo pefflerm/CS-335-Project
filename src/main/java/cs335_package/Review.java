@@ -30,9 +30,7 @@ public class Review {
         this.reviewer = reviewer;    
     }
 
-    public void createReview(Scanner scan) { 
-        //Review r = new Review(); // Initialize a new Review object
-        
+    public void createReview(Scanner scan) {       
         // Get star rating from user
         this.addStars(scan);
 
@@ -110,16 +108,6 @@ public class Review {
 		System.out.println("Enter your name: ");
 		this.reviewer = sc.nextLine().trim();
 	}
-
-	/* Same functionality as addStars method
-	public void setStars(int stars) {
-		if (stars >= 1 && stars <= 5) {
-			this.stars = stars;
-		} else { 
-			System.out.println("Invalid star rating. Must be between 1 and 5.");
-		}		
-	}
-	*/         
         
     public void saveReviewToCSV(String fileName) throws IOException {
         try {

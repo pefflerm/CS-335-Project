@@ -12,11 +12,12 @@ public class Menu {
             System.out.println("1. Restaurants");
             System.out.println("2. Things to Do");
             System.out.println("3. Self-Care");
-            System.out.println("4. Add Location");
-            System.out.println("5. Exit");
+            System.out.println("4. Search");
+            System.out.println("5. Add Location");
+            System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
 
-            choice = getValidChoice(scanner, 5);
+            choice = getValidChoice(scanner, 6);
 
             switch (choice) {
                 case 1: {
@@ -47,15 +48,24 @@ public class Menu {
                     break;
                 }
                 case 4:{
-                    addLocation(scanner);
-                	}
-                	break;
-            	
+                	Scanner sc1 = new Scanner(System.in);
+                    System.out.print("Enter your choice: ");
+                    String choiceName = sc1.nextLine();
+                    System.out.print(choiceName);
+                    sc1.close();
+                    return choiceName;                    
+                }
                 case 5:{
+                	String fileName = "places/general.csv";
+                	new LocationFactory(fileName);
+                }
+                break;
+                case 6:{
                     System.out.println("Exiting... Goodbye!");
                     subChoice = "";
                     break;                  
-            }}
+                }
+            } // switch statement
 			return subChoice;
         
    }
@@ -73,15 +83,13 @@ public class Menu {
             System.out.println("2. Brunch");
             System.out.println("3. Cafes/Bakeries/study friendly");
             System.out.println("4. Lunch/Dinner");
-            System.out.println("5. Go Back");
+            System.out.println("5. Other");
+            System.out.println("6. Go Back");
             System.out.print("Enter your choice: ");
 
-            subChoice = getValidChoice(scanner, 5);
-
+            subChoice = getValidChoice(scanner, 6);
             
-            return getRestaurantType(subChoice);
-            
-
+            return getRestaurantType(subChoice);           
     }
 
     private static String activitiesMenu(Scanner scanner) {
@@ -91,18 +99,14 @@ public class Menu {
             System.out.println("1. Shopping");
             System.out.println("2. Fun Activities");
             System.out.println("3. Outdoors");
-            System.out.println("4. Go Back");
+            System.out.println("4. Other");
+            System.out.println("5. Go Back");
             System.out.print("Enter your choice: ");
 
-            subChoice = getValidChoice(scanner, 4);
+            subChoice = getValidChoice(scanner, 5);
 
            
-                return getActivityType(subChoice);
-            
-
-        
-
-   
+            return getActivityType(subChoice);
     }
 
     private static String selfCareMenu(Scanner scanner) {
@@ -112,13 +116,13 @@ public class Menu {
             System.out.println("1. Spa");
             System.out.println("2. Massage");
             System.out.println("3. Skincare/Haircare");
-            System.out.println("4. Go Back");
+            System.out.println("4. Other");
+            System.out.println("5. Go Back");
             System.out.print("Enter your choice: ");
 
-            subChoice = getValidChoice(scanner, 5);
+            subChoice = getValidChoice(scanner, 6);
 
-            return getSelfCareType(subChoice);
-             
+            return getSelfCareType(subChoice);            
     }
 
     
@@ -143,8 +147,16 @@ public class Menu {
             case 2: return "Brunch";
             case 3: return "Cafes/Bakeries";
             case 4: return "Lunch/Dinner";
-            case 5: return "Go Back";
-            default: return ""; 
+            case 5: {
+                System.out.print("Enter the name of a restaurant you like: ");
+                Scanner scanner = new Scanner(System.in);
+                String restaurantName = scanner.nextLine();
+                return restaurantName;
+            }
+            case 6:
+                return "Go Back";
+            default:
+                return "";
         }
     }
 
@@ -153,8 +165,16 @@ public class Menu {
             case 1: return "Shopping";
             case 2: return "Fun Activities";
             case 3: return "Outdoors";
-            case 4: return "Go Back";
-            default: return ""; 
+            case 4: {
+                System.out.print("Enter an activity: ");
+                Scanner scanner = new Scanner(System.in);
+                String activityName = scanner.nextLine();
+                return activityName;
+            }
+            case 5:
+                return "Go Back";
+            default:
+                return ""; 
         }
     }
 
@@ -162,10 +182,17 @@ public class Menu {
         switch (choice) {
             case 1: return "Spa";
             case 2: return "Massage";
-            case 3: return "Skincare/Haircare";
-            
-            case 4: return "Go Back";
-            default: return ""; 
+            case 3: return "Skincare/Haircare";           
+            case 4: {
+                System.out.print("Enter a self care activity: ");
+                Scanner scanner = new Scanner(System.in);
+                String selfCareName = scanner.nextLine();
+                return selfCareName;
+            }
+            case 5:
+                return "Go Back";
+            default:
+                return ""; 
         }
     }
 }

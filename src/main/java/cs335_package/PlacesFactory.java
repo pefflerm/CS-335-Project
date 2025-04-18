@@ -97,7 +97,6 @@ public class PlacesFactory {
         		while (reader.readNext() != null) {
         			num += 1;
 	        	}
-        		System.out.println(location.getName()+" "+Integer.toString(num));
 	        	location.setNumOfReviews(num-1);
 	        	reader.close();
         	} catch(IOException|CsvException e){
@@ -105,11 +104,10 @@ public class PlacesFactory {
         	}
         }else { // if review file doesn't exist then there's 0 reviews
         	location.setNumOfReviews(0);
-        }
-        
+        }       
         
         return location;
-    }
+    } // getNextPlace function
     
     // Add a method to close the scanner when done
     public void close() {
@@ -117,6 +115,4 @@ public class PlacesFactory {
             sc.close();
         }
     }
-    
-
 }

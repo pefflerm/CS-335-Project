@@ -1,7 +1,5 @@
 package cs335_package;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class LocationFactory {
@@ -9,19 +7,27 @@ public class LocationFactory {
     private FileWriter writer;
     private String csvFile;
 
+    public LocationFactory() {
+   	 sc = new Scanner(System.in);
+   	 System.out.println();
+    }
+    
     public LocationFactory(String fileName) {
         sc = new Scanner(System.in);
         this.csvFile = fileName;
         try {
             File file = new File(csvFile);
-            // Create a new file if it doesn't exist
+            File parentDir = file.getParentFile();
+            if (parentDir != null && !parentDir.exists()) {
+                parentDir.mkdirs(); // ensures "places/" exists
+            }
+
             if (!file.exists()) {
                 file.createNewFile();
                 writer = new FileWriter(file, true);
-                // Write headers to the file if it's a new file
-                writer.append("Bars,Genre,Location,Coat Check,Cover,Has Kelsey been?,TikTok/ IG Reels,Links\n");
+                writer.append("Name,Type,Location,Reservation,Coat Check,Cover,Price,Stars,Link,Reviews,Business Hours\n");
             } else {
-                writer = new FileWriter(file, true); // Append to existing file
+                writer = new FileWriter(file, true);
             }
         } catch (IOException e) {
             System.out.println("An error occurred while creating the file.");
@@ -34,13 +40,16 @@ public class LocationFactory {
 
         // Get user input for each field
         System.out.print("Enter Place Name: ");
-        String barName = sc.nextLine();
+        String name = sc.nextLine();
 
         System.out.print("Enter Genre: ");
-        String genre = sc.nextLine();
+        String type = sc.nextLine();
 
         System.out.print("Enter Location: ");
         String location = sc.nextLine();
+        
+        System.out.print("Reservation (Yes/No): ");
+        String reservation = sc.nextLine();
 
         System.out.print("Enter Coat Check (Yes/No): ");
         String coatCheck = sc.nextLine();
@@ -48,23 +57,30 @@ public class LocationFactory {
         System.out.print("Enter Cover Charge (Yes/No): ");
         String cover = sc.nextLine();
 
-        System.out.print("Has Kelsey been? (TRUE/FALSE): ");
-        String hasKelseyBeen = sc.nextLine();
+        System.out.print("Price (e.g. $, $$, $$$): ");
+        String price = sc.nextLine();
 
-        System.out.print("Enter TikTok/IG Reels link (if any): ");
-        String tikTokReels = sc.nextLine();
+        System.out.print("Stars (e.g. 4.5): ");
+        String stars = sc.nextLine();
 
-        System.out.print("Enter Links: ");
-        String links = sc.nextLine();
+        System.out.print("Link (Yelp/website): ");
+        String link = sc.nextLine();
+
+        System.out.print("Reviews: ");
+        String reviews = sc.nextLine();
+
+        System.out.print("Business Hours: ");
+        String businessHours = sc.nextLine();
+
 
         // Add the new location to the CSV file
         try {
-            writer.append(barName + "," + genre + "," + location + "," + coatCheck + "," + cover + ","
-                    + hasKelseyBeen + "," + tikTokReels + "," + links + "\n");
+            writer.append(String.join(",", name, type, location, reservation, coatCheck, cover, price, stars, link, reviews, businessHours));
+            writer.append("\n");
             writer.flush();
-            System.out.println("Location added successfully!");
+            System.out.println("✅ Location added successfully!");
         } catch (IOException e) {
-            System.out.println("An error occurred while saving the location.");
+            System.out.println("❌ Error while saving the location.");
             e.printStackTrace();
         }
     }

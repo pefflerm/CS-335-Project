@@ -63,7 +63,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>cs335_package.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -77,7 +77,7 @@
                 </descriptorRefs>
                 <archive>
                     <manifest>
-                        <mainClass>YelpSearch</mainClass>
+                        <mainClass>cs335_package.Main</mainClass>
                     </manifest>
                 </archive>
             </configuration>

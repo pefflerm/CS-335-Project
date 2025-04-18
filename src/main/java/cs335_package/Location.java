@@ -123,7 +123,7 @@ public class Location {
 	    } catch(IOException|CsvException e){
 	    	e.printStackTrace();
 	    }
-    }
+    } // updateStars function
     
     public void readReviews() {
     	String reviewFileName = "reviews/" + this.name.replaceAll("[^a-zA-Z0-9]", "_") + "_reviews.csv";
@@ -140,7 +140,7 @@ public class Location {
     	}catch(CsvException|IOException e) {
     		e.printStackTrace();
     	}
-    }
+    } // readReviews function
 
 	public void saveReviewToCSV(Review r) throws IOException {	    
 	    // Add the review to the location's review list
@@ -192,8 +192,6 @@ public class Location {
 	        System.out.println("Review file does not exist after saving!");
 	    }
 	} // saveReviewToCSV method
-
-
 	
 	// Add these fields to the Location class
 	private static Schedule globalSchedule = new Schedule();
@@ -331,8 +329,6 @@ public class Location {
 	    return scheduled;
 	} // scheduleVisit method
 
-
-
 	public void add2Wishlist() throws IOException {
 	    String os = getOS();
 	    if (os == null) {
@@ -412,7 +408,7 @@ public class Location {
 	    } catch (IOException ex) {
 	        System.out.println("Failed to save to CSV file: " + ex.getMessage());
 	    }
-	}
+	} // writeFileCSV function
 	
 	// New method to write schedule to CSV
 	private void writeScheduleCSV(File scheduleFile) throws IOException {
@@ -443,7 +439,7 @@ public class Location {
 	        System.out.println("Error saving schedule: " + e.getMessage());
 	        throw e;
 	    }
-	}
+	} // writeScheduleCSV function
 	
 	// Helper method to properly escape CSV values
 	private String escapeCSV(String value) {
@@ -456,7 +452,7 @@ public class Location {
 	        return "\"" + value.replace("\"", "\"\"") + "\"";
 	    }
 	    return value;
-	}
+	} // escapeCSV function
 	
 	// Add this method to load the schedule from a CSV file
 	public static void loadScheduleFromCSV(File scheduleFile) {
@@ -493,7 +489,7 @@ public class Location {
 	    } catch (IOException e) {
 	        System.out.println("Error loading schedule from CSV: " + e.getMessage());
 	    }
-	}
+	} // loadScheduleFromCSV function
 	
 	// Helper method to parse CSV lines correctly (handling quoted values)
 	private static String[] parseCSVLine(String line) {
@@ -527,9 +523,7 @@ public class Location {
 	    result.add(currentValue.toString());
 	    
 	    return result.toArray(new String[0]);
-	}
-	
-	
+	} // parseCSVLine method		
 	
 	public String getOS() { //legit the simpler version of what rachel did 
 	    String os = System.getProperty("os.name").toLowerCase();
@@ -543,9 +537,7 @@ public class Location {
 	        System.out.println("Compatible operating system not detected");
 	        return null;
 	    }
-	}	
-	
-	
+	} // getOS function		
 	
 	public File createFile(String fileName, String filePath) {
 	    File file1;
