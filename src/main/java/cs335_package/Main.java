@@ -29,8 +29,8 @@ public class Main {
         
         
         int locIndex = 0; // keeps track of where in the locations arrayList the user is
-        Menu m = new Menu();
-        s = m.Menu();
+        s = GuiMainMenu.getUserChoice();
+
         if(!s.matches("")) {
             SearchYelp.initiateSearch(s);
 	        // read in all csv files as Location objects
@@ -138,7 +138,8 @@ public class Main {
                 System.out.println("");
               
                 while(s.equals("Go Back")){
-                    s=m.Menu();                           
+                	s = GuiMainMenu.getUserChoice();
+
                 }
                 
                 if(!s.isEmpty()){
