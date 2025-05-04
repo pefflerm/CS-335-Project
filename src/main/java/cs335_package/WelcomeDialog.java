@@ -21,7 +21,11 @@ import javax.swing.plaf.ColorUIResource;
 public class WelcomeDialog extends JDialog {
 //https://www.geeksforgeeks.org/java-swing-jdialog-examples/ sources
 //https://stackoverflow.com/questions/11623777/how-to-implement-a-java-swing-application-to-touch-screen sources
-    
+//https://stackoverflow.com/questions/6810581/how-to-center-the-text-in-a-jlabel
+//https://andrewbridge.wordpress.com/2012/03/26/java-styling-a-swing-jlabel/
+//https://www.youtube.com/watch?v=U3ACpPu9_kE
+//https://www.geeksforgeeks.org/java-swing-creating-custom-message-dialogs/
+	
     public WelcomeDialog(Frame owner, String message, String title, ImageIcon icon) {
         super(owner, title, true); // Modal dialog
 

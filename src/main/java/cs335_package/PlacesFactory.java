@@ -1,10 +1,11 @@
 package cs335_package;
-import java.io.*;
-import java.util.List;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 import com.opencsv.CSVReader;
-import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvException;
 
 public class PlacesFactory {
@@ -68,19 +69,24 @@ public class PlacesFactory {
             location.setCover(parts[5].trim());
         }
         
-        // Update the price handling
+        // Handle Price (assuming it's at index 6)
 		if (parts.length > 6 && !parts[6].isEmpty()) {
-		    location.setPrice(parts[6].trim());
+		    location.setPrice(parts[6].trim()); // Set price as String
 		}
-	
-		// Update the stars handling
+
+		// Handle Stars (assuming it's at index 7)
 		if (parts.length > 7 && !parts[7].isEmpty()) {
 		    location.setStarsStr(parts[7].trim());
-		    String stars = parts[7];
-		    stars = stars.replaceAll("\"", "0");
-		    location.setStarsDouble(Double.valueOf(stars));
+		    String stars = parts[7].trim(); // Trim whitespace
+		    try {
+		        // Attempt to parse stars as a Double
+		        location.setStarsDouble(Double.valueOf(stars));
+		    } catch (NumberFormatException e) {
+		        System.err.println("Warning: Could not parse stars as a number for line: " + line);
+		        location.setStarsDouble(0.0); // Set a default value or handle as needed
+		    }
 		}
-	        
+
 	    if (parts.length > 8 && !parts[8].isEmpty()) {
 	        location.setWeb(parts[8].trim());
 	    }

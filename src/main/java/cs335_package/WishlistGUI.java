@@ -21,11 +21,13 @@ import javax.swing.SwingConstants;
 
 public class WishlistGUI extends JDialog {
     private Location location;
+    private String username; // Added field to store the username
 
-    
-    public WishlistGUI(Frame owner, Location loc) {
+    // Modified constructor to accept the username
+    public WishlistGUI(Frame owner, Location loc, String username) {
         super(owner, "Add to Wishlist", true); // Modal dialog
         this.location = loc;
+        this.username = username; // Store the username
 
         initComponents();
         pack(); // Adjusts the dialog size based on its components
@@ -34,7 +36,7 @@ public class WishlistGUI extends JDialog {
 
     private void initComponents() {
         //https://stackoverflow.com/questions/15311316/how-to-put-two-components-to-a-jpanel-with-borderlayout sources
-        //https://stackoverflow.com/questions/56287248/how-to-apply-existed-buttons-to-yes-no-buttons sources 
+        //https://stackoverflow.com/questions/56287248/how-to-apply-existed-buttons-to-yes-no-buttons sources
         // Use a JPanel for better layout control
         JPanel panel = new JPanel(new BorderLayout(10, 10)); // Add some spacing
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // Add padding
@@ -75,11 +77,14 @@ public class WishlistGUI extends JDialog {
         setContentPane(panel);
     }
 
-    /**
-     * Adds the location to the wishlist CSV file and shows a confirmation message.
-     */
+    
+    //Adds the location to the wishlist CSV file specific to the user and shows a confirmation message.
+    
     private void addToWishlistAndConfirm() {
-        try (FileWriter fw = new FileWriter("places/wishlist.csv", true);
+        // Construct the user-specific wishlist file path
+        String userWishlistFile = "places/wishlist_" + username + ".csv";
+
+        try (FileWriter fw = new FileWriter(userWishlistFile, true);
              PrintWriter pw = new PrintWriter(fw)) {
 
             // Use getLocation() for address and getType() for category
@@ -87,23 +92,23 @@ public class WishlistGUI extends JDialog {
 
             // Show success message
             JOptionPane.showMessageDialog(this,
-                    location.getName() + " added to wishlist successfully!",
+                    location.getName() + " added to " + username + "'s wishlist successfully!",
                     "Success",
                     JOptionPane.INFORMATION_MESSAGE);
 
-            System.out.println("Location added to wishlist successfully.");
+            System.out.println("Location added to " + username + "'s wishlist successfully.");
 
         } catch (IOException e) {
             // Show error message
             JOptionPane.showMessageDialog(this,
-                    "Failed to add " + location.getName() + " to wishlist.\n" + e.getMessage(),
+                    "Failed to add " + location.getName() + " to " + username + "'s wishlist.\n" + e.getMessage(),
                     "Error",
                     JOptionPane.ERROR_MESSAGE);
 
-            System.out.println("Error adding to wishlist: " + e.getMessage());
-            // No need to re-throw here as the action is complete within the dialog
+            System.out.println("Error adding to " + username + "'s wishlist: " + e.getMessage());
+    
         }
     }
 
-    
+
 }
