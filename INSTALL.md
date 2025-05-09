@@ -9,7 +9,7 @@ This program is desinged to work on Eclipse IDE.
 ## Instructions
 Download the ZIP and extract. Import the folder as a project in Eclipse.
 
-Using the link above, download Maven by clicking `apache-maven-3.9.9-bin.zip`. For Windows, extract the zipped files to `C:\\Program Files\Apache`. For Macs, 
+To install Maven, open Eclipse and cick `Help`>>`Install New Software`>>`Add` and then type `M2Eclipse` in the Name field and `http://download.eclipse.org/technology/m2e/releases` in the Location field. Installation should begin after clicking ok.
 
 Using the link above, download Apache Commons Lang by clicking `commons-lang3-3.17.0-bin.zip`. Unzip and paste a copy of the entire folder in `CS-335-Project-main\src\main\java\cs335_package`. Copy the file `commons-lang3-3.17.0.jar` into `CS-335-Project-main\src\main\java\cs335_package`.
 
